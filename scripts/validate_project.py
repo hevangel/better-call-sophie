@@ -12,9 +12,9 @@ REQUIRED = [
     "spec/production-pipeline.md", "spec/third-party.md", ".gitmodules",
 ]
 ART = [
-    "assets/marketing/poster-tv-4x3.jpg",
-    "assets/marketing/business-card-front.jpg",
-    "assets/marketing/business-card-back.jpg",
+    "assets/marketing/poster-tv-4x3.webp",
+    "assets/marketing/business-card-front.webp",
+    "assets/marketing/business-card-back.webp",
 ]
 SUBMODULES = [
     "external/comfyui", "external/remotion", "external/auto-editor", "external/whisper",

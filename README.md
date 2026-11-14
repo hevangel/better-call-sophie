@@ -13,7 +13,7 @@ An **AI-generated philosophical crime drama / dark comedy** created collaborativ
 ### TV-series poster
 
 <p align="center">
-  <img src="assets/marketing/poster-tv-4x3.jpg" alt="Better Call Sophie: Sophie Goodman in a burgundy suit in her philosophical consulting office, Albuquerque at dusk" width="740" />
+  <img src="assets/marketing/poster-tv-4x3.webp" alt="Better Call Sophie: Sophie Goodman in a burgundy suit in her philosophical consulting office, Albuquerque at dusk" width="480" />
 </p>
 
 ### Goodman Philosophical Consulting — business card
@@ -24,12 +24,12 @@ An **AI-generated philosophical crime drama / dark comedy** created collaborativ
     <th>Back</th>
   </tr>
   <tr>
-    <td><img src="assets/marketing/business-card-front.jpg" alt="Better Call Sophie business card front with Sophie Goodman, PhD" width="450" /></td>
-    <td><img src="assets/marketing/business-card-back.jpg" alt="Business card back listing philosophical advocacy services and fictional contact details" width="450" /></td>
+    <td><img src="assets/marketing/business-card-front.webp" alt="Better Call Sophie business card front with Sophie Goodman, PhD" width="330" /></td>
+    <td><img src="assets/marketing/business-card-back.webp" alt="Business card back listing philosophical advocacy services and fictional contact details" width="330" /></td>
   </tr>
 </table>
 
-_These are concept images; details such as names, fictional phone numbers, and branding are subject to final art review. The repository artwork consists of GitHub-friendly previews; preserve full-resolution masters in production storage._
+_These are concept images; details such as names, fictional phone numbers, and branding are subject to final art review. The repository artwork consists of **lightweight, reduced-resolution WebP previews**; preserve full-resolution masters in production storage._
 
 ## The idea
 

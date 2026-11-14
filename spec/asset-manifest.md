@@ -4,9 +4,9 @@ All entries below were generated in this project conversation using image genera
 
 | Repo preview | Source concept | Status | Notes |
 | --- | --- | --- | --- |
-| `assets/marketing/poster-tv-4x3.jpg` | 4:3 horizontal Better Call Sophie TV poster | concept | Burgundy suit, office, philosophical chalkboard, Albuquerque dusk; generated 2026-11-14 |
-| `assets/marketing/business-card-front.jpg` | Goodman Philosophical Consulting card front | concept | Yellow/red ad-style, portrait and fictional phone 505-555-0148; generated 2026-11-14 |
-| `assets/marketing/business-card-back.jpg` | Business card back | concept | Services and fictional contact information; generated 2026-11-14 |
+| `assets/marketing/poster-tv-4x3.webp` | 4:3 horizontal Better Call Sophie TV poster | concept | Burgundy suit, office, philosophical chalkboard, Albuquerque dusk; generated 2026-11-14 |
+| `assets/marketing/business-card-front.webp` | Goodman Philosophical Consulting card front | concept | Yellow/red ad-style, portrait and fictional phone 505-555-0148; generated 2026-11-14 |
+| `assets/marketing/business-card-back.webp` | Business card back | concept | Services and fictional contact information; generated 2026-11-14 |
 
 **Source session file names** (not necessarily published to repo at full size):
 - `better_call_sophie_moral_loopholes.png` (the more recent 4:3 poster was chosen).
