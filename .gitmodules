@@ -1,0 +1,12 @@
+[submodule "external/comfyui"]
+	path = external/comfyui
+	url = https://github.com/Comfy-Org/ComfyUI.git
+[submodule "external/remotion"]
+	path = external/remotion
+	url = https://github.com/remotion-dev/remotion.git
+[submodule "external/auto-editor"]
+	path = external/auto-editor
+	url = https://github.com/WyattBlue/auto-editor.git
+[submodule "external/whisper"]
+	path = external/whisper
+	url = https://github.com/openai/whisper.git
