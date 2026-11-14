@@ -45,6 +45,7 @@ The stakes come from reputation, public hearings, ethics panels, corporate board
 - [Canon and open decisions](spec/canon.md) — what is fixed versus provisional.
 - [Season 1 outline](story/season-01/overview.md) — ten episode concepts.
 - [Production pipeline](spec/production-pipeline.md) — Google Flow-first, tool-agnostic shot production.
+- **[Google Flow: First Pilot Runs](production/google-flow/tutorial-first-pilot.md)** — hands-on setup, three practice experiments, reusable characters, voice tests, Scenebuilder, credits and QC.
 - [External software](spec/third-party.md) — pinned Git submodules and their separate licenses.
 
 ## Repository layout

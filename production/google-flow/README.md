@@ -1,5 +1,7 @@
 # Google Flow — initial generation platform
 
+**Start here if you're new:** [First Pilot Runs — step-by-step tutorial](tutorial-first-pilot.md) covers setup, three hands-on tests, prompts, credits, reference characters, dialogue, editing, and evaluation.
+
 The human showrunner has a Google Flow subscription and intends to use it for early video generation. The pipeline must remain portable to other tools.
 
 ## Manual workflow

@@ -12,7 +12,7 @@ Help the human showrunner develop and produce **Better Call Sophie**, an AI-gene
 2. [spec/canon.md](spec/canon.md) — accepted facts; never silently contradict these.
 3. [spec/series-bible.md](spec/series-bible.md) — premise, cast, themes, evolving setting.
 4. [spec/style-guide.md](spec/style-guide.md) — creative and visual consistency.
-5. [spec/production-pipeline.md](spec/production-pipeline.md) and [spec/asset-manifest.md](spec/asset-manifest.md) — generated asset workflow, storage, provenance.
+5. [spec/production-pipeline.md](spec/production-pipeline.md) and [spec/asset-manifest.md](spec/asset-manifest.md) — generated asset workflow, storage, provenance. For Google Flow experiments use [production/google-flow/tutorial-first-pilot.md](production/google-flow/tutorial-first-pilot.md).
 6. [spec/ai-creative-policy.md](spec/ai-creative-policy.md) and [spec/third-party.md](spec/third-party.md) — disclosure, intellectual property, external code and licensing.
 
 For episode work, also read `story/season-01/overview.md`, the character files, and any episode treatment before inventing a new scene.
