@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-golden
 version: v02
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner as the office master wide, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md
 camera_position: cam-c       # wide from the front-door corner
@@ -84,6 +84,7 @@ agent_review:
   verdict: much closer to the direction than v01; chair placement and chalkboard text are the main fixes
 
 showrunner_review:
-  decision: null              # pending: approve as master, or re-roll
-  notes: null
+  decision: approved          # 2026-11-22: "Approve v02"
+  notes: Approved as the master wide; the deviations listed above were accepted as they are.
+repo_reference_copy: assets/locations/sophie-office/office-master-wide-golden.webp   # WebP conversion of the original, same resolution
 youtube_url: null

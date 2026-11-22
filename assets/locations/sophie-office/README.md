@@ -1,6 +1,6 @@
 # Location: Goodman Philosophical Consulting — Sophie's office
 
-**Status:** design **APPROVED** by the showrunner (2026-11-22): concept, floor plan and fixed set list. The reference pack is **not generated yet**. From now on, changes to the floor plan or set list need a documented reason. Needed before the next round of Flow tests, because continuity was the weakest result of the tutorial run.
+**Status:** design **APPROVED** by the showrunner (2026-11-22): concept, floor plan and fixed set list. The **master wide (v02) is APPROVED** (2026-11-22; see Decisions). The other views of the reference pack are **not generated yet**. From now on, changes to the floor plan or set list need a documented reason. Needed before the next round of Flow tests, because continuity was the weakest result of the tutorial run.
 
 ## Concept
 
@@ -112,4 +112,6 @@ For each later view, use the master image as the reference and state the camera 
 3. Still open: approve the generated master wide image before the other views are made.
    - **v01** (2026-11-22): re-roll requested. [Log](../../../production/generation-logs/office-master-wide-golden-v01.yaml).
    - **v02** (2026-11-22, prompt v02, Nano Banana 2.1, 16:9, High): reads as a strip-mall lawyer's office with diplomas, two client chairs and the trolley chalkboard. Main deviations: the client chairs stand against the left wall instead of facing the desk, garbled chalk text beside the trolley, and the window is on the right wall again. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml).
-   - Images are in production storage (`production/exports/locations/sophie-office/`). **Decision needed:** approve v02 as the master, or re-roll.
+   - Images are in production storage (`production/exports/locations/sophie-office/`).
+4. ~~Master wide~~: **v02 APPROVED by the showrunner on 2026-11-22.** The repo reference copy is [office-master-wide-golden.webp](office-master-wide-golden.webp). Its known deviations are accepted as they are: the client chairs stand against the left wall, there's garbled chalk text beside the trolley, the window is on the right wall, and the bookcases are freestanding. Later views should match the image, not the original floor plan, where the two differ.
+5. Next: generate the other views from the master (`cam-a`, `cam-b`, `cam-d`, then day and night), upload the master and the views to the Flow project, and log each one.
