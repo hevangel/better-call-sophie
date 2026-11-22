@@ -1,0 +1,80 @@
+# Generation log: Sophie's office, master wide, golden hour, take 1.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-master-wide-golden
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md
+camera_position: cam-c       # wide from the front-door corner
+lighting_state: golden-hour
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # model picker shown in the composer settings before generating
+settings_shown_in_flow:
+  mode: Image
+  aspect_ratio: "16:9"
+  quality: High              # radio group Low | Medium | High ("Extra thorough")
+  count: x1
+reference_images: []         # none; this is the master the later views will reference
+
+prompt_source: assets/locations/sophie-office/README.md, "Master prompt (PROPOSED)", used verbatim
+prompt: >-
+  Empty interior of a small philosophical consulting office in an Albuquerque strip-mall storefront,
+  year 2030, wide establishing shot from the front-door corner, eye level, 16:9. Floor-to-ceiling
+  dark-wood bookshelves cover the back wall, with a small Socrates bust on the top-right shelf. A
+  scuffed dark walnut desk faces the front window, holding a green glass banker's lamp (lit), three
+  stacked books and a closed silver laptop. An oxblood leather wingback client chair faces the desk. A
+  slate chalkboard on the left wall shows a hand-drawn trolley-problem diagram. Warm cream plaster
+  walls, a framed diploma, a faded Persian-style rug, wood-look floor. Golden-hour sunlight through
+  half-open venetian blinds casts warm slatted shadows. Slightly shabby but proud and scholarly.
+  Photorealistic, cinematic, prestige TV production design. No people, no readable text, no logos,
+  no watermarks.
+
+flow_project:
+  title: "AAO image a964e0d41448"      # created by `aao web image flow`; it cannot target the show's project (gap 1)
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index: 1
+  name: "Empty office interior with desk"   # name Flow gave the tile
+
+how_it_was_run: >-
+  `uv run aao web image flow --prompt ...` created the project, then failed before generating
+  ("locator.getAttribute: Timeout 30000ms exceeded"): AAO looks for a button named "Flow Agent",
+  but the live page labels it "Flow agent". The same steps were then done in that project with
+  playwright-cli (session aao-web-gemini): confirm Flow agent off, Settings, Image, check 16:9 / x1,
+  fill the prompt, Start generation. The original was downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T15:37:53-07:00"   # Start generation clicked; tile appeared about 25 s later
+
+output:
+  original_filename: Empty_office_interior_with_desk_c3dad42e.jpg
+  download_quality: "Original size"
+  local_path: production/exports/locations/sophie-office/Empty_office_interior_with_desk_c3dad42e.jpg   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-master-wide-golden-v01.jpg            # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 6F35033850862804C9096A41A6EF6811082F2EE49CD3E5366E2173EAA4E832A9
+
+agent_review:                 # against "Acceptance checks for the pack" in the office README
+  matches:
+    - Dark scuffed walnut desk with a lit green glass banker's lamp, three stacked books and a closed silver laptop
+    - Oxblood tufted leather wingback chair
+    - Slate chalkboard in a wooden frame on the left wall with a hand-drawn trolley diagram
+    - Socrates-style bust on the top-right of the shelves
+    - Cream plaster walls (shabby, stained), framed diploma, faded Persian-style rug, wood-look floor
+    - Golden-hour light through half-open venetian blinds with slatted shadows
+    - Chalkboard reads as on Sophie's right if she sits behind the desk facing camera (screen direction OK)
+    - No people, no logos, no watermarks
+  deviations:
+    - Storefront glass and blinds run along the RIGHT wall; the floor plan puts the window only on the front (street) wall
+    - Client chair stands beside the desk, angled toward camera, instead of facing the desk
+    - Bookshelves are a freestanding unit with a gap above and at the sides, not floor-to-ceiling across the back wall
+    - Diploma hangs on the left wall beside the chalkboard, not behind the desk
+    - Small pinned papers on the left wall carry illegible text-like marks
+    - Not in the prompt, so absent - second visitor chair, coat stand, waiting bench, water cooler, back-room door, "IS ≠ OUGHT" on the board, red top book
+  verdict: usable as a draft master; the showrunner decides whether the deviations are acceptable or need a re-roll
+
+showrunner_review:
+  decision: null              # pending: approve as master, or re-roll
+  notes: null
+youtube_url: null

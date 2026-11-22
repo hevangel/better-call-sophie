@@ -1,6 +1,6 @@
 # Sophie Goodman — Google Flow character record
 
-**Status:** the Flow character exists (created by hand during the tutorial); the **repo copy is not synced yet**. Info text and voice are **not set in Flow**, as the showrunner reported on 2026-11-22.
+**Status:** the Flow character exists (created by hand during the tutorial) and was **synced read-only on 2026-11-22** (block below). Flow shows **no info text** and a voice named **kore** already attached; that voice was not chosen against the brief below, so the voice decision is still open. The current portrait **does not read as 26–28** (see the age check below).
 
 This file mirrors Sophie's character in Google Flow, so the repo stays the source of truth for what that character should be. The canon itself is in [spec/canon.md](../../../spec/canon.md) and [story/characters/sophie-goodman.md](../../../story/characters/sophie-goodman.md).
 
@@ -9,16 +9,29 @@ This file mirrors Sophie's character in Google Flow, so the repo stays the sourc
 Fill this in only from a real read of Flow (a command or the showrunner). Never guess.
 
 ```yaml
-flow_project_title: null        # tutorial suggested "Better Call Sophie - Flow Experiments"; unverified
-flow_project_id: null
-flow_character_id: null
-flow_character_name: null       # expected "Sophie Goodman"
-reference_images: []            # Flow media names, plus repo/local copies once downloaded
-info_text_in_flow: null         # currently empty, per the showrunner
-voice_in_flow: null             # currently not set, per the showrunner
-last_synced: null
-synced_by: null                 # aao command, or "showrunner by hand"
+flow_project_title: "Better Call Sophie - Flow Experiments"
+flow_project_id: c9df3f16-dbf1-459b-a447-b20fbd978552
+flow_character_id: 63d772dc-71bc-4c69-b14c-6b28a68d9cfe
+flow_character_name: "Sophie Goodman"
+reference_images:
+  - flow_media: 'project media #10, "Character thumbnail" (Portrait view; a Body view tab also exists, not read)'
+    size: 1376x768 JPEG
+    local_copy: production/exports/characters/sophie-goodman/flow-character-portrait-original.jpg  # gitignored
+    sha256: 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6
+    flow_generation_prompt_head: "Medium studio shot of a 33-year-old woman, perfectly centered and forward-facing. ..."  # from the character's History panel
+    approved_as_canonical_face: false
+info_text_in_flow: ""           # "Character info (optional)" box is empty
+voice_in_flow: kore             # shown on the character page; not chosen by the showrunner against the voice brief
+model_shown_on_character_page: "Nano Banana 2.1"   # model picker in the character's edit box
+last_synced: 2026-11-22
+synced_by: "aao flow read + playwright-cli -s=aao-web-gemini (read-only character page); image fetched in the signed-in session"
 ```
+
+The project also holds a second character, **The Client** (ID not read). AAO's `aao flow download` timed out on the character tile, so the portrait was fetched from the URL the character page shows (`=s0`, the original size) inside the signed-in browser.
+
+### Age check (2026-11-22)
+
+**Result: does not read as 26–28.** The face reads early-to-mid thirties (fine lines at the eyes and mouth), which matches the "33-year-old" in its generation prompt. Wardrobe, hair, earrings and skin tone match the canon. Next: generate a new portrait with the age-27 prompt below and replace the character image before the voice is chosen.
 
 **How to sync:** AAO cannot read characters yet (gap 3 in [spec/flow-automation.md](../../../spec/flow-automation.md)). Until it can, either:
 

@@ -92,4 +92,4 @@ For each later view, use the master image as the reference and state the camera 
 
 1. ~~Concept~~: strip-mall storefront, approved 2026-11-22.
 2. ~~Floor plan and fixed set list~~: approved 2026-11-22.
-3. Still open: approve the generated master wide image before the other views are made.
+3. Still open: approve the generated master wide image before the other views are made. **Take v01 was generated on 2026-11-22** (Nano Banana 2.1, 16:9, High). It's logged with an agent review in [production/generation-logs/office-master-wide-golden-v01.yaml](../../../production/generation-logs/office-master-wide-golden-v01.yaml); the image itself is in production storage (`production/exports/locations/sophie-office/`). Main deviations: the storefront glass is on the right wall instead of the front, the client chair doesn't face the desk, and the shelves are not floor-to-ceiling. **Decision needed:** approve v01 as the master, or re-roll.
