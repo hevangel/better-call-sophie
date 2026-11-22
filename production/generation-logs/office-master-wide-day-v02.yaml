@@ -1,0 +1,57 @@
+# Generation log: Sophie's office reference view office-master-wide-day, take v02.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-master-wide-day
+version: v02
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md
+camera_position: cam-c
+lighting_state: day
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before the master v02; not re-read for this take
+reference_images:
+  - office-master-wide-golden v02 (Flow media "Philosopher office in strip mall", attached with "Add to prompt"; the only reference)
+
+prompt_source: 'production/prompts/sophie-office-views.md, section "office-master-wide-day-v02", with <shared anchor> replaced by the "Shared anchor" block, verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 1         # newest first
+  name: "Philosopher office with harsh da…"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the master with More options > Add to prompt, fill the prompt, Start generation. Downloaded
+  with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T15:59:57-07:00"   # Start generation clicked; tile appeared about 25 s later
+
+output:
+  original_filename: "Philosopher_office_with_harsh_da…_68705a79.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Philosopher_office_with_harsh_da…_68705a79.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-master-wide-day-v02.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: CBCC8D7C0BC9E3590567353A00B4EA47233C1C34A418519994777AD8E5F6241F
+uploaded_to_show_project_as: "office-master-wide-day-v02.jpg"   # uploaded with `aao flow upload` to Better Call Sophie - Flow Experiments (c9df3f16-dbf1-459b-a447-b20fbd978552)
+
+agent_review:
+  matches:
+    - Same framing, furniture and props as the master
+    - Banker's lamp is off; neutral, cooler daylight; no golden cast
+  deviations:
+    - Light is soft and even rather than the harsh high-contrast noon the prompt asked for
+    - Garbled chalk pseudo-text, as in the master
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

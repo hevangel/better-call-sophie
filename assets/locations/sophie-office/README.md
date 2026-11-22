@@ -114,4 +114,16 @@ For each later view, use the master image as the reference and state the camera 
    - **v02** (2026-11-22, prompt v02, Nano Banana 2.1, 16:9, High): reads as a strip-mall lawyer's office with diplomas, two client chairs and the trolley chalkboard. Main deviations: the client chairs stand against the left wall instead of facing the desk, garbled chalk text beside the trolley, and the window is on the right wall again. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml).
    - Images are in production storage (`production/exports/locations/sophie-office/`).
 4. ~~Master wide~~: **v02 APPROVED by the showrunner on 2026-11-22.** The repo reference copy is [office-master-wide-golden.webp](office-master-wide-golden.webp). Its known deviations are accepted as they are: the client chairs stand against the left wall, there's garbled chalk text beside the trolley, the window is on the right wall, and the bookcases are freestanding. Later views should match the image, not the original floor plan, where the two differ.
-5. Next: generate the other views from the master (`cam-a`, `cam-b`, `cam-d`, then day and night), upload the master and the views to the Flow project, and log each one.
+5. **Other views generated on 2026-11-22**, each from the master as the only reference. Prompts are in [production/prompts/sophie-office-views.md](../../../production/prompts/sophie-office-views.md). The master and these takes were uploaded to `Better Call Sophie - Flow Experiments` under their file names. **Decision needed:** approve each view, or ask for a re-roll.
+
+   | View | Take | Agent verdict | Log |
+   | --- | --- | --- | --- |
+   | `office-cam-a-golden` | v01 | Consistent; Apple-style logo on the laptop lid | [log](../../../production/generation-logs/office-cam-a-golden-v01.yaml) |
+   | `office-cam-b-golden` | v01 | Correct reverse with an invented storefront wall; pseudo-text on a shop across the lot | [log](../../../production/generation-logs/office-cam-b-golden-v01.yaml) |
+   | `office-cam-d-golden` | v01 | Three-quarter view, not side-on; garbled chalk text is prominent | [log](../../../production/generation-logs/office-cam-d-golden-v01.yaml) |
+   | `office-master-wide-day` | v01 | Rejected by the agent: still golden, lamp on | [log](../../../production/generation-logs/office-master-wide-day-v01.yaml) |
+   | `office-master-wide-day` | v02 | Lamp off, neutral daylight; softer than asked | [log](../../../production/generation-logs/office-master-wide-day-v02.yaml) |
+   | `office-master-wide-night` | v01 | Good: lamp and street-sign glow only | [log](../../../production/generation-logs/office-master-wide-night-v01.yaml) |
+   | `office-exterior-dusk` | v01 | Strong: strip mall, mountains, yellow-red sign panel; readable "TAX OF..." and "OPEN" on the neighbors | [log](../../../production/generation-logs/office-exterior-dusk-v01.yaml) |
+
+   Known issue across the pack: the chalkboard's garbled pseudo-handwriting next to the trolley comes from the master and carries into every interior view. Paint it out in post, or fix the master once and regenerate.

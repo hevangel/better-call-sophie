@@ -1,0 +1,59 @@
+# Generation log: Sophie's office reference view office-cam-b-golden, take v01.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-cam-b-golden
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md
+camera_position: cam-b
+lighting_state: golden-hour
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before the master v02; not re-read for this take
+reference_images:
+  - office-master-wide-golden v02 (Flow media "Philosopher office in strip mall", attached with "Add to prompt"; the only reference)
+
+prompt_source: 'production/prompts/sophie-office-views.md, section "office-cam-b-golden", with <shared anchor> replaced by the "Shared anchor" block, verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 5         # newest first
+  name: "Reverse angle office room interior"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the master with More options > Add to prompt, fill the prompt, Start generation. Downloaded
+  with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 5 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T15:52:34-07:00"   # Start generation clicked; tile appeared about 20 s later
+
+output:
+  original_filename: "Reverse_angle_office_room_interior_1dd063f6.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Reverse_angle_office_room_interior_1dd063f6.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-cam-b-golden-v01.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 8FBB3B2D392BFD514B5E15B26D71F6054B3B35DFD19BB76CB81FAD2632FA4BF5
+uploaded_to_show_project_as: "office-cam-b-golden-v01.jpg"   # uploaded with `aao flow upload` to Better Call Sophie - Flow Experiments (c9df3f16-dbf1-459b-a447-b20fbd978552)
+
+agent_review:
+  matches:
+    - Correct reverse - chalkboard, diplomas and both client chairs now on the right of frame; side window, coat stand and bench on the left
+    - Invents a plausible storefront wall - glass front door and a large front window with blinds, parking lot outside
+    - Lamp and stacked books sit on the correct (right) side of the desk from this side; desk chair back in the foreground
+  deviations:
+    - Shop sign across the parking lot has red pseudo-lettering; a paper notice with fake text is taped to the left window
+    - Desk is more cluttered than the master (papers, open laptop)
+    - No storefront decal on the front window (not in the prompt)
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

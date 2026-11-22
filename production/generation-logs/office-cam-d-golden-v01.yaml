@@ -1,0 +1,57 @@
+# Generation log: Sophie's office reference view office-cam-d-golden, take v01.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-cam-d-golden
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md
+camera_position: cam-d
+lighting_state: golden-hour
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before the master v02; not re-read for this take
+reference_images:
+  - office-master-wide-golden v02 (Flow media "Philosopher office in strip mall", attached with "Add to prompt"; the only reference)
+
+prompt_source: 'production/prompts/sophie-office-views.md, section "office-cam-d-golden", with <shared anchor> replaced by the "Shared anchor" block, verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 4         # newest first
+  name: "Philosopher office interior setup"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the master with More options > Add to prompt, fill the prompt, Start generation. Downloaded
+  with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 4 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T15:53:16-07:00"   # Start generation clicked; tile appeared about 30 s later
+
+output:
+  original_filename: "Philosopher_office_interior_setup_de14590c.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Philosopher_office_interior_setup_de14590c.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-cam-d-golden-v01.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: A94B3518D5F9B948608B9E4CF5B5A041C3685F386D905E05B6F2C64C50E39346
+uploaded_to_show_project_as: "office-cam-d-golden-v01.jpg"   # uploaded with `aao flow upload` to Better Call Sophie - Flow Experiments (c9df3f16-dbf1-459b-a447-b20fbd978552)
+
+agent_review:
+  matches:
+    - Chalkboard with the trolley drawing large in the foreground; same furniture and props as the master
+    - Golden slatted light consistent with the master
+  deviations:
+    - Not side-on - it reads as a closer three-quarter view from near the chalkboard, close to cam-c
+    - Garbled chalk pseudo-text ("Philosophy notes ...") is large and legible-looking; needs paint-out before use
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null
