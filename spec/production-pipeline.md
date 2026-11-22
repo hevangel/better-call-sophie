@@ -16,6 +16,10 @@
 | QC | Full episode | Continuity, intellectual accuracy, artifact checks, rights review |
 | Delivery | QC-approved master | Distribution copies, captions, release notes, manifest |
 
+## Automation
+
+Agents drive Flow and Flow Music through `external/any-agent-orchestrator`, check the outputs and log them. The commands, the known gaps and the per-shot loop are in [flow-automation.md](flow-automation.md). Steps that AAO cannot do yet are done by hand and logged in the same way.
+
 ## Episode production directory
 
 ~~~text

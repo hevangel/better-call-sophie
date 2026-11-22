@@ -28,13 +28,13 @@ A typical case has:
 
 ## Proposed setting
 
-**Albuquerque, New Mexico, around 2038** (pending timeline approval). A recognizable city rather than full cyberpunk spectacle. Sophie's inexpensive yet theatrically branded office holds philosophy books, a diagram-covered board, AI research systems, gaudy yellow-red advertising, and a burgundy-suited advocate. Corporate and institutional cases bring in other cities via travel and remote proceedings.
+**Albuquerque, New Mexico, 2030** (era LOCKED; Albuquerque still PROPOSED). It is the near future, only four years ahead of today. A recognizable city rather than full cyberpunk spectacle. Sophie's inexpensive yet theatrically branded office holds philosophy books, a diagram-covered board, AI research systems, gaudy yellow-red advertising, and a burgundy-suited advocate. Corporate and institutional cases bring in other cities via travel and remote proceedings.
 
 Google Flow is a **production tool** used to create this imagined world, not a feature of the story that must be mentioned in dialogue. In-world AI may be commonplace, but technology does not replace interesting human conflicts.
 
 ## Cast (all details outside canon pending)
 
-- **Dr. Sophie Goodman** — sharp, charming PhD philosopher; enjoys adversarial argument; risks confusing clever defense with virtue.
+- **Dr. Sophie Goodman** — sharp, charming PhD philosopher; enjoys adversarial argument; risks confusing clever defense with virtue. She starts **mixed** (LOCKED): principled about everyone's right to a defense, mercenary about fees and fame.
 - **Rebecca Hart** — estranged mother, social worker; sees moral costs that Sophie discounts.
 - **Professor Elena Salazar** — credible academic rival who believes philosophers owe more than strong arguments.
 - **Daniel Park** — AI engineer/marketer who turns ideas into irresistible public communication.

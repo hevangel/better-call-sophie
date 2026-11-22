@@ -4,7 +4,8 @@
 
 - **Identity (LOCKED):** A woman with a philosophy background; Dr. Sophie Goodman; Saul Goodman's granddaughter.
 - **Profession (LOCKED):** Philosophical advocate / consulting entrepreneur who defends clients accused of moral wrongdoing.
-- **Age (PROPOSED):** 33 in 2038; exact family timeline TBD.
+- **Era (LOCKED):** 2030. **Age (PROPOSED):** early thirties on screen; birth year and family timeline TBD (canon open decision 2).
+- **Starting stance (LOCKED):** mixed: a principled defender of unpopular people who is also openly in it for the money and the win.
 - **Expertise (PROPOSED):** Moral philosophy and metaethics, PhD; skilled communicator and strategist.
 - **Public persona:** Clever, warm when useful, theatrical, entrepreneurial, publicly confrontational.
 - **Internal contradiction:** Believes unpopular defendants deserve intellectual defense, while enjoying a win regardless of what winning costs.
@@ -19,4 +20,4 @@ Clever but not omniscient. She rarely lectures for minutes. Her best exchanges t
 
 ## Growth (PROPOSED)
 
-Begins as a commercially adept advocate who learns to care about the moral responsibility of defending a person without endorsing each action. No locked character arc yet.
+Begins as a mixed figure: a commercially adept advocate who learns to care about the moral responsibility of defending a person without endorsing each action. No locked character arc yet.

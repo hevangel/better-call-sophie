@@ -6,7 +6,7 @@ An **AI-generated philosophical crime drama / dark comedy** created collaborativ
 
 > "Grandpa found loopholes in the law. I find loopholes in morality."
 
-**Status:** concept development / preproduction. **Initial video production:** Google Flow (other tools may be added as needed). No episodes have been released.
+**Status:** preproduction — technical demo stage (era: 2030). **Initial video production:** Google Flow (other tools may be added as needed). No episodes have been released.
 
 ## Show artwork
 
@@ -46,6 +46,8 @@ The stakes come from reputation, public hearings, ethics panels, corporate board
 - [Season 1 outline](story/season-01/overview.md) — ten episode concepts.
 - [Production pipeline](spec/production-pipeline.md) — Google Flow-first, tool-agnostic shot production.
 - **[Google Flow: First Pilot Runs](production/google-flow/tutorial-first-pilot.md)** — hands-on setup, three practice experiments, reusable characters, voice tests, Scenebuilder, credits and QC.
+- **[Technical demo plan](production/demo/README.md)** — current milestone: a 30 s commercial, the opening titles and short test scenes, driven by AI agents through [Flow automation](spec/flow-automation.md).
+- **YouTube:** [@better-call-sophie](https://www.youtube.com/@better-call-sophie) — test and demo videos.
 - [External software](spec/third-party.md) — pinned Git submodules and their separate licenses.
 
 ## Repository layout

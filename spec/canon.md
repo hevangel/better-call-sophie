@@ -11,10 +11,21 @@
 - **Initial video-generation tool:** **Google Flow** (the stack may change or expand).
 - **Visual development:** Promotional poster and two-sided Goodman Philosophical Consulting business-card concept art have already been generated.
 - **Tone direction:** Philosophical drama/dark comedy inspired by Saul-style commercial bravado; serious philosophical conflict should underpin stories.
+- **Era (LOCKED 2026-11-22):** The show is set in **2030**.
+- **Sophie's starting stance (LOCKED 2026-11-22):** **Mixed.** She starts as a deliberate hybrid: a principled advocate who also enjoys money, publicity and winning.
+
+## LOCKED — production direction (showrunner, 2026-11-22)
+
+- **Next milestone:** a **technical demo**, not the pilot. It is a 30-second commercial for the show, an opening title sequence (OP), and a few short test scenes under one minute each. Together they prove every technical piece a 5–8 minute pilot needs. Plan: `production/demo/README.md`.
+- **Automation:** AI agents (Claude first) drive Google Flow and Google Flow Music through `external/any-agent-orchestrator` and check the outputs. The showrunner signs in to Google. See `spec/flow-automation.md`.
+- **Music:** songs and score are generated with **Google Flow Music**.
+- **Quality and cost:** draft quality is fine for now, and other tools may be tried later. The subscription plan covers credits, so cost does not limit tests.
+- **Distribution:** test and demo videos go to the YouTube channel [@better-call-sophie](https://www.youtube.com/@better-call-sophie).
+- **Sophie's office** is a recurring set that needs its own reference pack: `assets/locations/sophie-office/README.md`.
 
 ## PROPOSED — do not mistake for final canon
 
-- **Time:** 2038; Sophie age 33, born 2005.
+- **Sophie's age:** early thirties on screen (the Flow tests used "about 33"), so born around 1997. See open decision 2.
 - **Location:** Albuquerque, New Mexico, with national and international cases.
 - **Family:** An unacknowledged daughter of Jimmy/Saul (working name Rebecca); Sophie adopting the Goodman professional name; Jimmy alive and incarcerated.
 - **Supporting cast:** Professor Elena Salazar (academic rival), Daniel Park (AI/marketing partner), Maria Ortega (attorney), Rebecca Hart (mother).
@@ -26,10 +37,10 @@
 ## Open decisions
 
 1. Determine the exact family tree/timeline that respects or deliberately departs from existing franchise continuity.
-2. Lock era, age, whether original TV characters appear, and extent of direct franchise references.
-3. Define season length, episode duration, screen aspect ratio, audio languages and target release format.
+2. Lock Sophie's age and birth year for 2030. If she looks early thirties, she was born around 1997–2000, so her mother was born in the late 1970s, when Jimmy McGill was still a teenager. Either accept a deliberate departure from franchise continuity, or make Sophie about 26–28. Also decide whether original TV characters appear, and how direct the franchise references are.
+3. Define season length, episode duration (the pilot target is 5–8 minutes, pending the demo), screen aspect ratio, audio languages and target release format.
 4. Approve a canonical Sophie face/voice/wardrobe reference set; current art is **concept**.
-5. Choose whether Sophie begins as principled advocate, cynical entrepreneur, or a deliberate hybrid.
+5. ~~Sophie's starting stance~~ — resolved: mixed (LOCKED above).
 6. Establish the practical institution that can make philosophical arguments dramatically consequential.
 7. Review third-party franchise rights before any external distribution or commercialization.
 

@@ -10,3 +10,6 @@
 [submodule "external/whisper"]
 	path = external/whisper
 	url = https://github.com/openai/whisper.git
+[submodule "external/any-agent-orchestrator"]
+	path = external/any-agent-orchestrator
+	url = https://github.com/hevangel/any-agent-orchestrator.git

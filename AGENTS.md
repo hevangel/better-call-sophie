@@ -6,13 +6,21 @@ Read this file **before** changing anything. It is short by design; detailed ins
 
 Help the human showrunner develop and produce **Better Call Sophie**, an AI-generated philosophical drama. The show is collaboratively directed by the user and ChatGPT; Google Flow is the *initial* video-generation environment, not an exclusive or permanent dependency.
 
+## Current direction (showrunner, 2026-11-22)
+
+- **The milestone is a technical demo, not the pilot:** a 30 s show commercial first, then an opening title sequence (OP) and short test scenes under one minute each. Together they prove every technical piece a 5–8 minute pilot needs. Plan: [production/demo/README.md](production/demo/README.md).
+- **Agents drive Google Flow and Flow Music** through `external/any-agent-orchestrator` (AAO), then check and log the results. See [spec/flow-automation.md](spec/flow-automation.md). Music and songs come from **Flow Music**.
+- **Don't optimize for quality or cost yet.** Draft quality is fine, other tools may be tried later, and the subscription plan covers credits. Continuity is the known weak spot, so build the reference packs (Sophie's character, [Sophie's office](assets/locations/sophie-office/README.md)) before scenes.
+- **Era is 2030; Sophie starts mixed** (principled and mercenary). Both are LOCKED in `spec/canon.md`.
+- **Videos are published** on YouTube at [@better-call-sophie](https://www.youtube.com/@better-call-sophie).
+
 ## Required reading and priority
 
 1. **This file** — work process and non-negotiables.
 2. [spec/canon.md](spec/canon.md) — accepted facts; never silently contradict these.
 3. [spec/series-bible.md](spec/series-bible.md) — premise, cast, themes, evolving setting.
 4. [spec/style-guide.md](spec/style-guide.md) — creative and visual consistency.
-5. [spec/production-pipeline.md](spec/production-pipeline.md) and [spec/asset-manifest.md](spec/asset-manifest.md) — generated asset workflow, storage, provenance. For Google Flow experiments use [production/google-flow/tutorial-first-pilot.md](production/google-flow/tutorial-first-pilot.md).
+5. [spec/production-pipeline.md](spec/production-pipeline.md), [spec/flow-automation.md](spec/flow-automation.md) and [spec/asset-manifest.md](spec/asset-manifest.md) — generated asset workflow, Flow automation, storage, provenance. The hand-run Flow tutorial is done ([results](production/google-flow/tutorial-run-results.md)).
 6. [spec/ai-creative-policy.md](spec/ai-creative-policy.md) and [spec/third-party.md](spec/third-party.md) — disclosure, intellectual property, external code and licensing.
 
 For episode work, also read `story/season-01/overview.md`, the character files, and any episode treatment before inventing a new scene.
@@ -40,7 +48,9 @@ For episode work, also read `story/season-01/overview.md`, the character files, 
 
 ## External dependencies
 
-`external/` contains **Git submodules**, not original show assets. Do not edit their upstream source in place, paste their licenses into project-owned code, or update gitlinks casually. Explain why a new submodule is needed and document license and pinned revision in `spec/third-party.md`. Google Flow is a web service and is not a submodule; do not invent a Flow API.
+`external/` contains **Git submodules**, not original show assets. Do not edit their upstream source in place, paste their licenses into project-owned code, or update gitlinks casually. Explain why a new submodule is needed and document license and pinned revision in `spec/third-party.md`.
+
+Google Flow is a web service and is not a submodule; there is no Flow API. Drive it only through the commands that AAO (`external/any-agent-orchestrator`, the showrunner's own repo) actually implements. Follow AAO's own `AGENTS.md` when running it: use `uv run`, and never type passwords; the showrunner signs in to Google. Flow driving works only on the showrunner's computer with Chrome, not from a cloud container. When AAO lacks a feature (see the gaps in `spec/flow-automation.md`), propose the change upstream in AAO and do that step by hand in Flow meanwhile. Never patch the submodule here.
 
 ## Rights and attribution
 

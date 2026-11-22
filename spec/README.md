@@ -8,7 +8,9 @@ This directory is the source of truth for all creative and production decisions.
 | [series-bible.md](series-bible.md) | Logline, themes, world, characters, stakes, tonal arc |
 | [style-guide.md](style-guide.md) | Visual, narrative, and dialogue identity |
 | [production-pipeline.md](production-pipeline.md) | AI-first, Google Flow-first workflow; shot and QC records |
-| [Google Flow first pilot tutorial](../production/google-flow/tutorial-first-pilot.md) | Hands-on first-run lesson and test prompts |
+| [flow-automation.md](flow-automation.md) | How agents drive Google Flow / Flow Music through any-agent-orchestrator; known gaps; shot loop |
+| [Google Flow first pilot tutorial](../production/google-flow/tutorial-first-pilot.md) | Hands-on first-run lesson and test prompts (completed by hand; [results](../production/google-flow/tutorial-run-results.md)) |
+| [Technical demo plan](../production/demo/README.md) | Current milestone: 30s commercial, OP, short technical test scenes |
 | [asset-manifest.md](asset-manifest.md) | Art inventory, source provenance, asset naming |
 | [ai-creative-policy.md](ai-creative-policy.md) | AI disclosure, creative responsibility, rights and safety |
 | [third-party.md](third-party.md) | Submodule inventory, license boundaries, update process |

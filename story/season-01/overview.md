@@ -21,4 +21,4 @@ Sophie monetizes the right to a strong defense. Each victory increases her notor
 
 ## Pilot promise
 
-The pilot must reveal Sophie's expertise through a consequential decision and a compelling human exchange; no prolonged exposition. Her business card / advertisement can supply short comic punctuation. The 2038/Albuquerque setting is provisional pending canon approval.
+The pilot must reveal Sophie's expertise through a consequential decision and a compelling human exchange; no prolonged exposition. Her business card / advertisement can supply short comic punctuation. The era is LOCKED as 2030; Albuquerque is still provisional. Before the pilot, a technical demo comes first (`production/demo/README.md`).

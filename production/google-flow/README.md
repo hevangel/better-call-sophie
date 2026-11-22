@@ -13,6 +13,6 @@ The human showrunner has a Google Flow subscription and intends to use it for ea
 5. Give each export a stable project shot ID; record the original filename, tool/model details when exposed, settings, prompt, and generation notes.
 6. Review before marking a take `selected`; save output path to the shot record.
 
-No Flow project links, generated clips, or model settings have been supplied yet. Never invent them.
+**Status 2026-11-22:** the showrunner ran the tutorial by hand; see [results](tutorial-run-results.md). No Flow project links, clip IDs or model settings have been given to the repo yet, so never invent them. Automation through any-agent-orchestrator is described in [spec/flow-automation.md](../../spec/flow-automation.md).
 
 Google's product details, models, policy and rights can change; verify live terms before claiming a particular resolution, duration, feature, entitlement or license. See `spec/production-pipeline.md`.
