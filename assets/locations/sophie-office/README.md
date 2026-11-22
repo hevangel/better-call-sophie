@@ -1,6 +1,6 @@
 # Location: Goodman Philosophical Consulting — Sophie's office
 
-**Status:** PROPOSED design; the reference pack is **not generated yet**. Needed before the next round of Flow tests, because continuity was the weakest result of the tutorial run.
+**Status:** design **APPROVED** by the showrunner (2026-11-22): concept, floor plan and fixed set list. The reference pack is **not generated yet**. From now on, changes to the floor plan or set list need a documented reason. Needed before the next round of Flow tests, because continuity was the weakest result of the tutorial run.
 
 ## Concept
 
@@ -88,7 +88,8 @@ For each later view, use the master image as the reference and state the camera 
 3. No people, no garbled text, no logos.
 4. The showrunner approves the master wide. Only then are the other views generated, uploaded to the Flow project (`aao flow upload`), and logged here with Flow media names.
 
-## Decisions needed
+## Decisions
 
-1. Approve the strip-mall storefront concept, or choose another (for example a converted adobe house, or a downtown walk-up).
-2. Approve the floor plan and the fixed set list before the pack is generated. After that, changes need a documented reason.
+1. ~~Concept~~: strip-mall storefront, approved 2026-11-22.
+2. ~~Floor plan and fixed set list~~: approved 2026-11-22.
+3. Still open: approve the generated master wide image before the other views are made.

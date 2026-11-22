@@ -17,7 +17,7 @@ Prestige character drama with dark legal-comedy energy, but **not** a lecture se
 
 - Goodman advertising: punchy **yellow, red, black**, bold salesmanship, oversized typography, playful slogan placement.
 - Drama photography: cinematic contrast, Albuquerque sunset, grounded architecture, office clutter, books and diagrams.
-- Sophie concept: female lead, early 30s, dark wavy hair tied loosely, sharp burgundy suit over ivory blouse, gold jewelry, wry confident smile.
+- Sophie concept: female lead, late twenties (26–28, LOCKED), dark wavy hair tied loosely, sharp burgundy suit over ivory blouse, gold jewelry, wry confident smile.
 - Props: annotated philosophical texts, whiteboards with moral frameworks, odd educational keepsakes, Saul-like business cards.
 - Keep corporate and university settings grounded and varied rather than generic futuristic glass rooms.
 - Avoid actual copyrighted footage, actors' likenesses or franchise logo reproduction unless rights are separately reviewed.

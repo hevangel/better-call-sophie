@@ -45,8 +45,8 @@ The pilot needs every row. ● = the main test, ○ = also used.
 ## Order of work
 
 1. **Automation setup** on the showrunner's computer: AAO prerequisites, Google sign-in, and a check with `aao flow status` ([spec/flow-automation.md](../../spec/flow-automation.md#where-it-runs)).
-2. **Character sync:** copy the Sophie character from Flow into [assets/characters/sophie-goodman/flow-character.md](../../assets/characters/sophie-goodman/flow-character.md); set its info text and voice.
-3. **Office reference pack** ([assets/locations/sophie-office/README.md](../../assets/locations/sophie-office/README.md)): the master wide shot, then the other angles.
+2. **Character sync:** copy the Sophie character from Flow into [assets/characters/sophie-goodman/flow-character.md](../../assets/characters/sophie-goodman/flow-character.md). Check that the portrait reads as 26–28 and regenerate it if not. Enter the approved info text, then choose the voice.
+3. **Office reference pack** (design approved; [assets/locations/sophie-office/README.md](../../assets/locations/sophie-office/README.md)): the master wide shot, then the other angles once the showrunner approves the master.
 4. **D01 commercial**, the first deliverable.
 5. **OP**, which can run in parallel with step 4 because it needs few character shots.
 6. **T1 → T2 → T3 → T4.** Each adds one hard problem.

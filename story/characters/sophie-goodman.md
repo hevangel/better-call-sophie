@@ -4,7 +4,7 @@
 
 - **Identity (LOCKED):** A woman with a philosophy background; Dr. Sophie Goodman; Saul Goodman's granddaughter.
 - **Profession (LOCKED):** Philosophical advocate / consulting entrepreneur who defends clients accused of moral wrongdoing.
-- **Era (LOCKED):** 2030. **Age (PROPOSED):** early thirties on screen; birth year and family timeline TBD (canon open decision 2).
+- **Era (LOCKED):** 2030. **Age (LOCKED):** 26–28 (born 2002–2004); exact year and family timeline TBD. She is a young PhD, which helps her underdog, self-made pitch.
 - **Starting stance (LOCKED):** mixed: a principled defender of unpopular people who is also openly in it for the money and the win.
 - **Expertise (PROPOSED):** Moral philosophy and metaethics, PhD; skilled communicator and strategist.
 - **Public persona:** Clever, warm when useful, theatrical, entrepreneurial, publicly confrontational.

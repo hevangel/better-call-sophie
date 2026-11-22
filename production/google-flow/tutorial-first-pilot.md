@@ -1,6 +1,8 @@
 # Google Flow: First Pilot Runs for *Better Call Sophie*
 
 **Audience:** First-time Google Flow user. **Verified:** 2026-11-14 against Google's public Flow Help pages. **Status:** Production tutorial; sample prompts and examples are proposals, not show canon.  
+> **Update 2026-11-22:** Sophie's age is now LOCKED at 26–28, and the era at 2030. The prompts below are kept as they were run. For new work, use the approved character record `assets/characters/sophie-goodman/flow-character.md`, not the "about 33" / "early thirties" wording here.
+
 **Goal:** Make a convincing 20–30-second *technical proof of concept* before attempting a full episode of the show.  
 **Starting tool:** [Google Flow](https://flow.google.com/) in Chrome or Edge on desktop.
 
