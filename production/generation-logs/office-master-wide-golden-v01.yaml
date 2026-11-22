@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-golden
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # showrunner asked for a re-roll on 2026-11-22; see v02
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md
 camera_position: cam-c       # wide from the front-door corner
@@ -75,6 +75,9 @@ agent_review:                 # against "Acceptance checks for the pack" in the 
   verdict: usable as a draft master; the showrunner decides whether the deviations are acceptable or need a re-roll
 
 showrunner_review:
-  decision: null              # pending: approve as master, or re-roll
-  notes: null
+  decision: re-roll           # 2026-11-22
+  notes: >-
+    Needs a chair for the client. Liked the trolley on the chalkboard. Make it a lawyer's office in
+    a strip mall, inspired by Saul Goodman's office but not the same (no columns, no round windows),
+    fitting Sophie's personality as a philosopher.
 youtube_url: null

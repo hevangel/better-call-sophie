@@ -1,0 +1,89 @@
+# Generation log: Sophie's office, master wide, golden hour, take 2 (re-roll of v01).
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-master-wide-golden
+version: v02
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md
+camera_position: cam-c       # wide from the front-door corner
+lighting_state: golden-hour
+reroll_reason: >-
+  Showrunner direction 2026-11-22: a lawyer's office in a strip mall, inspired by Saul Goodman's
+  office but not the same (no columns, no round windows); fit Sophie as a philosopher; it needs a
+  chair for the client; keep the trolley on the chalkboard.
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # model picker shown in the composer settings before generating
+settings_shown_in_flow:
+  mode: Image
+  aspect_ratio: "16:9"
+  quality: High
+  count: x1
+reference_images: []
+
+prompt_source: assets/locations/sophie-office/README.md, "Master prompt v02", used verbatim
+prompt: >-
+  Empty interior of a small storefront office in an Albuquerque strip mall, year 2030, set up like a
+  small-time lawyer's office but run by a young moral philosopher. Wide establishing shot from the
+  front-door corner, eye level, 16:9. The back wall is floor-to-ceiling dark-wood bookshelves packed
+  with worn philosophy books, with a small white marble Socrates bust on the top-right shelf. In front
+  of the shelves stands a large, slightly scuffed dark walnut executive desk facing the front of the
+  room, with a high-backed leather desk chair behind it; on the desk are a lit green glass banker's
+  lamp, three stacked books, a closed silver laptop and a brass business-card holder. Two client
+  chairs face the desk from the front: an oxblood leather wingback and a simpler matching visitor
+  chair. On the left wall hangs a large slate chalkboard in a wooden frame with a hand-drawn chalk
+  trolley-problem diagram: a trolley on tracks that split toward small stick figures. Beside the
+  shelves hang framed diplomas and certificates, and a gaudy gold-framed print of a classical painting
+  of ancient philosophers debating. A small waiting bench and a coat stand sit near the front. Warm
+  cream plaster walls, a cheap drop ceiling, a faded Persian-style rug, a worn wood-look floor. The
+  storefront window is behind the camera: golden-hour sun pours through its half-open venetian blinds
+  and lays warm slatted shadows across the floor, desk and chairs. The mood is a strip-mall lawyer's
+  office that tries a little too hard to look important, made scholarly and personal by its
+  philosopher owner: confident, theatrical, a bit shabby, proud. No classical columns, no round
+  windows, no flags, no statues of liberty. Photorealistic, cinematic, prestige TV production design.
+  No people, no readable text, no logos, no watermarks.
+
+flow_project:
+  title: "AAO image a964e0d41448"      # same project as v01
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 1                  # newest first; v01 is now index 2
+  name: "Philosopher office in strip mall"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini) in the v01 project, because
+  `aao web image flow` is broken (hevangel/any-agent-orchestrator#9): confirm Flow agent off,
+  check settings (Image, 16:9, Nano Banana 2.1, High, x1), fill the prompt, Start generation.
+  Downloaded with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T15:46:10-07:00"   # Start generation clicked; tile appeared about 20 s later
+
+output:
+  original_filename: Philosopher_office_in_strip_mall_04174d37.jpg
+  download_quality: "Original size"
+  local_path: production/exports/locations/sophie-office/Philosopher_office_in_strip_mall_04174d37.jpg   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-master-wide-golden-v02.jpg             # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: EA6799F5AA32CD8ECD75C5C941B65C004B4CA5F759029A053D5671F433AB597A
+
+agent_review:
+  matches_direction:
+    - Reads as a small-time lawyer's office - executive desk with high-backed leather chair, a wall of framed diplomas and certificates, coat stand, waiting bench, drop ceiling
+    - Two client chairs (oxblood tufted wingback and a leather visitor chair)
+    - Trolley-problem chalkboard on the left wall, close to v01's drawing
+    - Philosopher touches - packed bookshelves, bust top-right, gold-framed classical painting of philosophers (reads as David's "The Death of Socrates", a public-domain 1787 painting)
+    - No columns, no round windows, no flags; not a copy of Saul Goodman's office
+    - Lit green banker's lamp, three stacked books, silver laptop, golden-hour slatted light, rug, wood-look floor
+    - No people, no logos, no watermarks
+  deviations:
+    - Client chairs stand against the left wall, angled toward camera, not in front of the desk facing it
+    - The chalkboard has garbled pseudo-handwriting beside and under the trolley (breaks "no readable text"); fix in post or re-roll
+    - Bookshelves are two freestanding cases, not floor-to-ceiling across the back wall
+    - Window with blinds again on the RIGHT wall (the prompt put it behind the camera); the model has done this twice, so the floor plan may need to accept a side window or use a different camera
+    - Laptop is open, not closed; no brass nameplate (not in the prompt)
+  verdict: much closer to the direction than v01; chair placement and chalkboard text are the main fixes
+
+showrunner_review:
+  decision: null              # pending: approve as master, or re-roll
+  notes: null
+youtube_url: null

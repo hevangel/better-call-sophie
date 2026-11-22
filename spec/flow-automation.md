@@ -63,6 +63,8 @@ These are confirmed by reading the pinned code. They belong in AAO, the upstream
 8. **Character media:** `aao flow download` times out on a character tile, because a character's "More options" menu has no Download item. Read the character page's image instead (see [Sophie's Flow record](../assets/characters/sophie-goodman/flow-character.md)).
 9. **Stale page state:** AAO doesn't reload a page that is already open at the target URL, so a scrolled page or an open menu left by an earlier command can break the next one. Sending the browser to `https://flow.google.com/` first clears it.
 
+All of these, plus the stale `aao flow options` list, are filed upstream as [hevangel/any-agent-orchestrator#9](https://github.com/hevangel/any-agent-orchestrator/issues/9) (2026-11-22).
+
 Until a gap is closed, that step is done **by hand in Flow**, and the result is still logged here.
 
 ## Where it runs
