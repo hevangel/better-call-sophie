@@ -4,14 +4,14 @@
 
 An in-world local TV ad for Goodman Philosophical Consulting, in the spirit of grandpa's ads: earnest, a little cheesy, very sure of itself. It also works as the show's teaser. The ad shows her **mixed** starting stance: she's openly selling, but what she sells is a real principle.
 
-**Needs first:** the Sophie character (with voice), the Client reference, and the office pack's golden-hour views.
+**Needs first:** the Sophie character (with voice) and the office pack's golden-hour views. The Client and his kitchen in shot 2 are a **throwaway one-shot cameo** (showrunner, 2026-11-23): no reference image, no Flow character and no continuity check; describe them in the prompt and take what Flow gives.
 
 ## Script and shots
 
 | Shot | Time | Camera / location | Action and dialogue | Audio |
 | --- | --- | --- | --- | --- |
 | `demo-d01-sh01` | 0:00–0:05 | `cam-c` wide, office, golden hour | Sophie turns from the chalkboard to face the camera, chalk in hand. **SOPHIE:** "Has the internet decided you're a bad person?" | Jingle bed starts |
-| `demo-d01-sh02` | 0:05–0:09 | The Client's kitchen at night, medium close | The Client stares at his phone, its glow on his face (no readable screen), and winces as it buzzes again and again. Silent | Phone buzz SFX over the bed |
+| `demo-d01-sh02` | 0:05–0:09 | A client's kitchen at night, medium close (one-shot cameo, no references) | A tired man in his late forties stares at his phone, its glow on his face (no readable screen), and winces as it buzzes again and again. Silent | Phone buzz SFX over the bed |
 | `demo-d01-sh03` | 0:09–0:15 | `cam-a`, Sophie at her desk | She leans forward. **SOPHIE:** "Your lawyer handles what's legal. I handle what's *defensible*." | Bed |
 | `demo-d01-sh04` | 0:15–0:20 | `cam-d`, at the chalkboard | She taps "IS ≠ OUGHT" chalked on the board beside the trolley drawing. **SOPHIE:** "I won't say you're right. I'll make sure you get a *good argument*." Made two ways and compared (see [Shot 4 test](#shot-4-test-chalk-text-generated-vs-added-in-post)) | Bed |
 | `demo-d01-sh05` | 0:20–0:25 | `cam-a` close-up | She points at the lens and gives a wry smile. **SOPHIE:** "Morally questionable? Philosophically defensible." | Bed builds |

@@ -4,7 +4,7 @@
 
 **Hard problem:** a real two-person exchange using shot/reverse shot. The tutorial's C1–C3 test, grown to six shots with a prop hand-off.
 
-**Location:** office, **day** lighting state, `cam-a` and `cam-b`. **Characters:** Sophie and the Client (the man in his late forties from the commercial).
+**Location:** office, **day** lighting state, `cam-a` and `cam-b`. **Characters:** Sophie and the Client, a man in his late forties. He appears in several shots here and again in T3, so lock him down (reference image, Flow character) before T1. He need not match the one-shot cameo in the commercial.
 
 | Shot | Cam | Action and dialogue |
 | --- | --- | --- |

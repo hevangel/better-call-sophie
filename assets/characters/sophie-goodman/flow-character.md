@@ -148,7 +148,7 @@ The other 16 voices are listed as male: Achird, Algenib, Algieba, Alnilam, Charo
 
 | Character | Needed for | Look anchor |
 | --- | --- | --- |
-| The Client (tech executive) | Commercial, consultation test | Man in his late forties, navy suit, pale blue shirt, tired expression |
+| The Client (tech executive) | Consultation (T1) and hearing (T3) tests; the commercial's one-shot cameo needs no reference | Man in his late forties, navy suit, pale blue shirt, tired expression |
 | Daniel Park | Walk-and-talk test | Korean American, about 30, AI engineer/marketer, casual blazer, sneakers, tablet |
 | Integrity Index panelist | Hearing test | Woman in her fifties, gray bob, charcoal suit, reading glasses |
 

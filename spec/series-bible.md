@@ -48,7 +48,7 @@ Make both sides intellectually capable. Arguments must matter because characters
 
 ## Visual and sonic identity
 
-Contrast gaudy Goodman yellow/red marketing with elegant, moody philosophical interiors; Albuquerque dusk and modern institutional spaces. Sophie concept anchor: dark wavy hair, cream blouse, burgundy suit, confident expression. All characters and voices need controlled reference packs before production. See [style-guide.md](style-guide.md).
+Contrast gaudy Goodman yellow/red marketing with elegant, moody philosophical interiors; Albuquerque dusk and modern institutional spaces. Sophie concept anchor: dark wavy hair, cream blouse, burgundy suit, confident expression. Recurring characters, voices and locations need controlled reference packs before production; one-shot cameos and throwaway locations do not. See [style-guide.md](style-guide.md).
 
 ## Season direction
 

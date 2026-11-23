@@ -10,7 +10,7 @@ Help the human showrunner develop and produce **Better Call Sophie**, an AI-gene
 
 - **The milestone is a technical demo, not the pilot:** a 30 s show commercial first, then an opening title sequence (OP) and short test scenes under one minute each. Together they prove every technical piece a 5–8 minute pilot needs. Plan: [production/demo/README.md](production/demo/README.md).
 - **Agents drive Google Flow and Flow Music** through `external/any-agent-orchestrator` (AAO), then check and log the results. See [spec/flow-automation.md](spec/flow-automation.md). Music and songs come from **Flow Music**.
-- **Don't optimize for quality or cost yet.** Draft quality is fine, other tools may be tried later, and the subscription plan covers credits. Continuity is the known weak spot, so build the reference packs (Sophie's character, [Sophie's office](assets/locations/sophie-office/README.md)) before scenes.
+- **Don't optimize for quality or cost yet.** Draft quality is fine, other tools may be tried later, and the subscription plan covers credits. Continuity is the known weak spot, so build the reference packs (Sophie's character, [Sophie's office](assets/locations/sophie-office/README.md)) before scenes. **Only lock down what is reused:** one-shot cameos and throwaway locations need no references or continuity.
 - **Era is 2030; Sophie starts mixed** (principled and mercenary). Both are LOCKED in `spec/canon.md`.
 - **Videos are published** on YouTube at [@better-call-sophie](https://www.youtube.com/@better-call-sophie).
 
