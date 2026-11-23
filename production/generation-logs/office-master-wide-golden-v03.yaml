@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-golden
 version: v03
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
 room: Sophie's private office
@@ -42,7 +42,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: 7D6C2F7FA56CDAE53F2F83D5A02383D5D0F830F1A9FC67DAD822AD5BFF0ABF6D
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "office-master-wide-golden-v03.jpg"   # 2026-11-22, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared"
 
 agent_review:
   matches:
@@ -56,6 +56,6 @@ agent_review:
     - A small logo shape on the back of the laptop lid
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-22: "Approve all four"
+  notes: Approved as a floor plan v2 master, with the deviations listed above.
 youtube_url: null

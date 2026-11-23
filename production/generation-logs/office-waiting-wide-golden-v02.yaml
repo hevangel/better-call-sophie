@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-waiting-wide-golden
 version: v02
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
 room: waiting room
@@ -42,7 +42,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: 478355485706134A9B9A7942D198DACA44EEF36C712874C98340F299B42A3AD4
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: null   # approved; upload still pending (the 2026-11-22 batch upload stopped after the first file)
 
 agent_review:
   matches:
@@ -54,6 +54,6 @@ agent_review:
     - Small pseudo-lettering on the distant shop signs across the road (soft, out of focus)
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-22: "Approve all four"
+  notes: Approved as a floor plan v2 master, with the deviations listed above.
 youtube_url: null

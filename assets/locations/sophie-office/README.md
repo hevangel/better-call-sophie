@@ -1,6 +1,6 @@
 # Location: Goodman Philosophical Consulting — Sophie's office
 
-**Status:** concept APPROVED (2026-11-22). **Floor plan v2 is PROPOSED** (2026-11-22) after the showrunner's review of the first reference pack: the exterior and the interiors disagreed (corner unit vs. mid-row unit, door position), and the office needs privacy, with the waiting area and Sophie's own office as separate rooms. Floor plan v1 and its master wide v02 are superseded; v02's furniture and props carry over. Decision needed: approve floor plan v2 and its new masters (see Decisions).
+**Status:** concept APPROVED (2026-11-22). **Floor plan v2 is APPROVED** (2026-11-22, with its four masters) after the showrunner's review of the first reference pack: the exterior and the interiors disagreed (corner unit vs. mid-row unit, door position), and the office needs privacy, with the waiting area and Sophie's own office as separate rooms. Floor plan v1 and its master wide v02 are superseded; v02's furniture and props carry over. Next: generate the remaining views from the approved masters.
 
 ## Concept
 
@@ -20,7 +20,7 @@ This is what floor plan v2 copies from real small-practice offices in strip-mall
 - **The private office at the back.** Desk facing the door, the lawyer's back to the wall or window, two client chairs in front of the desk, bookshelves, filing cabinets, and diplomas on the wall the client faces.
 - **A short hallway** from the waiting room past the office door to a restroom and the back door onto the service alley.
 
-## Floor plan v2 (PROPOSED, 2026-11-22)
+## Floor plan v2 (APPROVED, 2026-11-22)
 
 Seen from the parking lot, front at the bottom. It matches the exterior take `office-exterior-dusk` v01: the storefront window is on the left, the glass front door on the right, and through the door you look down the hallway.
 
@@ -116,13 +116,13 @@ The prompts are in [production/prompts/sophie-office-v2.md](../../../production/
 ## Decisions
 
 1. ~~Concept~~: strip-mall storefront, approved 2026-11-22.
-2. Floor plan: v1 approved 2026-11-22, then **superseded** the same day by showrunner direction ("the office is its own room"; exterior and interior must agree). **Decision needed:** approve floor plan v2 above.
+2. Floor plan: v1 approved 2026-11-22, then **superseded** the same day by showrunner direction ("the office is its own room"; exterior and interior must agree). Floor plan v2 **APPROVED** by the showrunner on 2026-11-22 ("Approve all four").
 3. **Decision needed:** does Sophie have a receptionist? v2 assumes an empty reception desk with a bell (a solo practice that can't afford one yet). A part-time receptionist could be a recurring character.
 4. Master wide history:
    - **v01** (2026-11-22): re-roll requested. [Log](../../../production/generation-logs/office-master-wide-golden-v01.yaml).
    - **v02** (2026-11-22): approved by the showrunner as the floor plan v1 master, with its deviations accepted (client chairs against the left wall, garbled chalk text, window on the right wall, freestanding bookcases). Superseded by floor plan v2; its desk, chairs, chalkboard, bookcases, bust, diplomas and painting carry over. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml), repo copy [office-master-wide-golden.webp](office-master-wide-golden.webp).
    - **v03**: floor plan v2, see decision 5.
-5. **Floor plan v2 masters, generated 2026-11-22.** **Decision needed:** approve each, or ask for a re-roll. All were made in Flow project `d0b10764-5004-4f27-9269-a447a70807fe` and are not uploaded to the show project yet.
+5. **Floor plan v2 masters, generated 2026-11-22.** **The four for-review takes were APPROVED by the showrunner on 2026-11-22** (logs set to `selected`). Made in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`; master v03 is uploaded to the show project, the other three still need uploading.
 
    | View | Take | Agent verdict | Log |
    | --- | --- | --- | --- |
