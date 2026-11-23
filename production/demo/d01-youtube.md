@@ -1,6 +1,6 @@
 # D01 — YouTube upload text
 
-**Status:** PROPOSED draft (2026-11-23) for the showrunner to paste into YouTube Studio when uploading `production/exports/demo-d01-final/demo-d01-v01.mp4` to [@better-call-sophie](https://www.youtube.com/@better-call-sophie). After the upload, record the URL as `youtube_url` in [the end-card record](../generation-logs/demo-d01-sh06-v01.yaml).
+**Status:** PROPOSED draft (2026-11-23) for uploading `production/exports/demo-d01-final/demo-d01-v01.mp4` to [@better-call-sophie](https://www.youtube.com/@better-call-sophie). Upload route (2026-11-23): youtube-mcp through `scripts/youtube_mcp.py` (see [spec/flow-automation.md](../../spec/flow-automation.md#distribution)), or by hand in YouTube Studio. After the upload, record the URL as `youtube_url` in [the end-card record](../generation-logs/demo-d01-sh06-v01.yaml).
 
 Disclosures follow [spec/ai-creative-policy.md](../../spec/ai-creative-policy.md) and the README's rights notice: AI-generated, made with human direction, unofficial fan work, no endorsement.
 
