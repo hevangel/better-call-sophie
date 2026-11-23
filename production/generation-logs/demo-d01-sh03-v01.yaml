@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
 id: demo-d01-sh03
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # showrunner asked for a re-roll for office continuity, 2026-11-23; see v02
 piece: production/demo/d01-commercial-30s.md
 
 tool: Google Flow (web), video mode, Ingredients, Flow agent off
@@ -59,6 +59,6 @@ agent_review:
     - She rests on her forearms but barely leans forward
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: re-roll           # 2026-11-23: "Re-roll shot 3"
+  notes: Flow restyled the office; re-rolled as v02.
 youtube_url: null
