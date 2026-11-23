@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: sophie-portrait-age27
 version: v02
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-23
 asset_type: character reference portrait (candidate to replace the Flow character image)
 character: assets/characters/sophie-goodman/flow-character.md
 
@@ -39,7 +39,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: B053331CB04DEEAF0D7CF463CCB6F9166DD97C86D484536FDC05142AFEE0195E
-uploaded_to_show_project_as: null   # replaces the character image only after the showrunner approves
+uploaded_to_show_project_as: "sophie-portrait-age27-v02.jpg"   # 2026-11-23, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared" (hevangel/any-agent-orchestrator#9). Then used to replace the Flow character's Portrait and Body images (see flow-character.md)
 
 agent_review:
   matches:
@@ -50,5 +50,6 @@ agent_review:
     - Could still read as thirty to some viewers
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "v02"
+  notes: Chosen as Sophie's canonical face; replaces the tutorial portrait on the Flow character.
+repo_reference_copy: assets/characters/sophie-goodman/reference-front.webp   # WebP conversion of the original, same resolution

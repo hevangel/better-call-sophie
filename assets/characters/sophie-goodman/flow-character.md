@@ -1,6 +1,6 @@
 # Sophie Goodman — Google Flow character record
 
-**Status:** the Flow character exists (created by hand during the tutorial) and was **synced read-only on 2026-11-22** (block below). Flow shows **no info text** and a voice named **kore** already attached; that voice was not chosen against the brief below, so the voice decision is still open. The current portrait **does not read as 26–28** (see the age check below).
+**Status:** the Flow character exists (created by hand during the tutorial). On **2026-11-23** its Portrait and Body images were replaced with the **approved age-27 face** (portrait v02) and the approved info text was entered (block below). The voice named **kore** is still attached from the tutorial; it was not chosen against the brief below, so the voice decision is still open.
 
 This file mirrors Sophie's character in Google Flow, so the repo stays the source of truth for what that character should be. The canon itself is in [spec/canon.md](../../../spec/canon.md) and [story/characters/sophie-goodman.md](../../../story/characters/sophie-goodman.md).
 
@@ -14,18 +14,41 @@ flow_project_id: c9df3f16-dbf1-459b-a447-b20fbd978552
 flow_character_id: 63d772dc-71bc-4c69-b14c-6b28a68d9cfe
 flow_character_name: "Sophie Goodman"
 reference_images:
-  - flow_media: 'project media #10, "Character thumbnail" (Portrait view; a Body view tab also exists, not read)'
+  - view: Portrait
+    made_with: >-
+      Character page edit box, 2026-11-23T01:23:53-07:00, Nano Banana 2.1: attached
+      sophie-portrait-age27-v02.jpg (show project media) with the prompt "Replace the portrait with the
+      attached image: use the attached photo of the woman exactly as it is, the same face, hair, earrings,
+      cream blouse, burgundy blazer, light gray background, framing and lighting. Do not change her face or
+      age." Flow also passed the old portrait in as an input. Selected in the history panel and saved with Done.
     size: 1376x768 JPEG
-    local_copy: production/exports/characters/sophie-goodman/flow-character-portrait-original.jpg  # gitignored
-    sha256: 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6
-    flow_generation_prompt_head: "Medium studio shot of a 33-year-old woman, perfectly centered and forward-facing. ..."  # from the character's History panel
-    approved_as_canonical_face: false
-info_text_in_flow: ""           # "Character info (optional)" box is empty
+    local_copy: production/exports/characters/sophie-goodman/flow-character-portrait-age27.jpg  # gitignored
+    sha256: F68F741FC7CEBAD73355BC3020E8B5BF591E5CB11F81462F2648BB22145E91DA
+    repo_copy: assets/characters/sophie-goodman/reference-front.webp   # WebP of portrait v02, the approved source image
+    approved_as_canonical_face: true   # showrunner chose portrait v02, 2026-11-23
+  - view: Body
+    made_with: >-
+      Character page edit box, 2026-11-23T01:25:23-07:00, Nano Banana 2.1: attached
+      sophie-portrait-age27-v02.jpg with the prompt "Redo this full-body triptych with the woman from the
+      attached portrait: her exact face, age, dark wavy hair loosely pinned up and gold hoop earrings. Keep the
+      three views (front facing, 3/4 side view and back view), the deep burgundy tailored pantsuit, the cream
+      blouse, dark shoes, flat studio lighting and a plain light gray background. Same woman in all three
+      views." Selected in the history panel and saved with Done.
+    size: 1376x768 JPEG
+    local_copy: production/exports/characters/sophie-goodman/flow-character-body-age27.jpg  # gitignored
+    sha256: 73F337C7B4BCAC731DA5548F38F07DE0FD7CBA6CC4ACEAC06409C8136E8FD264
+    repo_copy: assets/characters/sophie-goodman/reference-body.webp
+previous_images:   # still in the character's history panel
+  - "Portrait: tutorial image, 'Medium studio shot of a 33-year-old woman ...', sha256 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6 (flow-character-portrait-original.jpg)"
+  - "Body: tutorial triptych, 'Full-body triptych, three distinct views: front facing, 3/4 side view and back view ...' (not downloaded)"
+info_text_in_flow: approved text below, entered 2026-11-23 and read back after a reload
 voice_in_flow: kore             # shown on the character page; not chosen by the showrunner against the voice brief
 model_shown_on_character_page: "Nano Banana 2.1"   # model picker in the character's edit box
-last_synced: 2026-11-22
-synced_by: "aao flow read + playwright-cli -s=aao-web-gemini (read-only character page); image fetched in the signed-in session"
+last_synced: 2026-11-23
+synced_by: "playwright-cli -s=aao-web-gemini on the character page (edit, then reload and read back); images fetched at =s0 in the signed-in session"
 ```
+
+**Gotcha:** generating in the character's edit box adds the result to the history panel, but after a reload the character still shows the old image. Click the new history entry, then **Done**, for each view (Portrait and Body separately), and reload to check.
 
 The project also holds a second character, **The Client** (ID not read). AAO's `aao flow download` timed out on the character tile, so the portrait was fetched from the URL the character page shows (`=s0`, the original size) inside the signed-in browser.
 
@@ -35,15 +58,15 @@ The project also holds a second character, **The Client** (ID not read). AAO's `
 
 ### Age-27 portrait takes (2026-11-23)
 
-Made in the work project `d0b10764-5004-4f27-9269-a447a70807fe` with the prompts in [production/prompts/sophie-portrait-age27.md](../../../production/prompts/sophie-portrait-age27.md). None has replaced the character image yet. **Decision needed:** pick a take to become Sophie's face, or ask for more.
+Made in the work project `d0b10764-5004-4f27-9269-a447a70807fe` with the prompts in [production/prompts/sophie-portrait-age27.md](../../../production/prompts/sophie-portrait-age27.md). **The showrunner chose v02 on 2026-11-23** as Sophie's canonical face. It is uploaded to the show project as `sophie-portrait-age27-v02.jpg` and is now the character's image (see the block above). Repo copies: [reference-front.webp](reference-front.webp) (portrait v02) and [reference-body.webp](reference-body.webp) (the character's new Body triptych).
 
 | Take | Route | Agent verdict | Log |
 | --- | --- | --- | --- |
 | v01 | Approved prompt, no reference | Reads late twenties to about thirty; a new, calmer face that matches neither the poster nor the current portrait | [log](../../../production/generation-logs/sophie-portrait-age27-v01.yaml) |
-| v02 | Approved prompt + the poster concept art as reference | Closest to the concept art (strong brows, loose curls, wry half-smile); reads late twenties, upper end | [log](../../../production/generation-logs/sophie-portrait-age27-v02.yaml) |
+| v02 | Approved prompt + the poster concept art as reference | **Approved (canonical face).** Closest to the concept art (strong brows, loose curls, wry half-smile); reads late twenties, upper end | [log](../../../production/generation-logs/sophie-portrait-age27-v02.yaml) |
 | v03 | Approved prompt + the current Flow portrait as reference, asked to be younger | Rejected by the agent: almost unchanged, still early thirties | [log](../../../production/generation-logs/sophie-portrait-age27-v03.yaml) |
 
-Once a take is approved: replace the Flow character's image (by hand, since AAO cannot edit characters; gap 4), enter the approved info text, keep a small copy here as `reference-front.webp`, then shortlist voices. The poster and business card will be regenerated with the approved face.
+Done on 2026-11-23: character image replaced, info text entered, repo copies made. Next: shortlist voices, and regenerate the poster and business card with this face.
 
 **How to sync:** AAO cannot read characters yet (gap 3 in [spec/flow-automation.md](../../../spec/flow-automation.md)). Until it can, either:
 
@@ -60,7 +83,7 @@ Short, visual and voice-focused, so Flow can use it. Story backstory stays in th
 Dr. Sophie Goodman, late twenties, a young PhD moral philosopher who runs a small, loudly advertised "philosophical advocacy" practice in Albuquerque in 2030. Dark brown wavy hair loosely pinned up, warm light-medium skin, small gold hoop earrings, cream blouse under a deep burgundy tailored pantsuit. Confident, quick, theatrical when selling, quiet and precise when thinking. Wry half-smile; rarely raises her voice. Speaks American English, fast but clear, with dry humor.
 ```
 
-Approved, with her age updated to late twenties to match the age lock. Next: enter it in Flow (by hand, because AAO cannot edit characters yet; gap 4).
+Approved, with her age updated to late twenties to match the age lock. **Entered in Flow on 2026-11-23** with playwright-cli (AAO cannot edit characters yet; gap 4).
 
 **Check the portrait first.** The existing Flow portrait was generated from the tutorial prompt, which said "age about 33". If it doesn't read as late twenties, generate a new portrait with the prompt below. Then rebuild the character, or replace its image, before choosing the voice. Keep the old image only as a record.
 

@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: sophie-portrait-age27
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # not chosen; the showrunner picked v02, 2026-11-23
 asset_type: character reference portrait (candidate to replace the Flow character image)
 character: assets/characters/sophie-goodman/flow-character.md
 
@@ -49,5 +49,5 @@ agent_review:
     - Calm and neutral; little of the wry confidence in the brief
 
 showrunner_review:
-  decision: null
+  decision: not chosen        # 2026-11-23: the showrunner picked v02
   notes: null

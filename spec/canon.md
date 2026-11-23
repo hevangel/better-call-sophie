@@ -25,6 +25,7 @@
 - **Sophie's office (APPROVED 2026-11-22):** the strip-mall storefront concept in `assets/locations/sophie-office/README.md`. The first floor plan was approved, then reopened the same day by the showrunner: the unit is mid-row, and Sophie's office is a private room separate from the waiting room. Floor plan v2, its set list and its four masters were approved by the showrunner on 2026-11-22.
 - **No receptionist in season 1 (LOCKED 2026-11-23):** Sophie works alone. The reception desk in her waiting room is normally empty; sometimes her friends or other characters sit there to do other things.
 - **Sophie's Flow character info text (APPROVED 2026-11-22):** see `assets/characters/sophie-goodman/flow-character.md`. Her voice is not chosen yet.
+- **Sophie's face (APPROVED 2026-11-23):** age-27 portrait v02 (`assets/characters/sophie-goodman/reference-front.webp`), now the image of her Flow character. It replaces the tutorial portrait, which read early thirties.
 
 ## PROPOSED — do not mistake for final canon
 
@@ -41,7 +42,7 @@
 1. Determine the exact family tree/timeline that respects or deliberately departs from existing franchise continuity.
 2. Sophie's age is resolved (26–28, LOCKED above); her exact birth year and her mother's timeline are still open. Also decide whether original TV characters appear, and how direct the franchise references are.
 3. Define season length, episode duration (the pilot target is 5–8 minutes, pending the demo), screen aspect ratio, audio languages and target release format.
-4. Approve a canonical Sophie face/voice/wardrobe reference set; current art is **concept**.
+4. Approve a canonical Sophie face/voice/wardrobe reference set. The face is approved (above); the voice is still open. The poster and business card are **concept** art and will be regenerated with the approved face.
 5. ~~Sophie's starting stance~~ — resolved: mixed (LOCKED above).
 6. Establish the practical institution that can make philosophical arguments dramatically consequential.
 7. Review third-party franchise rights before any external distribution or commercialization.
