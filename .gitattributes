@@ -7,6 +7,10 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
-*.mp4 binary
-*.mov binary
 *.webp binary
+
+# Videos are stored in Git LFS (showrunner, 2026-11-23)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text

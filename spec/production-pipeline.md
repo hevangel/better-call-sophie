@@ -71,7 +71,8 @@ Copy this as documentation, not a claim that any shot exists yet.
 
 - Episode: `s01e01`; scene: `sc03`; shot: `sh012`; take/version: `v03`.
 - Small references under `assets/`; prompts, metadata and scripts under `production/`.
-- High-resolution image masters, generated video, audio stems and backups live in designated production storage. `production/exports/` is ignored by Git; use a reviewed Git LFS strategy if binaries truly need versioning in GitHub.
+- High-resolution image masters, generated video, audio stems and backups live in designated production storage. `production/exports/` is ignored by Git.
+- **Videos in Git LFS, golden versions only (showrunner, 2026-11-23).** `.gitattributes` sends `*.mp4`, `*.mov`, `*.webm` and `*.mkv` to Git LFS. Commit only the takes the showrunner has selected and the current cut, at their named path (`production/exports/<shot>/<shot>-<take>.mp4`), with `git add -f`, since the folder stays ignored. Rejected takes, test variants and older cuts stay local; their generation logs keep the checksum. The LFS object ID equals the file's SHA-256, so it can be checked against the log. GitHub counts LFS storage and bandwidth against the account's LFS quota.
 - Never commit third-party copyrighted clips, credentials, subscription data, or private account identifiers.
 - Preserve **unaltered exports** before retiming, grading or transcription. Save checksum/filename when available.
 

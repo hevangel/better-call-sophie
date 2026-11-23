@@ -42,7 +42,7 @@ For episode work, also read `story/season-01/overview.md`, the character files, 
 - Maintain a source-of-truth reference in `spec/` rather than duplicating contradictory instructions across many files.
 - For any new shot, record the prompt, continuity anchors, tool/model version if known, output ID/path, and review state. Never invent technical parameters or generation provenance.
 - Add scripts only for concrete repetitive needs. Prefer stdlib/simple dependencies; document CLI use.
-- Keep heavyweight renders and experimental generated files out of normal Git. Use production storage and/or Git LFS when intentionally configured.
+- Keep heavyweight renders and experimental generated files out of normal Git. **Videos are stored with Git LFS, golden versions only** (the showrunner's selected takes and the current cut), added with `git add -f`; see [spec/production-pipeline.md](spec/production-pipeline.md#file-naming-and-storage).
 - Run `python scripts/validate_project.py` after changing docs/assets when available.
 - Do not put secrets, API keys, personal data, or credentials in the repo.
 

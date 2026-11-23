@@ -36,6 +36,7 @@ output:
   original_filename: "Woman_tapping_chalkboard_with_text_1aa5bb71.mp4"
   local_path: "production/exports/demo-d01-sh04a/Woman_tapping_chalkboard_with_text_1aa5bb71.mp4"   # gitignored
   working_copy: production/exports/demo-d01-sh04a/demo-d01-sh04a-v01.mp4    # identical bytes
+  git_lfs: committed           # golden version (showrunner-selected), 2026-11-23; LFS object ID = the sha256 below
   sha256: 03347780436F9EA75878C8A409C39558FF752930C0379283E43E9989881194E6
   bytes: 2697345
   duration_seconds: 8.043

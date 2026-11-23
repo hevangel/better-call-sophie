@@ -35,6 +35,7 @@ output:
   original_filename: "Man_staring_at_phone_f4b65086.mp4"
   local_path: "production/exports/demo-d01-sh02/Man_staring_at_phone_f4b65086.mp4"   # gitignored
   working_copy: production/exports/demo-d01-sh02/demo-d01-sh02-v01.mp4    # identical bytes
+  git_lfs: committed           # golden version (showrunner-selected), 2026-11-23; LFS object ID = the sha256 below
   sha256: 6166635E6706973A7711F9917870343A2417B42F8984D42BE1F034A1DBC26C3E
   bytes: 2537618
   duration_seconds: 8.043

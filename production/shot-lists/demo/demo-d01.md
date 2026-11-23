@@ -24,8 +24,10 @@ The agent may mark takes `generated` or `rejected`; only the showrunner sets `se
 
 ## Rough cut v03 (2026-11-23)
 
-`production/exports/demo-d01-roughcut/demo-d01-roughcut-v03.mp4` (gitignored), 25.0 s: as v02, with shot 3 **v02** trimmed to 1.0–7.0 s (speech 1.72–6.5 s).
+`production/exports/demo-d01-roughcut/demo-d01-roughcut-v03.mp4` (**in Git LFS**, the golden cut), 25.0 s: as v02, with shot 3 **v02** trimmed to 1.0–7.0 s (speech 1.72–6.5 s).
 
 **All picture takes are selected** (showrunner, 2026-11-23: "Accept all four", after "Version A (Flow)" for shot 4). Rough cut v03 is the picture lock candidate.
+
+**Storage (showrunner, 2026-11-23):** the golden versions are committed with Git LFS: the five selected takes (`<shot>-<take>.mp4` beside each shot's exports) and rough cut v03. Rejected takes, the 4B overlay and rough cuts v01–v02 stay local only; their logs keep the checksums.
 
 Still to do for D01: the Flow Music jingle; the end card in post; the mix; the YouTube upload.

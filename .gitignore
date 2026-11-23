@@ -19,6 +19,10 @@ cache/
 *.pt
 *.pth
 
+# Videos in Git LFS (showrunner, 2026-11-23): only the golden versions (takes the showrunner
+# selected, and the current cut) are committed, added one by one with `git add -f`.
+# Everything else in production/exports stays local. See .gitattributes.
+
 # Software build outputs
 __pycache__/
 *.py[cod]

@@ -36,6 +36,7 @@ output:
   original_filename: "Woman_pointing_and_speaking_7c2b3784.mp4"
   local_path: "production/exports/demo-d01-sh05/Woman_pointing_and_speaking_7c2b3784.mp4"   # gitignored
   working_copy: production/exports/demo-d01-sh05/demo-d01-sh05-v01.mp4    # identical bytes
+  git_lfs: committed           # golden version (showrunner-selected), 2026-11-23; LFS object ID = the sha256 below
   sha256: 9CE8FDBE32FEB77F4B4486015F5563C291027BB8325B567320CBA79D2D1B5CF6
   bytes: 2620263
   duration_seconds: 8.043
