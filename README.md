@@ -13,7 +13,7 @@ An **AI-generated philosophical crime drama / dark comedy** created collaborativ
 ### TV-series poster
 
 <p align="center">
-  <img src="assets/marketing/poster-tv-4x3.webp" alt="Better Call Sophie: Sophie Goodman in a burgundy suit in her philosophical consulting office, Albuquerque at dusk" width="480" />
+  <img src="assets/marketing/poster-tv-4x3.webp" alt="Better Call Sophie: Sophie Goodman in a burgundy suit leaning on her desk in her office, with a trolley-problem chalkboard and golden light through the blinds" width="480" />
 </p>
 
 ### Goodman Philosophical Consulting — business card

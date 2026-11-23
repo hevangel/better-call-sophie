@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: poster-art
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-23
 asset_type: TV poster key art, text-free (lettering added by scripts/compose_marketing.py)
 
 tool: Google Flow (web), image mode, direct generation (Flow agent off)
@@ -39,7 +39,7 @@ output:
   format: JPEG
   resolution: 1200x896
   sha256: 509D99759270CF762158DC1C3F786C35FB6C32E637561B31C1493CF958092C1B
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "poster-art-v01.jpg"   # 2026-11-23, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "-3 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -51,5 +51,6 @@ agent_review:
     - The diplomas carry faint pseudo-text (unreadable at poster size)
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Approve all three"
+  notes: Approved as v2 marketing art with the lettering from scripts/compose_marketing.py, replacing the 2026-11-14 concept.
+repo_reference_copy: assets/marketing/poster-tv-4x3.webp   # composed by scripts/compose_marketing.py (poster-tv-4x3-v2)

@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: card-logo
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-23
 asset_type: business card emblem, text-free
 
 tool: Google Flow (web), image mode, direct generation (Flow agent off)
@@ -37,7 +37,7 @@ output:
   format: JPEG
   resolution: 1024x1024
   sha256: 42F663AB3822A652AA72E4F2AF144FC668B89A6AFD5D0E99A12DC48B3B2587F3
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "card-logo-v01.jpg"   # 2026-11-23, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; the first multi-file upload missed this file, a single-file retry landed (tile seen in the project)
 
 agent_review:
   matches:
@@ -47,5 +47,6 @@ agent_review:
     - The scale has a stand and base, which reads as a scale foot rather than a column
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Approve all three"
+  notes: Approved as v2 marketing art with the lettering from scripts/compose_marketing.py, replacing the 2026-11-14 concept.
+repo_reference_copy: assets/marketing/business-card-back.webp   # composed by scripts/compose_marketing.py (business-card-back-v2)

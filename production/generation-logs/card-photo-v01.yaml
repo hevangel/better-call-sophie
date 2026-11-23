@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: card-photo
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-23
 asset_type: business card front photo, text-free
 
 tool: Google Flow (web), image mode, direct generation (Flow agent off)
@@ -38,7 +38,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: C5442B428ED1A98F5930576398001A4729DB0A8425F6C9D6FA29E9E38CAC904F
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "card-photo-v01.jpg"   # 2026-11-23, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "-3 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -48,5 +48,6 @@ agent_review:
     - Neither eyebrow is noticeably raised
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Approve all three"
+  notes: Approved as v2 marketing art with the lettering from scripts/compose_marketing.py, replacing the 2026-11-14 concept.
+repo_reference_copy: assets/marketing/business-card-front.webp   # composed by scripts/compose_marketing.py (business-card-front-v2)
