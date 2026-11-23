@@ -21,11 +21,11 @@ Showrunner direction (2026-11-23): regenerate the poster and card with Sophie's 
 
 | Piece | Art (Google Flow, Nano Banana 2.1) | Composed output | Repo file |
 | --- | --- | --- | --- |
-| TV poster 4:3 | `poster-art` v01, [log](../production/generation-logs/poster-art-v01.yaml) | `production/exports/marketing/poster-tv-4x3-v2.png` (1200x896) | `assets/marketing/poster-tv-4x3.webp` |
+| TV poster 4:3 | `poster-art` v01, [log](../production/generation-logs/poster-art-v01.yaml) | not used: the lettering was generated in Flow instead (below) | `assets/marketing/poster-tv-4x3.webp` (Flow-lettered); text-free art `assets/marketing/poster-art-4x3.webp` |
 | Card front | `card-photo` v01, [log](../production/generation-logs/card-photo-v01.yaml) | `production/exports/marketing/business-card-front-v2.png` (1050x600, 3.5x2 in at 300 dpi) | `assets/marketing/business-card-front.webp` |
 | Card back | `card-logo` v01, [log](../production/generation-logs/card-logo-v01.yaml) | `production/exports/marketing/business-card-back-v2.png` (1050x600) | `assets/marketing/business-card-back.webp` |
 
-**Poster with Flow-generated lettering (PROPOSED, 2026-11-23):** at the showrunner's request ("generate one with the text, using the font of the old poster"), Flow lettered the approved poster art, using the concept poster as the lettering reference: `poster-lettered` v01, [log](../production/generation-logs/poster-lettered-v01.yaml), `production/exports/marketing/poster-lettered-v01.jpg` (1200x896, gitignored). It is a candidate to replace the composed poster; the repo file stays the composed v2 until the showrunner picks one.
+**Poster with Flow-generated lettering (APPROVED 2026-11-23):** at the showrunner's request ("generate one with the text, using the font of the old poster"), Flow lettered the approved poster art, using the concept poster as the lettering reference: `poster-lettered` v01, [log](../production/generation-logs/poster-lettered-v01.yaml). The showrunner chose it for the README ("Use the flow lettered for the README.md keep the no text version of the image"), so `assets/marketing/poster-tv-4x3.webp` is this image, and the text-free art is kept as `assets/marketing/poster-art-4x3.webp` for future lettering or crops. The script-lettered `poster-tv-4x3-v2` is not used; `scripts/compose_marketing.py` still makes it.
 
 - Prompts: [production/prompts/marketing-v2.md](../production/prompts/marketing-v2.md).
 - Lettering: [scripts/compose_marketing.py](../scripts/compose_marketing.py), run with `uv run --no-project --with pillow python scripts/compose_marketing.py`. It uses the Windows system fonts Arial Black, Georgia and Brush Script MT; check their license terms before any commercial print run, or swap in open-licensed fonts.

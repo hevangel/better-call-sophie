@@ -53,4 +53,4 @@ agent_review:
 showrunner_review:
   decision: approved          # 2026-11-23: "Approve all three"
   notes: Approved as v2 marketing art with the lettering from scripts/compose_marketing.py, replacing the 2026-11-14 concept.
-repo_reference_copy: assets/marketing/poster-tv-4x3.webp   # composed by scripts/compose_marketing.py (poster-tv-4x3-v2)
+repo_reference_copy: assets/marketing/poster-art-4x3.webp   # text-free WebP conversion of the original, same resolution (showrunner, 2026-11-23: "keep the no text version of the image"); the repo poster is now poster-lettered v01, and the script-lettered poster-tv-4x3-v2 is not used
