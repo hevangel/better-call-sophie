@@ -1,0 +1,39 @@
+# Generation log: D01 commercial, sung tag, take v01.
+# Every value below was read from AAO output, ffprobe, ffmpeg or Whisper; nothing is guessed.
+id: demo-d01-jingle-tag
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+piece: production/demo/d01-commercial-30s.md
+
+tool: Google Flow Music (web, https://www.flowmusic.app/)
+model: null                  # Flow Music does not show a model name in AAO's output
+command: uv run aao web audio flow-music --prompt "<prompt>" --out production/exports/demo-d01-jingle --json   # run from external/any-agent-orchestrator
+prompt_source: 'production/prompts/d01-commercial.md, section "demo-d01-jingle-tag v01", verbatim'
+flow_music_session: https://www.flowmusic.app/session/845d57d1-bb1c-4d0b-8b77-fe485682cfff
+generation_datetime: "2026-11-23T15:47:11-07:00"   # command started
+
+output:
+  original_filename: "Better Call Sophie! (Jingle).mp3"   # title chosen by Flow Music
+  local_path: production/exports/demo-d01-jingle/flow-music-audio-1b97b775266f/Better Call Sophie! (Jingle).mp3   # gitignored
+  working_copy: production/exports/demo-d01-jingle/demo-d01-jingle-tag-v01.mp3   # identical bytes
+  sha256: 3E6356EBC285B73CB52BFCE8546E23949AC6105584DA54DA08C22303AC7434C2
+  bytes: 1799019
+  duration_seconds: 60.203
+  integrated_loudness_lufs: -14.7
+
+checks:
+  whisper_small_en:
+    - "0.00-1.66: 'Better call Sophie!' (word timestamps: Better 0.0-0.5, call 0.5-0.92, Sophie! 0.92-1.66), no_speech_prob 0.38"
+    - "30.0-56.4: a further verse about Sophie (no_speech_prob 0.87, partly garbled); not used"
+  envelope: "the chord after the phrase decays to a dip at about 3.0-3.7 s; the song restarts at about 4.0 s"
+
+agent_review:
+  matches:
+    - Opens with exactly the words "Better call Sophie!" (Whisper), over brass, ending in a chord
+    - The first 3.6 s work as the tag (used in mix v01)
+  deviations:
+    - 60.2 seconds with extra verses, not under 10 seconds (no length control, AAO gap 6)
+
+showrunner_review:
+  decision: null
+  notes: null

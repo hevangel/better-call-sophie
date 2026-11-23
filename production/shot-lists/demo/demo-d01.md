@@ -30,4 +30,26 @@ The agent may mark takes `generated` or `rejected`; only the showrunner sets `se
 
 **Storage (showrunner, 2026-11-23):** the golden versions are committed with Git LFS: the five selected takes (`<shot>-<take>.mp4` beside each shot's exports) and rough cut v03. Rejected takes, the 4B overlay and rough cuts v01–v02 stay local only; their logs keep the checksums.
 
-Still to do for D01: the Flow Music jingle; the end card in post; the mix; the YouTube upload.
+## Music (2026-11-23)
+
+Made in Google Flow Music with `aao web audio flow-music` (prompt only; AAO gap 6). Prompts: [production/prompts/d01-commercial.md](../../prompts/d01-commercial.md#music-google-flow-music-via-aao-web-audio-flow-music).
+
+| Take | Status | Flow Music title | Length | Agent notes | Log |
+| --- | --- | --- | --- | --- | --- |
+| `demo-d01-jingle` v01 | rejected (agent) | Better Call Sophie | 103.3 s | Full song with invented handyman lyrics; the tag is unclear | [log](../../generation-logs/demo-d01-jingle-v01.yaml) |
+| `demo-d01-jingle` v02 | generated | Prime Time Commercial Jingle | 61.6 s | Instrumental, no vocals: the bed | [log](../../generation-logs/demo-d01-jingle-v02.yaml) |
+| `demo-d01-jingle-tag` v01 | generated | Better Call Sophie! (Jingle) | 60.2 s | Opens with exactly "Better call Sophie!" and a chord (0–3.6 s used) | [log](../../generation-logs/demo-d01-jingle-tag-v01.yaml) |
+
+Flow Music ignored the requested lengths every time; trimming in the edit solves it.
+
+## Mix v01 (2026-11-23)
+
+`production/exports/demo-d01-mix/demo-d01-mix-v01.mp4` (local until approved), **30.0 s, −14.5 LUFS**:
+
+- Picture: rough cut v03 (25.0 s), then 5.0 s of the approved exterior plate `office-exterior-dusk` as the end card background. The end-card lettering is not made yet.
+- Dialogue: each shot's own audio.
+- Bed: jingle v02, 1.85–26.85 s, at 0.55 gain, faded, ducked under the dialogue with ffmpeg `sidechaincompress`.
+- Tag: tag v01, 0–3.6 s, placed at 26.2 s so the chord ends just before 30 s.
+- Master: ffmpeg `loudnorm` to −14 LUFS, true peak −1.5 dB.
+- Whisper on the mix: all four lines word-perfect over the music; the tail alone reads "Better call Sophie!".
+Still to do for D01: the showrunner approves the music and mix; the end-card lettering in post; the YouTube upload.

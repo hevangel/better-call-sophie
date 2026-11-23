@@ -1,0 +1,37 @@
+# Generation log: D01 commercial, jingle (instrumental bed), take v02.
+# Every value below was read from AAO output, ffprobe, ffmpeg or Whisper; nothing is guessed.
+id: demo-d01-jingle
+version: v02
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+piece: production/demo/d01-commercial-30s.md
+
+tool: Google Flow Music (web, https://www.flowmusic.app/)
+model: null                  # Flow Music does not show a model name in AAO's output
+command: uv run aao web audio flow-music --prompt "<prompt>" --out production/exports/demo-d01-jingle --json   # run from external/any-agent-orchestrator
+prompt_source: 'production/prompts/d01-commercial.md, section "demo-d01-jingle v02", verbatim'
+flow_music_session: https://www.flowmusic.app/session/1e00d5bf-d2d9-49e1-91c6-7ab4475feea6
+generation_datetime: "2026-11-23T15:46:43-07:00"   # command started
+
+output:
+  original_filename: "Prime Time Commercial Jingle.mp3"   # title chosen by Flow Music
+  local_path: production/exports/demo-d01-jingle/flow-music-audio-ac4923d62317/Prime Time Commercial Jingle.mp3   # gitignored
+  working_copy: production/exports/demo-d01-jingle/demo-d01-jingle-v02.mp3   # identical bytes
+  sha256: 227342B16CB5836C8AD2A7DBCA06A5F8A5826DEF1BC7BC327AAE9F1B668DA1A8
+  bytes: 1674646
+  duration_seconds: 61.568
+  integrated_loudness_lufs: -15.5
+  silence_below_minus45db: ["0.0-1.85", "59.08-61.57"]   # ffmpeg silencedetect
+
+checks:
+  whisper_small_en: "no vocals; only 'You' at 60.0-62.0 s in the closing silence, no_speech_prob 0.85"
+
+agent_review:
+  matches:
+    - Instrumental only, as asked; retro local-TV ad style with brass, organ, bass and handclaps (by description; not checked by a human ear)
+    - Usable as the 25-second bed (used 1.85-26.85 s in mix v01)
+  deviations:
+    - 61.6 seconds, not about 30 (no length control in Flow Music, AAO gap 6)
+
+showrunner_review:
+  decision: null
+  notes: null

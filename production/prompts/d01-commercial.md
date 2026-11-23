@@ -6,6 +6,28 @@ All shots: Google Flow video mode, **Ingredients**, 16:9, 720p, x1, model **Omni
 
 **Mentions.** `@[Name]` marks an asset inserted with Flow's `@` picker (type `@`, search the name, select it, **Add to prompt**). `@[Sophie Goodman]` is her Flow character (approved face, body and voice Kore); `@[office-….jpg]` is an approved office view uploaded to the show project. Each mention also adds the asset as an ingredient. The jingle is added in post, so every prompt asks for no music.
 
+## Music (Google Flow Music, via `aao web audio flow-music`)
+
+Flow Music takes only a chat prompt (AAO gap 6: no length, lyrics or instrumental controls) and AAO downloads the first finished song as an MP3.
+
+### demo-d01-jingle v01
+
+The PROPOSED prompt in [d01-commercial-30s.md](../demo/d01-commercial-30s.md#music-flow-music-proposed-prompt), verbatim. Result: a 103-second song with invented handyman lyrics; see its log.
+
+### demo-d01-jingle v02 (instrumental bed)
+
+Following the plan's fallback: the bed and the sung tag as separate generations.
+
+```text
+An original instrumental jingle for a retro local-TV commercial, about 30 seconds long: bright brass stabs, cheesy electric organ, slap bass and handclaps, upbeat, optimistic and slightly over-the-top, like a 1980s local TV ad. Instrumental only: no vocals, no singing, no lyrics, no spoken words. It ends on a big button chord. Original melody; not in the style of any existing TV theme.
+```
+
+### demo-d01-jingle-tag v01 (sung tag)
+
+```text
+A very short original sung tag for a local TV commercial, under 10 seconds long: a cheerful small group of singers sings exactly the three words "Better call Sophie!" once, over bright brass and handclaps, ending on a big button chord, then silence. No other words or lyrics. Original melody; not in the style of any existing TV theme.
+```
+
 ## demo-d01-sh01 v01 (cam-c wide, turn from the board)
 
 ```text

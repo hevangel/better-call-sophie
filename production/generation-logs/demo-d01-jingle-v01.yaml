@@ -1,0 +1,42 @@
+# Generation log: D01 commercial, jingle, take v01.
+# Every value below was read from AAO output, ffprobe, ffmpeg or Whisper; nothing is guessed.
+id: demo-d01-jingle
+version: v01
+status: rejected             # agent: not a 30-second jingle (see deviations); kept local as a record
+piece: production/demo/d01-commercial-30s.md
+
+tool: Google Flow Music (web, https://www.flowmusic.app/)
+model: null                  # Flow Music does not show a model name in AAO's output
+command: uv run aao web audio flow-music --prompt "<prompt>" --out production/exports/demo-d01-jingle --json   # run from external/any-agent-orchestrator
+prompt_source: 'production/demo/d01-commercial-30s.md, section "Music (Flow Music, PROPOSED prompt)", verbatim'
+flow_music_session: https://www.flowmusic.app/session/b8d4f86b-740f-4ba9-acda-27fbbefe12b4
+generation_datetime: "2026-11-23T15:45:06-07:00"   # command started
+
+output:
+  original_filename: "Better Call Sophie.mp3"      # title chosen by Flow Music
+  local_path: production/exports/demo-d01-jingle/flow-music-audio-ce237015d24e/Better Call Sophie.mp3   # gitignored
+  working_copy: production/exports/demo-d01-jingle/demo-d01-jingle-v01.mp3   # identical bytes
+  sha256: 7786788A2C602FBF7FC26A0044730E8228BB97AB32298A7A95793F92808B161F
+  bytes: 2905740
+  duration_seconds: 103.275
+  audio: "mp3 48000 Hz, 2 ch, about 225 kb/s, with embedded cover art"
+  integrated_loudness_lufs: -13.6   # ffmpeg ebur128
+
+checks:
+  whisper_small_en:            # segments, seconds; not checked by a human ear
+    - "0.0-15.4: instrumental"
+    - "15.4-32.0: verse about a leaky pipe, a broken door and 'the finest service in the state'"
+    - "48.5-62.0: verse ('She's working in your corner day and night')"
+    - "85.0-100.0: tag heard as 'Better come soul me' (probably a sung 'Better call Sophie'; unconfirmed)"
+
+agent_review:
+  matches:
+    - Retro local-TV ad sound with a 15-second instrumental intro
+  deviations:
+    - 103 seconds long, not 30; Flow Music has no length control (AAO gap 6)
+    - Full verses with invented handyman lyrics instead of a 25-second instrumental bed
+    - The tag is not clearly "Better call Sophie!" in Whisper's transcript
+
+showrunner_review:
+  decision: null
+  notes: null
