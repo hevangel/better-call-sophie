@@ -24,11 +24,11 @@ The agent may mark takes `generated` or `rejected`; only the showrunner sets `se
 
 ## Rough cut v03 (2026-11-23)
 
-`production/exports/demo-d01-roughcut/demo-d01-roughcut-v03.mp4` (**in Git LFS**, the golden cut), 25.0 s: as v02, with shot 3 **v02** trimmed to 1.0–7.0 s (speech 1.72–6.5 s).
+`production/exports/demo-d01-roughcut/demo-d01-roughcut-v03.mp4` (local; it was in Git LFS until the final cut replaced it), 25.0 s: as v02, with shot 3 **v02** trimmed to 1.0–7.0 s (speech 1.72–6.5 s).
 
 **All picture takes are selected** (showrunner, 2026-11-23: "Accept all four", after "Version A (Flow)" for shot 4). Rough cut v03 is the picture lock candidate.
 
-**Storage (showrunner, 2026-11-23):** the golden versions are committed with Git LFS: the five selected takes (`<shot>-<take>.mp4` beside each shot's exports) and rough cut v03. Rejected takes, the 4B overlay and rough cuts v01–v02 stay local only; their logs keep the checksums.
+**Storage (showrunner, 2026-11-23):** the golden versions are committed with Git LFS: the five selected takes (`<shot>-<take>.mp4` beside each shot's exports) and the current cut, now the final commercial `demo-d01-v01.mp4` (rough cut v03 was removed from the tree when the final replaced it; its LFS object stays in history). Rejected takes, the 4B overlay and rough cuts v01–v02 stay local only; their logs keep the checksums.
 
 ## Music (2026-11-23)
 
@@ -55,6 +55,6 @@ Flow Music ignored the requested lengths every time; trimming in the edit solves
 ## End card and final cut v01 (2026-11-23)
 
 - **End card** (`demo-d01-sh06` v01, [record](../../generation-logs/demo-d01-sh06-v01.yaml)): made in post with [scripts/end_card.py](../../../scripts/end_card.py) over the approved exterior plate, in the poster's colors. "BETTER CALL" slides in, "SOPHIE" lands on the sung "Sophie!", then the swoosh, the phone number 505-555-0148 and the fine print.
-- **Commercial** `production/exports/demo-d01-final/demo-d01-v01.mp4` (local until approved): mix v01's picture for 0–25 s, then the end card, with mix v01's sound unchanged. **30.0 s, −14.5 LUFS, 1280x720, 24 fps.**
+- **Commercial** `production/exports/demo-d01-final/demo-d01-v01.mp4`, **FINAL** (showrunner, 2026-11-23, "Approve as final"), **in Git LFS**: mix v01's picture for 0–25 s, then the end card, with mix v01's sound unchanged. **30.0 s, −14.5 LUFS, 1280x720, 24 fps.**
 - Rebuild: the mix with [scripts/d01_mix.ps1](../../../scripts/d01_mix.ps1), the end card with `scripts/end_card.py`, then the ffmpeg concat in the end-card record.
-Still to do for D01: the showrunner approves the final cut; then it goes into Git LFS and to YouTube (by hand, with the disclosures).
+**D01 is final** (2026-11-23). Still to do: the YouTube upload, by hand, with the AI-generated and unofficial-fan-work disclosures ([spec/ai-creative-policy.md](../../../spec/ai-creative-policy.md)); then record its URL in the end-card record.

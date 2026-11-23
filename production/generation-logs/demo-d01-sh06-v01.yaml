@@ -2,7 +2,7 @@
 # Made in post with traditional tools; no AI generation in this step. Values read from the tools' output.
 id: demo-d01-sh06
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: final                # approved as final by the showrunner, 2026-11-23
 piece: production/demo/d01-commercial-30s.md
 
 tool: scripts/end_card.py (Pillow frames, ffmpeg libopenh264 encode)
@@ -33,6 +33,7 @@ assembly:
   video: "h264 1280x720 24 fps"
   integrated_loudness_lufs: -14.5
   sha256: B76A55E65B85E2E4BFA01E9293AC8D8DDF710E91D0797502FC30B37618075077
+  git_lfs: committed           # golden version (final), 2026-11-23; LFS object ID = this sha256
   contact_sheet: production/exports/demo-d01-final/demo-d01-v01-sheet.jpg
 
 agent_review:
@@ -46,5 +47,6 @@ agent_review:
     - Georgia's old-style figures make the phone number's digits sit unevenly
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: final             # 2026-11-23: "Approve as final"
+  notes: The end card and the assembled commercial demo-d01-v01 are final.
+youtube_url: null             # upload by hand with the disclosures, then record the URL here
