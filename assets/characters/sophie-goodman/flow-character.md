@@ -101,6 +101,31 @@ Pick one of Flow's built-in voices by name, and use it for every Sophie shot fro
 
 **Decision needed:** which voice. This is the showrunner's ear; an agent can shortlist voices, but not choose one.
 
+### Shortlist (PROPOSED, 2026-11-23)
+
+Read from the character page's **Select a voice** dialog (click the voice name) in the show project on 2026-11-23. The dialog lists 30 built-in voices, each with a one-line description. The agent did not select anything; the character still has **kore**. The agent has not listened to the voices, so this shortlist goes by Flow's descriptions only.
+
+To listen, use the play button in that dialog, or open the sample file Flow plays. These are public files on `gstatic.com`, which Flow loads when you preview a voice (pattern seen in the page: `https://www.gstatic.com/aitestkitchen/voices/samples/<Name>.wav`).
+
+| Voice | Flow's description | Shortlist | Why | Sample |
+| --- | --- | --- | --- | --- |
+| Kore | Female, firm, mid pitch | **yes** (current) | Firm and mid pitch fit "confident, quick, rarely raises her voice" | [Kore.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Kore.wav) |
+| Erinome | Female, clear, mid pitch | **yes** | "Clear" fits "fast but clear, articulate" | [Erinome.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Erinome.wav) |
+| Sulafat | Female, warm, mid pitch | **yes** | "Warm" is in the brief | [Sulafat.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Sulafat.wav) |
+| Autonoe | Female, bright, mid pitch | **yes** | Bright and mid pitch suit the salesy side | [Autonoe.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Autonoe.wav) |
+| Despina | Female, smooth, mid pitch | **yes** | Smooth and mid pitch suit the quiet, precise side | [Despina.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Despina.wav) |
+| Callirrhoe | Female, easy-going, mid pitch | maybe | Mid pitch, but "easy-going" may be too relaxed for fast talk | [Callirrhoe.wav](https://www.gstatic.com/aitestkitchen/voices/samples/Callirrhoe.wav) |
+| Aoede | Female, breezy, mid pitch | no | "Breezy" risks the breathy sound the brief rules out | |
+| Achernar | Female, soft, high pitch | no | High pitch and soft | |
+| Gacrux | Female, mature, mid pitch | no | "Mature" works against late twenties | |
+| Laomedeia | Female, upbeat, mid-high pitch | no | Above mid pitch | |
+| Leda | Female, youthful, mid-high pitch | no | Above mid pitch; may read younger than 27 | |
+| Zephyr | Female, bright, mid-high pitch | no | Above mid pitch | |
+| Vindemiatrix | Female, gentle, mid pitch | no | "Gentle" undersells the theatrical sales mode | |
+| Pulcherrima | Ungendered, forward, mid-high pitch | no | Brief asks for a female voice | |
+
+The other 16 voices are listed as male: Achird, Algenib, Algieba, Alnilam, Charon, Enceladus, Fenrir, Iapetus, Orus, Puck, Rasalgethi, Sadachbia, Sadaltager, Schedar, Umbriel and Zubenelgenubi.
+
 ## Other demo characters (PROPOSED, not created)
 
 | Character | Needed for | Look anchor |
