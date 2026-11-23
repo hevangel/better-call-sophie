@@ -1,0 +1,50 @@
+# Record: D01 commercial, shot 6 (end card), version v01, and the assembled commercial.
+# Made in post with traditional tools; no AI generation in this step. Values read from the tools' output.
+id: demo-d01-sh06
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+piece: production/demo/d01-commercial-30s.md
+
+tool: scripts/end_card.py (Pillow frames, ffmpeg libopenh264 encode)
+command: >-
+  uv run --no-project --with pillow python scripts/end_card.py
+  assets/locations/sophie-office/office-exterior-dusk.webp
+  production/exports/demo-d01-final/demo-d01-endcard-v01.mp4 --sophie-at 2.1 --still 4.5
+plate: assets/locations/sophie-office/office-exterior-dusk.webp   # approved exterior, darkened, slow push-in
+lettering:                   # showrunner direction 2026-11-23: match the approved poster's colors
+  title_1: '"BETTER CALL", white, Segoe UI Black Italic (Windows seguibli.ttf), slides in at 0.2-0.7 s'
+  title_2: '"SOPHIE", gold with a dark outline, Bookman Old Style Bold Italic (Windows BOOKOSBI.TTF), lands at 2.1 s on the sung "Sophie!"'
+  swoosh: gold tapered stroke drawn by the script, wipes in at 2.1-2.5 s
+  phone: '"505-555-0148" (fictional 555 number), cream, Georgia Bold Italic, fades in at 2.6 s'
+  fine_print: '"Dr. Goodman is not a lawyer. Nothing in this ad is legal advice. Or moral advice. Probably.", cream, Georgia Italic, fades in at 3.1 s'
+  font_license: Windows system fonts; check their terms before any commercial release (same caveat as the poster and card)
+output:
+  end_card: production/exports/demo-d01-final/demo-d01-endcard-v01.mp4   # 5.0 s, 120 frames, video only
+  end_card_still: production/exports/demo-d01-final/demo-d01-endcard-v01.png   # frame at 4.5 s
+
+assembly:
+  output: production/exports/demo-d01-final/demo-d01-v01.mp4
+  command: >-
+    ffmpeg -i production/exports/demo-d01-mix/demo-d01-mix-v01.mp4 -i production/exports/demo-d01-final/demo-d01-endcard-v01.mp4
+    -filter_complex "[0:v]trim=duration=25,setpts=PTS-STARTPTS,fps=24,format=yuv420p[a];[1:v]fps=24,format=yuv420p,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]"
+    -map [v] -map 0:a -c:v libopenh264 -b:v 8M -c:a copy -t 30 production/exports/demo-d01-final/demo-d01-v01.mp4
+  sound: the approved mix v01, copied unchanged
+  duration_seconds: 30.0
+  video: "h264 1280x720 24 fps"
+  integrated_loudness_lufs: -14.5
+  sha256: B76A55E65B85E2E4BFA01E9293AC8D8DDF710E91D0797502FC30B37618075077
+  contact_sheet: production/exports/demo-d01-final/demo-d01-v01-sheet.jpg
+
+agent_review:
+  matches:
+    - All end-card text is exact (drawn from fonts) and in the poster's colors
+    - The title reads clearly over the darkened dusk sky; the phone and fine print sit over the dark parking lot
+    - '"SOPHIE" lands on the sung "Sophie!" of the tag'
+    - 30.0 s exactly, -14.5 LUFS
+  deviations:
+    - '"SOPHIE" overlaps the storefront''s blank yellow-red sign; the dark outline keeps it readable'
+    - Georgia's old-style figures make the phone number's digits sit unevenly
+
+showrunner_review:
+  decision: null
+  notes: null

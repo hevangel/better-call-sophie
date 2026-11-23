@@ -37,14 +37,14 @@ Made in Google Flow Music with `aao web audio flow-music` (prompt only; AAO gap 
 | Take | Status | Flow Music title | Length | Agent notes | Log |
 | --- | --- | --- | --- | --- | --- |
 | `demo-d01-jingle` v01 | rejected (agent) | Better Call Sophie | 103.3 s | Full song with invented handyman lyrics; the tag is unclear | [log](../../generation-logs/demo-d01-jingle-v01.yaml) |
-| `demo-d01-jingle` v02 | generated | Prime Time Commercial Jingle | 61.6 s | Instrumental, no vocals: the bed | [log](../../generation-logs/demo-d01-jingle-v02.yaml) |
-| `demo-d01-jingle-tag` v01 | generated | Better Call Sophie! (Jingle) | 60.2 s | Opens with exactly "Better call Sophie!" and a chord (0–3.6 s used) | [log](../../generation-logs/demo-d01-jingle-tag-v01.yaml) |
+| `demo-d01-jingle` v02 | **selected** (showrunner, 2026-11-23) | Prime Time Commercial Jingle | 61.6 s | Instrumental, no vocals: the bed | [log](../../generation-logs/demo-d01-jingle-v02.yaml) |
+| `demo-d01-jingle-tag` v01 | **selected** (showrunner, 2026-11-23) | Better Call Sophie! (Jingle) | 60.2 s | Opens with exactly "Better call Sophie!" and a chord (0–3.6 s used) | [log](../../generation-logs/demo-d01-jingle-tag-v01.yaml) |
 
 Flow Music ignored the requested lengths every time; trimming in the edit solves it.
 
 ## Mix v01 (2026-11-23)
 
-`production/exports/demo-d01-mix/demo-d01-mix-v01.mp4` (local until approved), **30.0 s, −14.5 LUFS**:
+`production/exports/demo-d01-mix/demo-d01-mix-v01.mp4`, **30.0 s, −14.5 LUFS**, **approved by the showrunner** (2026-11-23, "Approve, do end card"):
 
 - Picture: rough cut v03 (25.0 s), then 5.0 s of the approved exterior plate `office-exterior-dusk` as the end card background. The end-card lettering is not made yet.
 - Dialogue: each shot's own audio.
@@ -52,4 +52,9 @@ Flow Music ignored the requested lengths every time; trimming in the edit solves
 - Tag: tag v01, 0–3.6 s, placed at 26.2 s so the chord ends just before 30 s.
 - Master: ffmpeg `loudnorm` to −14 LUFS, true peak −1.5 dB.
 - Whisper on the mix: all four lines word-perfect over the music; the tail alone reads "Better call Sophie!".
-Still to do for D01: the showrunner approves the music and mix; the end-card lettering in post; the YouTube upload.
+## End card and final cut v01 (2026-11-23)
+
+- **End card** (`demo-d01-sh06` v01, [record](../../generation-logs/demo-d01-sh06-v01.yaml)): made in post with [scripts/end_card.py](../../../scripts/end_card.py) over the approved exterior plate, in the poster's colors. "BETTER CALL" slides in, "SOPHIE" lands on the sung "Sophie!", then the swoosh, the phone number 505-555-0148 and the fine print.
+- **Commercial** `production/exports/demo-d01-final/demo-d01-v01.mp4` (local until approved): mix v01's picture for 0–25 s, then the end card, with mix v01's sound unchanged. **30.0 s, −14.5 LUFS, 1280x720, 24 fps.**
+- Rebuild: the mix with [scripts/d01_mix.ps1](../../../scripts/d01_mix.ps1), the end card with `scripts/end_card.py`, then the ffmpeg concat in the end-card record.
+Still to do for D01: the showrunner approves the final cut; then it goes into Git LFS and to YouTube (by hand, with the disclosures).

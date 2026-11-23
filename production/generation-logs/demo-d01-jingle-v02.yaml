@@ -2,7 +2,7 @@
 # Every value below was read from AAO output, ffprobe, ffmpeg or Whisper; nothing is guessed.
 id: demo-d01-jingle
 version: v02
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner with mix v01, 2026-11-23
 piece: production/demo/d01-commercial-30s.md
 
 tool: Google Flow Music (web, https://www.flowmusic.app/)
@@ -33,5 +33,5 @@ agent_review:
     - 61.6 seconds, not about 30 (no length control in Flow Music, AAO gap 6)
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Approve, do end card" (mix v01)
+  notes: Used as trimmed in mix v01.
