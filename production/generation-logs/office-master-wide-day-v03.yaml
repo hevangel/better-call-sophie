@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-day
 version: v03
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # re-roll requested by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
 room: Sophie's private office
@@ -53,6 +53,6 @@ agent_review:
     - Light is soft and still slightly warm, not the crisp midday the prompt asked for; the difference from the golden master is small
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: re-roll          # 2026-11-22: "Yes, do that" (re-roll cam-a and day)
+  notes: Re-roll for the deviations listed above.
 youtube_url: null

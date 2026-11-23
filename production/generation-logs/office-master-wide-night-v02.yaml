@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-night
 version: v02
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
 room: Sophie's private office
@@ -42,7 +42,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: 5A3AF9C3DAD1D6E3FD92793BC40714DB781F0098CE93573626D634FD7CA35DF3
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "office-master-wide-night-v02.jpg"   # 2026-11-22, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -52,6 +52,7 @@ agent_review:
     - The lamp pools less light on the client chairs than asked; the room reads a little evenly lit
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-22: "Yes, do that" (approve cam-b, cam-d and night)
+  notes: Approved as the night state of the floor plan v2 master, with the deviations listed above.
+repo_reference_copy: assets/locations/sophie-office/office-master-wide-night.webp   # WebP conversion of the original, same resolution
 youtube_url: null

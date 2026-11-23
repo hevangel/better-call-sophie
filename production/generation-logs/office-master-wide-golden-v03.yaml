@@ -4,7 +4,7 @@ id: office-master-wide-golden
 version: v03
 status: selected             # approved by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
-location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
 room: Sophie's private office
 camera_position: cam-c
 lighting_state: golden (morning sun through the rear window)

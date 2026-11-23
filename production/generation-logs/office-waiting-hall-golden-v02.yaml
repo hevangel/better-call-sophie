@@ -4,7 +4,7 @@ id: office-waiting-hall-golden
 version: v02
 status: rejected            # rejected by the agent; see the deviations
 asset_type: location reference image (empty set plate)
-location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
 room: waiting room and hallway
 camera_position: cam-w2
 lighting_state: golden (late-afternoon sun through the storefront)

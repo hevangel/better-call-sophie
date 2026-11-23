@@ -85,7 +85,7 @@ Seen from the parking lot, front at the bottom. It matches the exterior take `of
 | `cam-c` | Office | Wide from the office door corner, toward the chalkboard, desk, bookcases and rear window | Establishing and entrances |
 | `cam-a` | Office | Over the client's shoulder, toward Sophie with the bookcases and rear window behind her | Sophie's coverage |
 | `cam-b` | Office | Reverse from behind Sophie's shoulder, toward the clients, with the partition, filing cabinets and the door behind them | Client coverage |
-| `cam-d` | Office | From the client side of the room, square to the chalkboard wall (PROPOSED change from "side-on beside the chalkboard", which Flow didn't produce in floor plan v1) | Sophie at the board |
+| `cam-d` | Office | From the client side of the room, square to the chalkboard wall (changed from "side-on beside the chalkboard", which Flow didn't produce in floor plan v1; approved with cam-d v02 on 2026-11-22) | Sophie at the board |
 | `cam-w1` | Waiting room | From the back of the waiting room toward the storefront: window on the left, glass door on the right | Arrivals, the client waiting |
 | `cam-w2` | Waiting room | From just inside the front door, toward the painting, the reception desk and the hallway with the office door | The walk to Sophie's door |
 | `cam-e` | Exterior | Across the parking lot, toward the storefront | Establishing and the commercial |
@@ -96,13 +96,14 @@ Generate as **images** in Flow (Nano Banana 2.1, 16:9, x1), empty sets with no p
 
 | File | View | Lighting | State |
 | --- | --- | --- | --- |
-| `office-master-wide-golden` | `cam-c` | Golden | v03 for review |
-| `office-waiting-wide-golden` | `cam-w1` | Golden | v02 for review |
-| `office-waiting-hall-golden` | `cam-w2` | Golden | v03 for review |
-| `office-exterior-dusk` | `cam-e` | Dusk | v02 for review (v01 was the building anchor) |
-| `office-cam-a-golden`, `office-cam-b-golden`, `office-cam-d-golden` | `cam-a`, `cam-b`, `cam-d` | Golden | v02 of each for review |
-| `office-master-wide-day` | `cam-c` | Day | v03 for review |
-| `office-master-wide-night` | `cam-c` | Night | v02 for review |
+| `office-master-wide-golden` | `cam-c` | Golden | v03 approved |
+| `office-waiting-wide-golden` | `cam-w1` | Golden | v02 approved |
+| `office-waiting-hall-golden` | `cam-w2` | Golden | v03 approved |
+| `office-exterior-dusk` | `cam-e` | Dusk | v02 approved (v01 was the building anchor) |
+| `office-cam-a-golden` | `cam-a` | Golden | v03 for review |
+| `office-cam-b-golden`, `office-cam-d-golden` | `cam-b`, `cam-d` | Golden | v02 of each approved |
+| `office-master-wide-day` | `cam-c` | Day | v04 for review |
+| `office-master-wide-night` | `cam-c` | Night | v02 approved |
 
 The prompts are in [production/prompts/sophie-office-v2.md](../../../production/prompts/sophie-office-v2.md).
 
@@ -135,15 +136,18 @@ The prompts are in [production/prompts/sophie-office-v2.md](../../../production/
    | `office-waiting-hall-golden` | v03 | Painting and reception desk face the front door; office door around the corner at the mouth of the hallway, white-noise machine beside it. The door's brass plate is gone | [log](../../../production/generation-logs/office-waiting-hall-golden-v03.yaml) |
    | `office-exterior-dusk` | v02 | Same building as v01; the waiting room and hallway are visible from the street, the office is not; blank sign panel | [log](../../../production/generation-logs/office-exterior-dusk-v02.yaml) |
 
-6. **Office views from master v03, generated 2026-11-22**, each with master v03 as the only reference, in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`. Not uploaded to the show project yet. **Decision needed:** approve each, or ask for a re-roll.
+6. **Office views from master v03, generated 2026-11-22**, each with master v03 as the only reference, in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`. On 2026-11-22 the showrunner **approved cam-b v02, cam-d v02 and night v02** and asked for re-rolls of cam-a and day ("Yes, do that"). The three approved takes are uploaded to the show project under their file names. Repo copies: [office-cam-b-golden.webp](office-cam-b-golden.webp), [office-cam-d-golden.webp](office-cam-d-golden.webp), [office-master-wide-night.webp](office-master-wide-night.webp). **Decision needed:** approve cam-a v03 and day v04, or ask for another re-roll.
 
-   | View | Take | Agent verdict | Log |
+   | View | Take | Result | Log |
    | --- | --- | --- | --- |
-   | `office-cam-a-golden` | v02 | Desk, window and bookcases backlit; both client chairs became wingbacks, a sliver of an extra window at the right edge, logo on the laptop | [log](../../../production/generation-logs/office-cam-a-golden-v02.yaml) |
-   | `office-cam-b-golden` | v02 | Correct reverse: door on the left, chalkboard and filing cabinets on the right, both chairs facing the desk | [log](../../../production/generation-logs/office-cam-b-golden-v02.yaml) |
-   | `office-cam-d-golden` | v02 | Chalkboard square-on with only the drawing; the diplomas carry near-readable pseudo-text | [log](../../../production/generation-logs/office-cam-d-golden-v02.yaml) |
-   | `office-master-wide-day` | v03 | Cooler than golden, but the lamp still looks lit and the change is small | [log](../../../production/generation-logs/office-master-wide-day-v03.yaml) |
-   | `office-master-wide-night` | v02 | Good: dark window, lamp-lit desk, hallway spill on the door | [log](../../../production/generation-logs/office-master-wide-night-v02.yaml) |
+   | `office-cam-a-golden` | v02 | Re-roll requested: both client chairs became wingbacks, a sliver of an extra window at the right edge, logo on the laptop | [log](../../../production/generation-logs/office-cam-a-golden-v02.yaml) |
+   | `office-cam-a-golden` | v03 | **For review.** The chairs are now right (wingback and visitor chair), but a sofa and a window strip appear at the right edge, and the laptop logo is still there | [log](../../../production/generation-logs/office-cam-a-golden-v03.yaml) |
+   | `office-cam-a-golden` | v04 | Rejected by the agent: tighter framing, but two extra wingbacks in the foreground and the right-wall window is back | [log](../../../production/generation-logs/office-cam-a-golden-v04.yaml) |
+   | `office-cam-b-golden` | v02 | **Approved.** Correct reverse: door on the left, chalkboard and filing cabinets on the right, both chairs facing the desk | [log](../../../production/generation-logs/office-cam-b-golden-v02.yaml) |
+   | `office-cam-d-golden` | v02 | **Approved.** Chalkboard square-on with only the drawing; blur the diplomas' near-readable pseudo-text before close-ups | [log](../../../production/generation-logs/office-cam-d-golden-v02.yaml) |
+   | `office-master-wide-day` | v03 | Re-roll requested: the lamp still looks lit and the change from golden is small | [log](../../../production/generation-logs/office-master-wide-day-v03.yaml) |
+   | `office-master-wide-day` | v04 | **For review.** Neutral overcast daylight, lamp off, clearly different from golden and night; logo on the laptop | [log](../../../production/generation-logs/office-master-wide-day-v04.yaml) |
+   | `office-master-wide-night` | v02 | **Approved.** Dark window, lamp-lit desk, hallway spill on the door | [log](../../../production/generation-logs/office-master-wide-night-v02.yaml) |
 
 7. First pack of views from master v02 (2026-11-22), made with floor plan v1. The interior views are **superseded** by floor plan v2 (cam-b showed a corner unit with a side window; the office was open to the storefront), and their logs are now `rejected`. They were already uploaded to the show's Flow project under their file names and are still there. The exterior v01 was the anchor for the building.
 

@@ -103,3 +103,27 @@ Use the attached image as the reference for the room: the same room, same furnit
 ```text
 <office anchor> Keep exactly the same camera position, framing, furniture and props as the reference image. Change only the lighting to night: the window behind the desk is black, its blinds almost closed, and the room is dark except for the lit green banker's lamp, which pools warm light on the desk, the stacked books and the two client chairs. A faint warm spill of light comes from the hallway through the open door in the right foreground. Deep shadows on the bookcases, the chalkboard and the ceiling. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
 ```
+
+## office-cam-a-golden v03 (`cam-a`, re-roll)
+
+Fixes v02: both client chairs became wingbacks, a second window showed on the right wall, and the laptop had a logo.
+
+```text
+<office anchor> New camera position: medium-wide shot from just behind the two client chairs, at seated eye level, looking straight at the empty desk and the empty high-backed chair. The two client chairs are different from each other and their tops are soft in the foreground: on the left, the oxblood tufted leather wingback with tall wings; on the right, a smaller brown leather visitor chair with a low rounded back and wooden arms, and no wings. Behind the desk: the only window in the room, with half-open blinds, between the two bookcases, the bust on the right bookcase. The edge of the chalkboard is at the left edge of the frame. At the right edge of the frame, the plain cream right wall with no window, no blinds and no opening. Low golden morning sun shines through the blinds behind the desk, toward the camera: a warm backlight, slatted light across the desktop, the banker's lamp lit. The laptop lid is plain brushed silver with no logo. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-cam-a-golden v04 (`cam-a`, re-roll)
+
+Fixes v03: the client chairs were right, but a leather sofa and a window strip appeared on the right wall. This take frames tighter so the right wall stays out of shot.
+
+```text
+<office anchor> New camera position: a symmetrical, tighter medium shot from just behind the two client chairs, at seated eye level, centered on the window behind the desk. The frame runs from the edge of the chalkboard and the diplomas on the left to the outer edge of the right bookcase on the right; the right wall is out of frame. In the foreground, soft and out of focus: on the left, the top of the oxblood tufted leather wingback with tall wings; on the right, the top of a smaller brown leather visitor chair with a low rounded back and wooden arms, and no wings. These are the only two seats besides the desk chair: no sofa, no couch, no third armchair. In the middle ground, the empty desk and the empty high-backed chair. Behind the desk: the window with half-open blinds between the two bookcases, the bust on the right bookcase. Low golden morning sun shines through the blinds toward the camera: a warm backlight, slatted light across the desktop, the banker's lamp lit. The laptop lid is plain brushed silver with no logo. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-master-wide-day v04 (`cam-c`, re-roll)
+
+Fixes v03: the lamp still looked lit and the light stayed warm, so the day state was barely different from the golden master.
+
+```text
+<office anchor> Keep exactly the same camera position, framing, furniture and props as the reference image. This is the same room on a bright overcast day at noon, with no direct sun. Remove every trace of golden, orange or amber light, and every sunbeam and slatted stripe. The window behind the desk shows a flat, bright white-gray sky through the half-open blinds, and soft, even, cool white daylight fills the room from it. The banker's lamp is switched off: its green glass shade is unlit and dark green, with no glow and no pool of light under it. Walls look pale neutral cream, shadows are soft and cool gray, the wood looks brown rather than orange. Color temperature: cool daylight, about 6500K, like an ordinary office at lunchtime. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```

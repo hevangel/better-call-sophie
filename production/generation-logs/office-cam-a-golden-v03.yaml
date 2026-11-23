@@ -1,0 +1,66 @@
+# Generation log: Sophie's office (floor plan v2), office-cam-a-golden, take v03.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-cam-a-golden
+version: v03
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
+room: Sophie's private office
+camera_position: cam-a
+lighting_state: golden (morning sun through the rear window)
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High                # set to High and read back just before this take (the composer had reset to Video mode, Low)
+reference_images:            # attached in this order with More options > Add to prompt
+  - office-master-wide-golden v03 (Flow media "Lawyer private office layout"; the only reference)
+
+prompt_source: 'production/prompts/sophie-office-v2.md, section "office-cam-a-golden v03", with <office anchor> replaced by the "Office anchor" block, verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 2         # newest first
+  name: "Office interior with desk and ch…"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 2 --to production/exports/locations/sophie-office`.
+mistaken_first_submission: >-
+  The first submission of this prompt, at 2026-11-22T23:25:01-07:00, ran with the Flow composer in
+  Video mode ("Video · 360p · 8s", Ingredients) by mistake. The cause is not known: the composer was in image mode
+  for the 21:26 night take, and the show project was used for uploads in between. It made a draft video in the work project, which is not used. The script now
+  refuses to submit unless the composer shows Nano Banana.
+generation_datetime: "2026-11-22T23:32:00-07:00"   # Start generation clicked; tile appeared about 30 s later
+
+output:
+  original_filename: "Office_interior_with_desk_and_5693cc9b.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Office_interior_with_desk_and_5693cc9b.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-cam-a-golden-v03.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: BCFD84E9AAC163E76A293D5DDCED95F85353C3C6DC9CC92BA933C24006AAA013
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - The two client chairs now differ: oxblood wingback on the left, brown leather visitor chair with wooden arms on the right
+    - Desk, high-backed chair, lit banker's lamp, stacked books, laptop and card holder; window with blinds between the two bookcases, bust on the right bookcase
+    - Chalkboard and six diplomas on the left wall; slatted golden light on the left wall
+  deviations:
+    - A brown leather sofa and a blurred chair appear at the right of the frame; the office has no sofa
+    - A strip of a second window with blinds at the right edge, on the wall that should be plain
+    - Apple-style logo still on the laptop lid
+    - The chalkboard drawing is cropped and the trolley itself is not visible; chairs are sharp rather than soft foreground
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null
