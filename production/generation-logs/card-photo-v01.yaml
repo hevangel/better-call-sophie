@@ -1,0 +1,52 @@
+# Generation log: marketing v2, card-photo, take v01.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: card-photo
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: business card front photo, text-free
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit
+settings_shown_in_flow:      # radios read as checked in the composer settings just before submit
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High
+reference_images:            # attached in this order with More options > Add to prompt
+  - sophie-portrait-age27 v02 (Flow media "Character design reference photo…" in this project; the approved face)
+
+prompt_source: 'production/prompts/marketing-v2.md, section "card-photo v01", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 2         # newest first
+  name: "Woman pointing at camera"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image, set the aspect ratio or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  set the composer settings, attach the references by Flow media name, fill the prompt, Start generation.
+  Downloaded with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 2 --to production/exports/marketing`.
+generation_datetime: "2026-11-23T02:12:42-07:00"   # Start generation clicked
+
+output:
+  original_filename: "Woman_pointing_at_camera_d0cf68e4.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/marketing/Woman_pointing_at_camera_d0cf68e4.jpg"   # gitignored
+  working_copy: production/exports/marketing/card-photo-v01.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: C5442B428ED1A98F5930576398001A4729DB0A8425F6C9D6FA29E9E38CAC904F
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - The approved face, pointing at the camera with a playful half-smile, on the right third
+    - Flat saturated yellow backdrop; the left two-thirds is empty for text; no lettering
+  deviations:
+    - Neither eyebrow is noticeably raised
+
+showrunner_review:
+  decision: null
+  notes: null

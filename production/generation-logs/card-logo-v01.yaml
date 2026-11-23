@@ -1,0 +1,51 @@
+# Generation log: marketing v2, card-logo, take v01.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: card-logo
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: business card emblem, text-free
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit
+settings_shown_in_flow:      # radios read as checked in the composer settings just before submit
+  aspect_ratio: "1:1"
+  count: x1
+  quality: High
+reference_images: []        # text only
+
+prompt_source: 'production/prompts/marketing-v2.md, section "card-logo v01", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 1         # newest first
+  name: "Owl on balance scale emblem"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image, set the aspect ratio or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  set the composer settings, attach the references by Flow media name, fill the prompt, Start generation.
+  Downloaded with `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/marketing`.
+generation_datetime: "2026-11-23T02:13:22-07:00"   # Start generation clicked
+
+output:
+  original_filename: "Owl_on_balance_scale_emblem_d31d3cf7.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/marketing/Owl_on_balance_scale_emblem_d31d3cf7.jpg"   # gitignored
+  working_copy: production/exports/marketing/card-logo-v01.jpg   # identical bytes
+  format: JPEG
+  resolution: 1024x1024
+  sha256: 42F663AB3822A652AA72E4F2AF144FC668B89A6AFD5D0E99A12DC48B3B2587F3
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - Owl perched on a balance scale inside a laurel wreath; no column, pillar or pedestal
+    - Flat dark burgundy-brown on yellow; no lettering
+  deviations:
+    - The scale has a stand and base, which reads as a scale foot rather than a column
+
+showrunner_review:
+  decision: null
+  notes: null

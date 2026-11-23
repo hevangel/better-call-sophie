@@ -13,6 +13,20 @@ All entries below were generated in this project conversation using image genera
 - `a_bold_graphic_advertising_style_poster_business.png` (business-card front).
 - `better_call_sophie_business_card.png` (business-card back).
 
+## v2 poster and business card (PROPOSED, 2026-11-23)
+
+Showrunner direction (2026-11-23): regenerate the poster and card with Sophie's approved face ([reference-front.webp](../assets/characters/sophie-goodman/reference-front.webp)); set the poster in her approved office; generate text-free art and add all lettering afterwards; card logo is the owl with scales, no column. The concept files above stay in place until the showrunner approves v2.
+
+| Piece | Art (Google Flow, Nano Banana 2.1) | Composed output (gitignored until approved) |
+| --- | --- | --- |
+| TV poster 4:3 | `poster-art` v01, [log](../production/generation-logs/poster-art-v01.yaml) | `production/exports/marketing/poster-tv-4x3-v2.png` (1200x896) |
+| Card front | `card-photo` v01, [log](../production/generation-logs/card-photo-v01.yaml) | `production/exports/marketing/business-card-front-v2.png` (1050x600, 3.5x2 in at 300 dpi) |
+| Card back | `card-logo` v01, [log](../production/generation-logs/card-logo-v01.yaml) | `production/exports/marketing/business-card-back-v2.png` (1050x600) |
+
+- Prompts: [production/prompts/marketing-v2.md](../production/prompts/marketing-v2.md).
+- Lettering: [scripts/compose_marketing.py](../scripts/compose_marketing.py), run with `uv run --no-project --with pillow python scripts/compose_marketing.py`. It uses the Windows system fonts Arial Black, Georgia and Brush Script MT; check their license terms before any commercial print run, or swap in open-licensed fonts.
+- The v2 card keeps the fictional 555 phone number and drops the concept card's email and web addresses, because those domains may belong to real people. It adds "Albuquerque, New Mexico".
+
 Avoid relying on the fictional email/web addresses as real, registered services. Before print, web deployment, or release, verify names and text with a human-readable final proof. Future assets should list prompt, tool, model if available, reference images, versions, review decision and license/rights notes. Distinguish **concept**, **approved**, and **released**.
 
 ## Namespaces
