@@ -20,6 +20,14 @@
 
 Agents drive Flow and Flow Music through `external/any-agent-orchestrator`, check the outputs and log them. The commands, the known gaps and the per-shot loop are in [flow-automation.md](flow-automation.md). Steps that AAO cannot do yet are done by hand and logged in the same way.
 
+## Post-production text and graphics
+
+**Showrunner direction (2026-11-23), for agents:** add text and graphics to video with **traditional editing tools**. These include ffmpeg filters, OpenCV tracking and warping, Blender's tracker and compositor, and Remotion for animated titles. Do not use AI regeneration, inpainting or video-to-video for this.
+
+- Script the overlay so it can be re-run, and log the tool, version and command or script in the shot record.
+- Text on a surface in the scene, such as a chalkboard, sign or screen: corner-pin or track the surface, then matte out anything that passes in front of it. The first worked example is D01 shot 4, in [production/demo/d01-commercial-30s.md](../production/demo/d01-commercial-30s.md#shot-4-test-chalk-text-generated-vs-added-in-post).
+- Generating readable text in Flow is allowed only as a showrunner-approved test.
+
 ## Episode production directory
 
 ~~~text

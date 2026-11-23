@@ -57,5 +57,6 @@ The pilot needs every row. ● = the main test, ○ = also used.
 - Shot IDs: `demo-d01-sh01`, `demo-op-sh03`, `demo-t2-sh04`; takes `-v01`, `-v02`.
 - Every shot gets a record in `production/shot-lists/demo/` and a generation log ([production-pipeline.md](../../spec/production-pipeline.md)).
 - 16:9, one output per generation. Use whichever Flow model `aao flow options` shows. Omni Flash 1.2 is the working default, because Veo 3.1 Fast/Quality and Omni Flash 1.1 retire on 2026-12-05.
-- **One speaker per generation.** Readable text (logos, phone numbers, screens, nameplates) is always added in post, never generated.
+- **One speaker per generation.** Readable text (logos, phone numbers, screens, nameplates) is added in post, never generated. The exception is a showrunner-approved comparison test, such as D01 shot 4, which makes the same shot with generated text and with text added in post.
+- **Text and graphics in post use traditional editing tools** (ffmpeg, OpenCV, Blender, Remotion), not AI regeneration. See [production-pipeline.md](../../spec/production-pipeline.md#post-production-text-and-graphics).
 - Original fictional people only: no real actors' likenesses or voices, and no franchise footage or music.
