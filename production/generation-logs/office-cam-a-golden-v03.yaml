@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-cam-a-golden
 version: v03
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # approved by the showrunner, 2026-11-22
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
 room: Sophie's private office
@@ -47,7 +47,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: BCFD84E9AAC163E76A293D5DDCED95F85353C3C6DC9CC92BA933C24006AAA013
-uploaded_to_show_project_as: null   # upload after the showrunner approves
+uploaded_to_show_project_as: "office-cam-a-golden-v03.jpg"   # 2026-11-23, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -61,6 +61,7 @@ agent_review:
     - The chalkboard drawing is cropped and the trolley itself is not visible; chairs are sharp rather than soft foreground
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-22: "Approve both"
+  notes: Approved as the floor plan v2 desk view, with the deviations listed above; keep the right edge (sofa, window strip) out of shot or crop it.
+repo_reference_copy: assets/locations/sophie-office/office-cam-a-golden.webp   # WebP conversion of the original, same resolution
 youtube_url: null
