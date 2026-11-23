@@ -6,13 +6,13 @@ The agent may mark takes `generated` or `rejected`; only the showrunner sets `se
 
 | Shot | Take | Status | Flow name | Line (Whisper) | Agent notes | Log |
 | --- | --- | --- | --- | --- | --- | --- |
-| `demo-d01-sh01` | v01 | generated | Woman at chalkboard holding chalk | word-perfect | Office matches the wide master well; she walks toward the camera after turning | [log](../../generation-logs/demo-d01-sh01-v01.yaml) |
-| `demo-d01-sh02` | v01 | generated | Man staring at phone | silent (buzz only) | One-shot cameo, no references by design; screen faces away | [log](../../generation-logs/demo-d01-sh02-v01.yaml) |
+| `demo-d01-sh01` | v01 | **selected** (showrunner, 2026-11-23) | Woman at chalkboard holding chalk | word-perfect | Office matches the wide master well; she walks toward the camera after turning | [log](../../generation-logs/demo-d01-sh01-v01.yaml) |
+| `demo-d01-sh02` | v01 | **selected** (showrunner, 2026-11-23) | Man staring at phone | silent (buzz only) | One-shot cameo, no references by design; screen faces away | [log](../../generation-logs/demo-d01-sh02-v01.yaml) |
 | `demo-d01-sh03` | v01 | rejected (re-roll asked) | Woman speaking at desk | word-perfect | Sophie consistent; **office restyled** against cam-a (plants, globe, clock; no laptop or bust) | [log](../../generation-logs/demo-d01-sh03-v01.yaml) |
-| `demo-d01-sh03` | v02 | generated | Woman leaning forward talking | word-perfect | Re-roll with the room spelled out: cam-a angle over the wingback, bookcases, bust, diplomas, lamp all right; still a small plant and globe, no laptop, cooler light | [log](../../generation-logs/demo-d01-sh03-v02.yaml) |
+| `demo-d01-sh03` | v02 | **selected** (showrunner, 2026-11-23) | Woman leaning forward talking | word-perfect | Re-roll with the room spelled out: cam-a angle over the wingback, bookcases, bust, diplomas, lamp all right; still a small plant and globe, no laptop, cooler light | [log](../../generation-logs/demo-d01-sh03-v02.yaml) |
 | `demo-d01-sh04a` | v01 | **selected** (showrunner, 2026-11-23) | Woman tapping chalkboard with text | word-perfect | Version A: Flow's chalk text correct and stable, plus an unasked underline | [log](../../generation-logs/demo-d01-sh04a-v01.yaml) |
 | `demo-d01-sh04b` | v01 | rejected (not chosen) | Woman tapping chalkboard with chalk | word-perfect | Version B: clean board; text added in post with `scripts/chalk_overlay.py` | [log](../../generation-logs/demo-d01-sh04b-v01.yaml) |
-| `demo-d01-sh05` | v01 | generated | Woman pointing and speaking | word-perfect | Points at the lens, wry smile and a wink | [log](../../generation-logs/demo-d01-sh05-v01.yaml) |
+| `demo-d01-sh05` | v01 | **selected** (showrunner, 2026-11-23) | Woman pointing and speaking | word-perfect | Points at the lens, wry smile and a wink | [log](../../generation-logs/demo-d01-sh05-v01.yaml) |
 
 ## Rough cut v01 (2026-11-23)
 
@@ -26,4 +26,6 @@ The agent may mark takes `generated` or `rejected`; only the showrunner sets `se
 
 `production/exports/demo-d01-roughcut/demo-d01-roughcut-v03.mp4` (gitignored), 25.0 s: as v02, with shot 3 **v02** trimmed to 1.0–7.0 s (speech 1.72–6.5 s).
 
-Still to do for D01: the showrunner picks takes for shots 1, 2, 3 and 5 (or asks for re-rolls); the Flow Music jingle; the end card in post; the mix; the YouTube upload.
+**All picture takes are selected** (showrunner, 2026-11-23: "Accept all four", after "Version A (Flow)" for shot 4). Rough cut v03 is the picture lock candidate.
+
+Still to do for D01: the Flow Music jingle; the end card in post; the mix; the YouTube upload.

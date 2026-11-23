@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
 id: demo-d01-sh02
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # accepted by the showrunner for the commercial, 2026-11-23
 piece: production/demo/d01-commercial-30s.md
 
 tool: Google Flow (web), video mode, Ingredients, Flow agent off
@@ -56,6 +56,6 @@ agent_review:
     - The phone glow on his face is faint; the light is mostly cool ambient
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Accept all four"
+  notes: Accepted for D01 with the deviations listed above.
 youtube_url: null
