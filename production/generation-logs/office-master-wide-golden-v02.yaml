@@ -87,5 +87,5 @@ showrunner_review:
   decision: approved          # 2026-11-22: "Approve v02"
   notes: Approved as the master wide; the deviations listed above were accepted as they are.
 uploaded_to_show_project_as: "office-master-wide-golden-v02.jpg"   # 2026-11-22, `aao flow upload` to Better Call Sophie - Flow Experiments (c9df3f16-dbf1-459b-a447-b20fbd978552)
-repo_reference_copy: assets/locations/sophie-office/office-master-wide-golden.webp   # WebP conversion of the original, same resolution
+repo_reference_copy: null   # the WebP copy at assets/locations/sophie-office/office-master-wide-golden.webp was replaced by v03 on 2026-11-22; this version is in git history at commit 5faaf8e
 youtube_url: null

@@ -43,7 +43,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: 22FDDA807C3B6085141FDFBB3844BACDBF25941EDD80D4CE3EB5F9AC4E935E63
-uploaded_to_show_project_as: null   # approved; upload still pending (the 2026-11-22 batch upload stopped after the first file)
+uploaded_to_show_project_as: "office-exterior-dusk-v02.jpg"   # 2026-11-22, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -56,4 +56,5 @@ agent_review:
 showrunner_review:
   decision: approved          # 2026-11-22: "Approve all four"
   notes: Approved as a floor plan v2 master, with the deviations listed above.
+repo_reference_copy: assets/locations/sophie-office/office-exterior-dusk.webp   # WebP conversion of the original, same resolution
 youtube_url: null

@@ -42,7 +42,7 @@ output:
   format: JPEG
   resolution: 1376x768
   sha256: BD2C8EB3F84D2DD3F77C383099739E760B0FBD6545051CAE12B289DC280B934C
-uploaded_to_show_project_as: null   # approved; upload still pending (the 2026-11-22 batch upload stopped after the first file)
+uploaded_to_show_project_as: "office-waiting-hall-golden-v03.jpg"   # 2026-11-22, `aao flow upload` to c9df3f16-dbf1-459b-a447-b20fbd978552; tile seen in the project although the command reported "0 of 1 media appeared" (hevangel/any-agent-orchestrator#9)
 
 agent_review:
   matches:
@@ -57,4 +57,5 @@ agent_review:
 showrunner_review:
   decision: approved          # 2026-11-22: "Approve all four"
   notes: Approved as a floor plan v2 master, with the deviations listed above.
+repo_reference_copy: assets/locations/sophie-office/office-waiting-hall-golden.webp   # WebP conversion of the original, same resolution
 youtube_url: null

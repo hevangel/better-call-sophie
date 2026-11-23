@@ -63,3 +63,43 @@ References: exterior v01 (first), waiting v02 (second).
 ```text
 Keep exactly the same strip mall, building, neighboring shops, sign panel, mountains, sky, parking lot, camera position and framing as the first attached image. Change only what is seen through the storefront. Through the window with half-open venetian blinds, the warmly lit waiting room from the second attached image: mismatched waiting chairs, a side table, a water cooler, cream walls. Through the glass door on the right, a narrow hallway running straight back with a closed wooden office door on its left side. There is no desk, no banker's lamp and no bookcase visible from the street: Sophie's private office is a separate room at the back, out of sight. The sign panel above the window is a clean, blank, gaudy yellow and red panel. The neighboring shop signs are blank and out of focus, with no neon lettering. No lens flare. No people, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
 ```
+
+## Views from the approved office master v03
+
+Each view attaches **office master v03** (Flow media "Lawyer private office layout") as the only reference. Each prompt starts with `<office anchor>`, replaced by the block below before submitting. Take numbers continue from the floor plan v1 takes with the same IDs. The anchor describes the room as v03 shows it: the camera of v03 stands in the open door, at the front end of the right wall.
+
+## Office anchor
+
+```text
+Use the attached image as the reference for the room: the same room, same furniture positions, same props, same materials and colors. Sophie Goodman's private office at the back of a strip-mall storefront unit, a small closed room with solid walls. Back wall: one window with half-open venetian blinds in the middle, flanked by two tall dark-wood bookcases packed with worn books, a small white bust on top of the right bookcase. In front of the window: a dark walnut executive desk facing the front of the room, a high-backed brown leather chair behind it, a green glass banker's lamp, three stacked books, a silver laptop and a brass card holder on the desk. In front of the desk, facing it: an oxblood tufted leather wingback on the left and a brown leather visitor chair on the right. Left wall: a slate chalkboard in a wooden frame with only a chalk trolley-problem drawing, six framed diplomas beside it, two battered beige metal filing cabinets near the front corner. Right wall: plain, with a solid dark-wood door at its front end. Warm cream plaster walls, a cheap drop ceiling, a faded Persian-style rug, a worn wood-look floor.
+```
+
+## office-cam-a-golden v02 (`cam-a`, toward the desk)
+
+```text
+<office anchor> New camera position: medium-wide shot from just behind the two client chairs, at seated eye level, looking straight at the empty desk and the empty high-backed chair. The tops of the wingback (left) and the visitor chair (right) are soft in the foreground. Behind the desk: the window with half-open blinds between the two bookcases, the bust on the right bookcase. The edge of the chalkboard is at the left edge of the frame. Low golden morning sun shines through the blinds behind the desk, toward the camera: a warm backlight, slatted light across the desktop, the banker's lamp lit. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-cam-b-golden v02 (`cam-b`, reverse toward the client chairs)
+
+```text
+<office anchor> New camera position: the reverse angle. The camera stands behind the desk, just beside the empty high-backed chair, at seated eye level, looking toward the front of the room, away from the window. The edge of the desk, the lit banker's lamp and the stacked books are soft in the foreground. The two empty client chairs face the camera: the wingback on the right of the frame and the visitor chair on the left. Behind them, the plain front wall of the room. On the right of the frame: the chalkboard wall, with the filing cabinets in the front corner. On the left of the frame: the plain wall with the solid dark-wood door at its front end, closed. No storefront glass and no window in view. Low golden morning sun from the window behind the camera lays long warm slatted shadows forward across the rug, the chairs and the front wall. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-cam-d-golden v02 (`cam-d`, toward the chalkboard)
+
+```text
+<office anchor> New camera position: from the right side of the room, beside the visitor chair, at standing eye level, looking straight at the left wall. The slate chalkboard with the chalk trolley drawing is square to the camera in the center of the frame, the six framed diplomas to its right and the filing cabinets at the right edge. In the left foreground, the end of the desk and the lit banker's lamp; the back of the wingback in the lower right foreground. On the left edge of the frame, the corner of a bookcase and the window blinds. Warm golden morning sun from the window on the left throws slatted light across the chalkboard wall. The chalkboard shows only the trolley drawing: tracks that split, a trolley, small stick figures, a lever, and no words. No people, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-master-wide-day v03 (`cam-c`, day)
+
+```text
+<office anchor> Keep exactly the same camera position, framing, furniture and props as the reference image. Relight the whole scene as midday: no golden or orange light anywhere. Bright, neutral white daylight comes through the half-open blinds of the window behind the desk and throws crisp white stripes across the desk, the chairs and the rug. Walls pale cream under neutral light, cool gray shadows. The green banker's lamp is switched OFF and dark. Overall color temperature: cool daylight, around 6500K. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```
+
+## office-master-wide-night v02 (`cam-c`, night)
+
+```text
+<office anchor> Keep exactly the same camera position, framing, furniture and props as the reference image. Change only the lighting to night: the window behind the desk is black, its blinds almost closed, and the room is dark except for the lit green banker's lamp, which pools warm light on the desk, the stacked books and the two client chairs. A faint warm spill of light comes from the hallway through the open door in the right foreground. Deep shadows on the bookcases, the chalkboard and the ceiling. No people, no writing on the chalkboard, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design, 16:9.
+```

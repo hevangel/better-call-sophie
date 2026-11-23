@@ -1,0 +1,59 @@
+# Generation log: Sophie's office (floor plan v2), office-cam-b-golden, take v02.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-cam-b-golden
+version: v02
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (APPROVED 2026-11-22)
+room: Sophie's private office
+camera_position: cam-b
+lighting_state: golden (morning sun through the rear window)
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before master v02; not re-read for this take
+reference_images:            # attached in this order with More options > Add to prompt
+  - office-master-wide-golden v03 (Flow media "Lawyer private office layout"; the only reference)
+
+prompt_source: 'production/prompts/sophie-office-v2.md, section "office-cam-b-golden v02", with <office anchor> replaced by the "Office anchor" block, verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 4         # newest first
+  name: "Office interior reverse angle view"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 4 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T21:23:36-07:00"   # Start generation clicked; tile appeared about 40 s later
+
+output:
+  original_filename: "Office_interior_reverse_angle_view_acc39b55.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Office_interior_reverse_angle_view_acc39b55.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-cam-b-golden-v02.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 223471B58EE29C6B6FD230EF8A1261BD3F31F4BE5AC39959A2C46DE70896B3D5
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - Correct reverse: the closed office door on the left wall of frame, the chalkboard, diplomas and filing cabinets on the right
+    - Wingback on the right of frame and the visitor chair on the left, both facing the desk; plain front wall, no storefront glass
+    - Desk chair, lamp, stacked books and laptop in the foreground; warm slatted light
+  deviations:
+    - Slatted light falls mainly on the chalkboard wall, not forward from the window behind the camera
+    - The filing cabinets are mismatched in height
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

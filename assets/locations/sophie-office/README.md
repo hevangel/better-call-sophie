@@ -1,6 +1,6 @@
 # Location: Goodman Philosophical Consulting — Sophie's office
 
-**Status:** concept APPROVED (2026-11-22). **Floor plan v2 is APPROVED** (2026-11-22, with its four masters) after the showrunner's review of the first reference pack: the exterior and the interiors disagreed (corner unit vs. mid-row unit, door position), and the office needs privacy, with the waiting area and Sophie's own office as separate rooms. Floor plan v1 and its master wide v02 are superseded; v02's furniture and props carry over. Next: generate the remaining views from the approved masters.
+**Status:** concept APPROVED (2026-11-22). **Floor plan v2 is APPROVED** (2026-11-22, with its four masters) after the showrunner's review of the first reference pack: the exterior and the interiors disagreed (corner unit vs. mid-row unit, door position), and the office needs privacy, with the waiting area and Sophie's own office as separate rooms. Floor plan v1 and its master wide v02 are superseded; v02's furniture and props carry over. The office views made from the approved private-office master are waiting for review (see Decisions).
 
 ## Concept
 
@@ -85,7 +85,7 @@ Seen from the parking lot, front at the bottom. It matches the exterior take `of
 | `cam-c` | Office | Wide from the office door corner, toward the chalkboard, desk, bookcases and rear window | Establishing and entrances |
 | `cam-a` | Office | Over the client's shoulder, toward Sophie with the bookcases and rear window behind her | Sophie's coverage |
 | `cam-b` | Office | Reverse from behind Sophie's shoulder, toward the clients, with the partition, filing cabinets and the door behind them | Client coverage |
-| `cam-d` | Office | Side-on beside the chalkboard | Sophie at the board, profile two-shots |
+| `cam-d` | Office | From the client side of the room, square to the chalkboard wall (PROPOSED change from "side-on beside the chalkboard", which Flow didn't produce in floor plan v1) | Sophie at the board |
 | `cam-w1` | Waiting room | From the back of the waiting room toward the storefront: window on the left, glass door on the right | Arrivals, the client waiting |
 | `cam-w2` | Waiting room | From just inside the front door, toward the painting, the reception desk and the hallway with the office door | The walk to Sophie's door |
 | `cam-e` | Exterior | Across the parking lot, toward the storefront | Establishing and the commercial |
@@ -100,8 +100,9 @@ Generate as **images** in Flow (Nano Banana 2.1, 16:9, x1), empty sets with no p
 | `office-waiting-wide-golden` | `cam-w1` | Golden | v02 for review |
 | `office-waiting-hall-golden` | `cam-w2` | Golden | v03 for review |
 | `office-exterior-dusk` | `cam-e` | Dusk | v02 for review (v01 was the building anchor) |
-| `office-cam-a-golden`, `office-cam-b-golden`, `office-cam-d-golden` | | Golden | After the masters are approved |
-| `office-master-wide-day`, `office-master-wide-night` | `cam-c` | Day, night | After the masters are approved |
+| `office-cam-a-golden`, `office-cam-b-golden`, `office-cam-d-golden` | `cam-a`, `cam-b`, `cam-d` | Golden | v02 of each for review |
+| `office-master-wide-day` | `cam-c` | Day | v03 for review |
+| `office-master-wide-night` | `cam-c` | Night | v02 for review |
 
 The prompts are in [production/prompts/sophie-office-v2.md](../../../production/prompts/sophie-office-v2.md).
 
@@ -120,9 +121,9 @@ The prompts are in [production/prompts/sophie-office-v2.md](../../../production/
 3. **Decision needed:** does Sophie have a receptionist? v2 assumes an empty reception desk with a bell (a solo practice that can't afford one yet). A part-time receptionist could be a recurring character.
 4. Master wide history:
    - **v01** (2026-11-22): re-roll requested. [Log](../../../production/generation-logs/office-master-wide-golden-v01.yaml).
-   - **v02** (2026-11-22): approved by the showrunner as the floor plan v1 master, with its deviations accepted (client chairs against the left wall, garbled chalk text, window on the right wall, freestanding bookcases). Superseded by floor plan v2; its desk, chairs, chalkboard, bookcases, bust, diplomas and painting carry over. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml), repo copy [office-master-wide-golden.webp](office-master-wide-golden.webp).
+   - **v02** (2026-11-22): approved by the showrunner as the floor plan v1 master, with its deviations accepted (client chairs against the left wall, garbled chalk text, window on the right wall, freestanding bookcases). Superseded by floor plan v2; its desk, chairs, chalkboard, bookcases, bust, diplomas and painting carry over. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml); its repo copy was replaced by v03 (in git history at commit 5faaf8e).
    - **v03**: floor plan v2, see decision 5.
-5. **Floor plan v2 masters, generated 2026-11-22.** **The four for-review takes were APPROVED by the showrunner on 2026-11-22** (logs set to `selected`). Made in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`; master v03 is uploaded to the show project, the other three still need uploading.
+5. **Floor plan v2 masters, generated 2026-11-22.** **The four for-review takes were APPROVED by the showrunner on 2026-11-22** (logs set to `selected`). Made in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`; all four are uploaded to the show project `Better Call Sophie - Flow Experiments` under their file names. Repo copies: [office-master-wide-golden.webp](office-master-wide-golden.webp), [office-waiting-wide-golden.webp](office-waiting-wide-golden.webp), [office-waiting-hall-golden.webp](office-waiting-hall-golden.webp), [office-exterior-dusk.webp](office-exterior-dusk.webp).
 
    | View | Take | Agent verdict | Log |
    | --- | --- | --- | --- |
@@ -134,7 +135,17 @@ The prompts are in [production/prompts/sophie-office-v2.md](../../../production/
    | `office-waiting-hall-golden` | v03 | Painting and reception desk face the front door; office door around the corner at the mouth of the hallway, white-noise machine beside it. The door's brass plate is gone | [log](../../../production/generation-logs/office-waiting-hall-golden-v03.yaml) |
    | `office-exterior-dusk` | v02 | Same building as v01; the waiting room and hallway are visible from the street, the office is not; blank sign panel | [log](../../../production/generation-logs/office-exterior-dusk-v02.yaml) |
 
-6. First pack of views from master v02 (2026-11-22), made with floor plan v1. The interior views are **superseded** by floor plan v2 (cam-b showed a corner unit with a side window; the office was open to the storefront), and their logs are now `rejected`. They were already uploaded to the show's Flow project under their file names and are still there. The exterior v01 was the anchor for the building.
+6. **Office views from master v03, generated 2026-11-22**, each with master v03 as the only reference, in Flow project `d0b10764-5004-4f27-9269-a447a70807fe`. Not uploaded to the show project yet. **Decision needed:** approve each, or ask for a re-roll.
+
+   | View | Take | Agent verdict | Log |
+   | --- | --- | --- | --- |
+   | `office-cam-a-golden` | v02 | Desk, window and bookcases backlit; both client chairs became wingbacks, a sliver of an extra window at the right edge, logo on the laptop | [log](../../../production/generation-logs/office-cam-a-golden-v02.yaml) |
+   | `office-cam-b-golden` | v02 | Correct reverse: door on the left, chalkboard and filing cabinets on the right, both chairs facing the desk | [log](../../../production/generation-logs/office-cam-b-golden-v02.yaml) |
+   | `office-cam-d-golden` | v02 | Chalkboard square-on with only the drawing; the diplomas carry near-readable pseudo-text | [log](../../../production/generation-logs/office-cam-d-golden-v02.yaml) |
+   | `office-master-wide-day` | v03 | Cooler than golden, but the lamp still looks lit and the change is small | [log](../../../production/generation-logs/office-master-wide-day-v03.yaml) |
+   | `office-master-wide-night` | v02 | Good: dark window, lamp-lit desk, hallway spill on the door | [log](../../../production/generation-logs/office-master-wide-night-v02.yaml) |
+
+7. First pack of views from master v02 (2026-11-22), made with floor plan v1. The interior views are **superseded** by floor plan v2 (cam-b showed a corner unit with a side window; the office was open to the storefront), and their logs are now `rejected`. They were already uploaded to the show's Flow project under their file names and are still there. The exterior v01 was the anchor for the building.
 
    | View | Take | Result | Log |
    | --- | --- | --- | --- |
