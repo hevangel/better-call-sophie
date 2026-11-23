@@ -62,6 +62,8 @@ This is a deliberate exception to the demo rule that readable text is added in p
 
 Both routes worked on the first try for a static camera. B gives exact control of wording and lettering and needs only four corner points per shot; A needs no post work but cannot guarantee spelling, and added an underline unasked. Neither take tested a hand crossing the text; a third take where she writes or taps on the words would test the matte.
 
+**Decision (showrunner, 2026-11-23): version A** ("Version A (Flow)"). The commercial uses Flow's own chalk text for shot 4. Version B and the overlay script stay as the record of the post route; this pick is for D01 and does not by itself change the demo rule for other pieces.
+
 Tools: [scripts/chalk_overlay.py](../../scripts/chalk_overlay.py) (overlay) and [scripts/check_lines.py](../../scripts/check_lines.py) (Whisper line check).
 
 ## End card

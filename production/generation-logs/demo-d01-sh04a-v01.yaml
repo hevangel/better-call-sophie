@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
 id: demo-d01-sh04a
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: selected             # chosen by the showrunner for shot 4, 2026-11-23
 piece: production/demo/d01-commercial-30s.md
 
 tool: Google Flow (web), video mode, Ingredients, Flow agent off
@@ -61,6 +61,6 @@ agent_review:
     - The camera frames the board closer and from a lower angle than cam-d (window and desk out of frame)
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: approved          # 2026-11-23: "Version A (Flow)"
+  notes: Chosen over version B (text added in post) for D01 shot 4; Flow's own chalk text goes in the commercial.
 youtube_url: null

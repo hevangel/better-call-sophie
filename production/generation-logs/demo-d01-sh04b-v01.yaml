@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
 id: demo-d01-sh04b
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # not chosen: the showrunner picked version A for shot 4, 2026-11-23
 piece: production/demo/d01-commercial-30s.md
 
 tool: Google Flow (web), video mode, Ingredients, Flow agent off
@@ -71,6 +71,6 @@ agent_review:
     - Same closer, lower framing than cam-d as in version A
 
 showrunner_review:
-  decision: null
-  notes: null
+  decision: not chosen        # 2026-11-23: "Version A (Flow)"
+  notes: Version B and its overlay stay as the record of the post route; scripts/chalk_overlay.py stays available.
 youtube_url: null
