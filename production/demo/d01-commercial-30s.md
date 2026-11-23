@@ -1,6 +1,6 @@
 # D01 — "Better Call Sophie" 30-second commercial
 
-**Status:** PROPOSED script and shots; not generated. Showrunner decisions on 2026-11-23: shot 4 is made in two versions (generated chalk text vs text added in post), and the end card matches the approved poster's colors.
+**Status:** PROPOSED script; **first takes of every shot generated on 2026-11-23** (shot record: [production/shot-lists/demo/demo-d01.md](../shot-lists/demo/demo-d01.md)). No take is selected yet; the jingle, end card and mix are not made. Showrunner decisions on 2026-11-23: shot 4 is made in two versions (generated chalk text vs text added in post), and the end card matches the approved poster's colors.
 
 An in-world local TV ad for Goodman Philosophical Consulting, in the spirit of grandpa's ads: earnest, a little cheesy, very sure of itself. It also works as the show's teaser. The ad shows her **mixed** starting stance: she's openly selling, but what she sells is a real principle.
 
@@ -48,6 +48,21 @@ This is a deliberate exception to the demo rule that readable text is added in p
 **Text source for B:** "IS ≠ OUGHT" rendered from a font (scripted, so the spelling is exact) or written in chalk on a real board and photographed. Record which.
 
 **Compare A and B on:** spelling in every frame; whether the text stays put on the board (no swimming or flicker); whether her hand covers it correctly; whether it looks like chalk on that board; time and number of retries. The comparison goes in the shot records and decides the rule for the OP, T4 and the pilot.
+
+### First results (2026-11-23, one take each)
+
+| | A — generated ([log](../generation-logs/demo-d01-sh04a-v01.yaml)) | B — clean plate + post ([log](../generation-logs/demo-d01-sh04b-v01.yaml)) |
+| --- | --- | --- |
+| Spelling | Correct in every sampled frame, plus an underline under "IS" that was not asked for | Exact by construction (rendered from a font) |
+| Stays on the board | Yes | Yes: OpenCV tracking, corners within 3.4 px of the pinned position over 192 frames |
+| Hand over the text | Not tested: she taps the switch figure, not the words | Not tested: she taps the trolley, not the empty corner |
+| Looks like chalk | Yes; Flow's chalk is bolder and matches the drawing | Convincing in the slate texture and sun stripes; strokes thinner than the drawing's |
+| Effort | 1 generation, about 45 s | 1 generation plus one script run (a few seconds) after picking the four corners by eye |
+| Line (Whisper) | Word-perfect | Word-perfect |
+
+Both routes worked on the first try for a static camera. B gives exact control of wording and lettering and needs only four corner points per shot; A needs no post work but cannot guarantee spelling, and added an underline unasked. Neither take tested a hand crossing the text; a third take where she writes or taps on the words would test the matte.
+
+Tools: [scripts/chalk_overlay.py](../../scripts/chalk_overlay.py) (overlay) and [scripts/check_lines.py](../../scripts/check_lines.py) (Whisper line check).
 
 ## End card
 

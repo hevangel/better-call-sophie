@@ -1,6 +1,6 @@
 # Technical demo — plan
 
-**Status:** milestone LOCKED by the showrunner (2026-11-22); all scene content and scripts below are **PROPOSED**. Nothing has been generated for the demo yet.
+**Status:** milestone LOCKED by the showrunner (2026-11-22); all scene content and scripts below are **PROPOSED**. D01's first takes were generated on 2026-11-23 ([shot record](../shot-lists/demo/demo-d01.md)); nothing else has been generated yet.
 
 **Purpose:** find out what Google Flow (with Flow Music and post-production) can do **reliably**, using short pieces, before writing the 5–8 minute pilot. Quality is not the goal yet. The goal is to have every technical piece working at least once, and repeatably, with agents driving the work ([spec/flow-automation.md](../../spec/flow-automation.md)).
 

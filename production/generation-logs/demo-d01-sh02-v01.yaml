@@ -1,0 +1,61 @@
+# Generation log: D01 commercial, demo-d01-sh02, take v01.
+# Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
+id: demo-d01-sh02
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+piece: production/demo/d01-commercial-30s.md
+
+tool: Google Flow (web), video mode, Ingredients, Flow agent off
+model: "Omni 1.2 Flash"      # composer model picker at submit
+settings_shown_in_flow:      # radios read as checked just before submit; summary "Video · 720p · 8s crop_16_9 x1"
+  mode: Video
+  input: Ingredients
+  aspect_ratio: "16:9"
+  resolution: 720p
+  count: x1
+  duration: 8s               # from the summary; the panel has no duration control
+mentions_in_prompt:          # inserted with Flow's @ picker; each also became an ingredient
+  []   # one-shot cameo: no references (showrunner, 2026-11-23)
+prompt_source: 'production/prompts/d01-commercial.md, section "demo-d01-sh02 v01", verbatim'
+
+flow_project:
+  title: "Better Call Sophie - Flow Experiments"
+  id: c9df3f16-dbf1-459b-a447-b20fbd978552
+flow_media:
+  index_at_download: 1
+  name: "Man staring at phone"
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because AAO cannot use a Flow character
+  or generate in a named project (hevangel/any-agent-orchestrator#9, gaps 1-2 in spec/flow-automation.md):
+  set the composer settings, type the prompt, insert each @ mention with Flow's asset picker, Start generation.
+  Downloaded with `uv run aao flow download c9df3f16-dbf1-459b-a447-b20fbd978552 1 --to production/exports/demo-d01-sh02`.
+generation_datetime: "2026-11-23T14:54:43-07:00"   # Start generation clicked
+
+output:
+  original_filename: "Man_staring_at_phone_f4b65086.mp4"
+  local_path: "production/exports/demo-d01-sh02/Man_staring_at_phone_f4b65086.mp4"   # gitignored
+  working_copy: production/exports/demo-d01-sh02/demo-d01-sh02-v01.mp4    # identical bytes
+  sha256: 6166635E6706973A7711F9917870343A2417B42F8984D42BE1F034A1DBC26C3E
+  bytes: 2537618
+  duration_seconds: 8.043
+  video: "h264 1280x720 24/1 fps"
+  audio: "aac 48000 Hz, 2 ch"
+  integrated_loudness_lufs: -28.1   # ffmpeg ebur128
+
+checks:
+  contact_sheet: production/exports/demo-d01-sh02/demo-d01-sh02-v01-sheet.jpg   # 1 frame per second
+  scripted_line: null   # silent shot
+  whisper: { model: small.en, word_match: null, note: "no dialogue; Whisper renders the phone buzz as words (\"Vroom, vroom, vroom, vroom.\" without word timestamps, \"denote States\" with them), no_speech_prob 0.53; not listened to by a human yet" }
+
+agent_review:
+  matches:
+    - A tired man in his late forties, pale blue shirt, loosened navy tie, at a kitchen counter at night, staring at his phone and wincing (one-shot cameo, no references by design)
+    - The phone screen faces him, so no screen is readable
+    - No music, no subtitles, no text; quiet (-28.1 LUFS) with buzzing
+  deviations:
+    - The phone glow on his face is faint; the light is mostly cool ambient
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

@@ -1,0 +1,64 @@
+# Generation log: D01 commercial, demo-d01-sh03, take v01.
+# Every value below was read from Flow, AAO, ffprobe, ffmpeg or Whisper; nothing is guessed.
+id: demo-d01-sh03
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+piece: production/demo/d01-commercial-30s.md
+
+tool: Google Flow (web), video mode, Ingredients, Flow agent off
+model: "Omni 1.2 Flash"      # composer model picker at submit
+settings_shown_in_flow:      # radios read as checked just before submit; summary "Video · 720p · 8s crop_16_9 x1"
+  mode: Video
+  input: Ingredients
+  aspect_ratio: "16:9"
+  resolution: 720p
+  count: x1
+  duration: 8s               # from the summary; the panel has no duration control
+mentions_in_prompt:          # inserted with Flow's @ picker; each also became an ingredient
+  - "Sophie Goodman"   # Flow character 63d772dc-71bc-4c69-b14c-6b28a68d9cfe (approved face, body and voice Kore)
+  - "office-cam-a-golden-v03.jpg"   # approved office view uploaded to the show project
+prompt_source: 'production/prompts/d01-commercial.md, section "demo-d01-sh03 v01", verbatim'
+
+flow_project:
+  title: "Better Call Sophie - Flow Experiments"
+  id: c9df3f16-dbf1-459b-a447-b20fbd978552
+flow_media:
+  index_at_download: 1
+  name: "Woman speaking at desk"
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because AAO cannot use a Flow character
+  or generate in a named project (hevangel/any-agent-orchestrator#9, gaps 1-2 in spec/flow-automation.md):
+  set the composer settings, type the prompt, insert each @ mention with Flow's asset picker, Start generation.
+  Downloaded with `uv run aao flow download c9df3f16-dbf1-459b-a447-b20fbd978552 1 --to production/exports/demo-d01-sh03`.
+generation_datetime: "2026-11-23T14:52:10-07:00"   # Start generation clicked
+
+output:
+  original_filename: "Woman_speaking_at_desk_87004eab.mp4"
+  local_path: "production/exports/demo-d01-sh03/Woman_speaking_at_desk_87004eab.mp4"   # gitignored
+  working_copy: production/exports/demo-d01-sh03/demo-d01-sh03-v01.mp4    # identical bytes
+  sha256: 83CA8AF4D397FD7D75C0AE361A2280A601F71BC42843CF54635BFC958A40CC64
+  bytes: 2790606
+  duration_seconds: 8.043
+  video: "h264 1280x720 24/1 fps"
+  audio: "aac 48000 Hz, 2 ch"
+  integrated_loudness_lufs: -14.6   # ffmpeg ebur128
+
+checks:
+  contact_sheet: production/exports/demo-d01-sh03/demo-d01-sh03-v01-sheet.jpg   # 1 frame per second
+  scripted_line: "Your lawyer handles what's legal. I handle what's defensible."
+  whisper: { model: small.en, word_match: true, transcript: "Your lawyer handles what's legal. I handle what's defensible.", speech_s: [0.0, 5.9] }
+
+agent_review:
+  matches:
+    - Sophie matches her character and sits behind a desk with a green banker's lamp, bookcases and a window with blinds behind her
+    - Line word-perfect (Whisper), delivered to the lens
+    - No music, no subtitles, no other text
+  deviations:
+    - Office continuity is weak: Flow restyled the room against office-cam-a-golden v03, adding plants, a globe, a clock and diplomas on the back wall; the lamp is on the left of the desk; the laptop and the bust are missing
+    - The camera is a three-quarter angle across the desk, not over the client chair
+    - She rests on her forearms but barely leans forward
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null
