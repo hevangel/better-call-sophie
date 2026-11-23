@@ -1,6 +1,6 @@
 # Sophie Goodman — Google Flow character record
 
-**Status:** the Flow character exists (created by hand during the tutorial). On **2026-11-23** its Portrait and Body images were replaced with the **approved age-27 face** (portrait v02) and the approved info text was entered (block below). The voice named **kore** is still attached from the tutorial; it was not chosen against the brief below, so the voice decision is still open.
+**Status:** the Flow character exists (created by hand during the tutorial). On **2026-11-23** its Portrait and Body images were replaced with the **approved age-27 face** (portrait v02) and the approved info text was entered (block below). The voice **Kore** (attached since the tutorial) was **approved by the showrunner on 2026-11-23** after the voice shortlist below.
 
 This file mirrors Sophie's character in Google Flow, so the repo stays the source of truth for what that character should be. The canon itself is in [spec/canon.md](../../../spec/canon.md) and [story/characters/sophie-goodman.md](../../../story/characters/sophie-goodman.md).
 
@@ -42,7 +42,7 @@ previous_images:   # still in the character's history panel
   - "Portrait: tutorial image, 'Medium studio shot of a 33-year-old woman ...', sha256 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6 (flow-character-portrait-original.jpg)"
   - "Body: tutorial triptych, 'Full-body triptych, three distinct views: front facing, 3/4 side view and back view ...' (not downloaded)"
 info_text_in_flow: approved text below, entered 2026-11-23 and read back after a reload
-voice_in_flow: kore             # shown on the character page; not chosen by the showrunner against the voice brief
+voice_in_flow: kore             # shown on the character page; Flow lists it as "Kore — Female, firm, mid pitch"; approved by the showrunner 2026-11-23 ("Keep kore")
 model_shown_on_character_page: "Nano Banana 2.1"   # model picker in the character's edit box
 last_synced: 2026-11-23
 synced_by: "playwright-cli -s=aao-web-gemini on the character page (edit, then reload and read back); images fetched at =s0 in the signed-in session"
@@ -91,15 +91,33 @@ Approved, with her age updated to late twenties to match the age lock. **Entered
 A realistic television casting reference photograph of a fictional woman named Sophie Goodman, age about 27. Dark brown wavy hair loosely pinned up, confident intelligent eyes, warm light-medium skin tone, subtle makeup, small gold hoop earrings, cream blouse and deep burgundy tailored blazer. Neutral light gray studio background, soft even lighting, camera at eye level, shoulders and face unobscured, natural expression. No writing, posters, props, extra people, watermarks or stylization. This is a consistent original fictional character design, not a portrait of a real actor.
 ```
 
-## PROPOSED — voice selection
+## PROPOSED — voice description to add to the info text (2026-11-23)
 
-Pick one of Flow's built-in voices by name, and use it for every Sophie shot from then on.
+The showrunner asked for more description of the voice in Flow. The character page has no separate voice-description field: it has the voice picker and one **Character info** box ("Describe how your character acts…", no length limit in the page). So the voice description goes there, appended after the approved text above, which stays unchanged.
+
+```text
+Voice (Kore): a firm, clear, mid-pitched woman's voice in her late twenties, General American accent. She talks fast but crisply and lands the key word of each argument with a short pause. Selling, she is bright and theatrical, with a local TV-ad rhythm and a smile you can hear. Thinking or arguing, she drops lower and quieter: short sentences, precise, a deliberate pause before a conclusion. Her dry humor is deadpan; the joke is in the timing. When angry she gets quieter and slower, never louder. Never breathy, whispery, sing-song or announcer-like.
+```
+
+Why these lines:
+
+- Kore's own label is "firm, mid pitch"; the text names it, so the description and the picked voice agree.
+- The two modes (selling and thinking) come from the approved info text and the series bible's "theatrical" persona. Flow can then match the delivery to the scene.
+- "Quieter when angry" gives the director a consistent rule for confrontation scenes, and follows "rarely raises her voice".
+- The "never" list repeats the voice brief's exclusions, which are the common failure modes of generated voices.
+- No real person, actor or character is named, so it cannot drift into a sound-alike.
+
+**Decision needed:** approve this text (or edit it); then an agent appends it in Flow and reads it back after a reload.
+
+## Voice selection — Kore (APPROVED 2026-11-23)
+
+The showrunner kept **Kore** ("Keep kore", 2026-11-23). Use it for every Sophie shot. The brief and shortlist below are kept as the record of the choice.
 
 - **Listen for:** a female voice that sounds late twenties, with a clear mid-range pitch, warm, fast and articulate. Not breathy, not announcer-like, and no accent beyond General American.
 - **Test line** (read in two moods, salesy and serious): *"Legality is your lawyer's problem. Morality? That's mine."*
 - Record the chosen voice name here and in `voice_in_flow`. Do not use a real person's voice or a sound-alike.
 
-**Decision needed:** which voice. This is the showrunner's ear; an agent can shortlist voices, but not choose one.
+**Decided:** Kore, by the showrunner on 2026-11-23.
 
 ### Shortlist (PROPOSED, 2026-11-23)
 
