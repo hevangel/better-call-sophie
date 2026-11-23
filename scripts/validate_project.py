@@ -18,7 +18,7 @@ ART = [
 ]
 SUBMODULES = [
     "external/comfyui", "external/remotion", "external/auto-editor", "external/whisper",
-    "external/any-agent-orchestrator",
+    "external/any-agent-orchestrator", "external/youtube-mcp",
 ]
 
 

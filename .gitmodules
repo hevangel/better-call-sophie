@@ -13,3 +13,6 @@
 [submodule "external/any-agent-orchestrator"]
 	path = external/any-agent-orchestrator
 	url = https://github.com/hevangel/any-agent-orchestrator.git
+[submodule "external/youtube-mcp"]
+	path = external/youtube-mcp
+	url = https://github.com/pratikgh0se/youtube-mcp

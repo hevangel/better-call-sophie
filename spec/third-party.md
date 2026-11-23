@@ -9,6 +9,7 @@ Third-party repositories are deliberately kept under `external/` as **Git submod
 | `external/auto-editor` | [WyattBlue/auto-editor](https://github.com/WyattBlue/auto-editor) | Optional automatic timing/edit experiments | Unlicense (verify included components) |
 | `external/whisper` | [openai/whisper](https://github.com/openai/whisper) | Speech transcription and subtitle/QC reference | MIT; verify model/audio usage terms |
 | `external/any-agent-orchestrator` | [hevangel/any-agent-orchestrator](https://github.com/hevangel/any-agent-orchestrator) | The showrunner's own agent orchestrator. Its playwright-cli drivers let agents drive Google Flow and Flow Music in the user's Chrome; see [flow-automation.md](flow-automation.md) | MIT. Its own nested `external/` submodules have separate licenses and are not needed for Flow |
+| `external/youtube-mcp` | [pratikgh0se/youtube-mcp](https://github.com/pratikgh0se/youtube-mcp) | MCP server for the YouTube Data API: uploads to the show's channel and sets metadata (tags, category, made for kids, altered or synthetic content), each write behind a preview-and-approve step | MIT. Needs the showrunner's own Google Cloud API key and Desktop OAuth client (never committed) |
 
 Pinned at initialization (2026-11-14):
 - ComfyUI: `eee59185ff4f43ae2d9ad122b245619d27d9daad`
@@ -19,6 +20,8 @@ Pinned at initialization (2026-11-14):
 Added 2026-11-22:
 - any-agent-orchestrator: `00ba2498cf9653a6f3a3bf581b03eb790525879f` (upstream `main`, 2026-11-22). Added because the showrunner chose it for Flow automation. Fix Flow-driver gaps upstream and then bump this pin; do not patch it here. Its nested submodules are not needed: initialize them only when using AAO features beyond Flow.
 
+Added 2026-11-23:
+- youtube-mcp: `b21d71b064854618655299a8aa179230ddffec3c` (upstream `main`, release v0.3.3, 2026-11-08). Added at the showrunner's request to upload the demo videos to [@better-call-sophie](https://www.youtube.com/@better-call-sophie) instead of uploading by hand. Review before first use (2026-11-23): MIT; dependencies `googleapis`, `@modelcontextprotocol/sdk`, `youtube-transcript`, `zod`; network calls only to `googleapis.com` and a local `127.0.0.1` sign-in callback; tokens stored in `~/.youtube-mcp` (or `YOUTUBE_MCP_STATE_DIR`), outside the repo. It asks for the broad `youtube` and `youtube.force-ssl` scopes plus `yt-analytics.readonly`, not just upload. Install and build from the pinned checkout with `npm ci` in `external/youtube-mcp` (its `node_modules/` and `dist/` are ignored upstream); run `node external/youtube-mcp/dist/index.js`. Its own setup guide is `external/youtube-mcp/docs/SETUP.md`.
 ## Working with submodules
 
 ~~~bash
