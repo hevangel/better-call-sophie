@@ -1,0 +1,53 @@
+# Generation log: Sophie Goodman age-27 portrait, take v01.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: sophie-portrait-age27
+version: v01
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: character reference portrait (candidate to replace the Flow character image)
+character: assets/characters/sophie-goodman/flow-character.md
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # read in the composer settings just before v01; same page for v02 and v03
+reference_images: []        # text only
+
+prompt_source: 'production/prompts/sophie-portrait-age27.md, section "sophie-portrait-age27 v01", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 3         # newest first
+  name: "Woman posing for casting photograph"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 3 --to production/exports/characters/sophie-goodman`.
+generation_datetime: "2026-11-23T00:16:35-07:00"   # Start generation clicked; the script's tile count did not register the new tile, so no time-to-tile is recorded
+
+output:
+  original_filename: "Woman_posing_for_casting_photograph_a0f800ab.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/characters/sophie-goodman/Woman_posing_for_casting_photograph_a0f800ab.jpg"   # gitignored
+  working_copy: production/exports/characters/sophie-goodman/sophie-portrait-age27-v01.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 41660D6692846534536702C0A3AF5A57B2A76017F8E534F3560CF9BFE7DB9700
+uploaded_to_show_project_as: null   # replaces the character image only after the showrunner approves
+
+agent_review:
+  matches:
+    - Reads late twenties to about thirty: smooth skin, no visible fine lines
+    - Dark brown wavy hair pinned up, gold hoops, cream blouse, burgundy blazer, light gray background, centered and facing the camera
+  deviations:
+    - A new face: it does not resemble the poster concept art or the current Flow portrait
+    - Calm and neutral; little of the wry confidence in the brief
+
+showrunner_review:
+  decision: null
+  notes: null

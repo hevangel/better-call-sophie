@@ -33,6 +33,18 @@ The project also holds a second character, **The Client** (ID not read). AAO's `
 
 **Result: does not read as 26–28.** The face reads early-to-mid thirties (fine lines at the eyes and mouth), which matches the "33-year-old" in its generation prompt. Wardrobe, hair, earrings and skin tone match the canon. Next: generate a new portrait with the age-27 prompt below and replace the character image before the voice is chosen.
 
+### Age-27 portrait takes (2026-11-23)
+
+Made in the work project `d0b10764-5004-4f27-9269-a447a70807fe` with the prompts in [production/prompts/sophie-portrait-age27.md](../../../production/prompts/sophie-portrait-age27.md). None has replaced the character image yet. **Decision needed:** pick a take to become Sophie's face, or ask for more.
+
+| Take | Route | Agent verdict | Log |
+| --- | --- | --- | --- |
+| v01 | Approved prompt, no reference | Reads late twenties to about thirty; a new, calmer face that matches neither the poster nor the current portrait | [log](../../../production/generation-logs/sophie-portrait-age27-v01.yaml) |
+| v02 | Approved prompt + the poster concept art as reference | Closest to the concept art (strong brows, loose curls, wry half-smile); reads late twenties, upper end | [log](../../../production/generation-logs/sophie-portrait-age27-v02.yaml) |
+| v03 | Approved prompt + the current Flow portrait as reference, asked to be younger | Rejected by the agent: almost unchanged, still early thirties | [log](../../../production/generation-logs/sophie-portrait-age27-v03.yaml) |
+
+Once a take is approved: replace the Flow character's image (by hand, since AAO cannot edit characters; gap 4), enter the approved info text, keep a small copy here as `reference-front.webp`, then shortlist voices. The poster and business card will be regenerated with the approved face.
+
 **How to sync:** AAO cannot read characters yet (gap 3 in [spec/flow-automation.md](../../../spec/flow-automation.md)). Until it can, either:
 
 - the showrunner copies the fields above from Flow's Characters page, or
