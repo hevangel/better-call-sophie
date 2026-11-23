@@ -21,7 +21,7 @@ settings_shown_in_flow:
   count: x1
 reference_images: []
 
-prompt_source: assets/locations/sophie-office/README.md, "Master prompt v02", used verbatim
+prompt_source: production/prompts/sophie-office-views.md, "Master prompt v02" (moved there from the office README on 2026-11-22), used verbatim
 prompt: >-
   Empty interior of a small storefront office in an Albuquerque strip mall, year 2030, set up like a
   small-time lawyer's office but run by a young moral philosopher. Wide establishing shot from the

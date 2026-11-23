@@ -2,7 +2,7 @@
 # Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
 id: office-master-wide-night
 version: v01
-status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+status: rejected             # superseded by floor plan v2 (showrunner direction 2026-11-22: mid-row unit, private office separate from the waiting room)
 asset_type: location reference image (empty set plate)
 location: assets/locations/sophie-office/README.md
 camera_position: cam-c

@@ -1,0 +1,60 @@
+# Generation log: Sophie's office (floor plan v2), office-waiting-hall-golden, take v03.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-waiting-hall-golden
+version: v03
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
+room: waiting room and hallway
+camera_position: cam-w2
+lighting_state: golden (late-afternoon sun through the storefront)
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before master v02; not re-read for this take
+reference_images:            # attached in this order with More options > Add to prompt
+  - office-waiting-hall-golden v02 (Flow media "Modify waiting room interior design")
+
+prompt_source: 'production/prompts/sophie-office-v2.md, section "office-waiting-hall-golden v03", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 1         # newest first
+  name: "Redesigning office waiting room …"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T17:35:36-07:00"   # Start generation clicked; tile appeared about 25 s later
+
+output:
+  original_filename: "Redesigning_office_waiting_room_…_9c7c3b69.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Redesigning_office_waiting_room_…_9c7c3b69.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-waiting-hall-golden-v03.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: BD2C8EB3F84D2DD3F77C383099739E760B0FBD6545051CAE12B289DC280B934C
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - Partition wall with the gold-framed painting facing the front door, unstaffed reception desk with a brass bell in front of it
+    - Office door at the right end of the partition, opening onto the mouth of the hallway; white-noise machine on the floor beside it
+    - Hallway runs straight back; its right wall is plain with no doors
+    - One water cooler, at the far left; waiting chairs and side table on the left
+  deviations:
+    - The brass plate on the office door is gone
+    - The restroom door and steel back door at the end of the hallway are only hinted at
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

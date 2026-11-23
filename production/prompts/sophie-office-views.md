@@ -1,6 +1,6 @@
 # Prompts: Sophie's office reference views (v01)
 
-**Status:** PROPOSED prompts, used for the first generation of each view on 2026-11-22. Results and review are in `production/generation-logs/office-*-v01.yaml`.
+**Status:** SUPERSEDED on 2026-11-22 by floor plan v2 ([prompts](sophie-office-v2.md)). These prompts were used for the first generation of each view on 2026-11-22, and are kept because the logs in `production/generation-logs/office-*-v01.yaml` point here. The floor plan v1 master prompts are at the end of this file.
 
 Each view is made in Flow image mode (Nano Banana 2.1, 16:9, High, x1), with the **approved master wide v02** attached as the only reference image (Flow's "Add to prompt"). The master is [office-master-wide-golden.webp](../../assets/locations/sophie-office/office-master-wide-golden.webp), Flow media "Philosopher office in strip mall" in project `d0b10764-5004-4f27-9269-a447a70807fe`.
 
@@ -56,4 +56,20 @@ v01 of the day view came back still golden, with the lamp on. This version names
 
 ```text
 Use the attached image as the reference for the office interior seen through the window. Exterior of that office: a small storefront unit in a single-story Albuquerque strip mall at dusk, year 2030, seen from across the parking lot at eye level, 16:9. It sits between a vape shop and a tax-preparation office. The storefront has a glass door and a large window with half-open venetian blinds; through them you can glimpse the warm interior from the reference image: the bookcases, the lit green banker's lamp and the desk. Above the window, a gaudy bright yellow and red sign panel with blank lettering. The neighboring shop signs are plain and out of focus. Sandia mountains are silhouetted in the distance under a purple and orange sky; parking lot lights are coming on over empty spaces. Gaudy outside, scholarly inside. No people, no readable text, no logos, no watermarks. Photorealistic, cinematic, prestige TV production design.
+```
+
+## Floor plan v1 masters (superseded)
+
+Moved here from the office README on 2026-11-22, when floor plan v2 replaced it.
+
+### Master prompt v02 (used for office-master-wide-golden v02)
+
+```text
+Empty interior of a small storefront office in an Albuquerque strip mall, year 2030, set up like a small-time lawyer's office but run by a young moral philosopher. Wide establishing shot from the front-door corner, eye level, 16:9. The back wall is floor-to-ceiling dark-wood bookshelves packed with worn philosophy books, with a small white marble Socrates bust on the top-right shelf. In front of the shelves stands a large, slightly scuffed dark walnut executive desk facing the front of the room, with a high-backed leather desk chair behind it; on the desk are a lit green glass banker's lamp, three stacked books, a closed silver laptop and a brass business-card holder. Two client chairs face the desk from the front: an oxblood leather wingback and a simpler matching visitor chair. On the left wall hangs a large slate chalkboard in a wooden frame with a hand-drawn chalk trolley-problem diagram: a trolley on tracks that split toward small stick figures. Beside the shelves hang framed diplomas and certificates, and a gaudy gold-framed print of a classical painting of ancient philosophers debating. A small waiting bench and a coat stand sit near the front. Warm cream plaster walls, a cheap drop ceiling, a faded Persian-style rug, a worn wood-look floor. The storefront window is behind the camera: golden-hour sun pours through its half-open venetian blinds and lays warm slatted shadows across the floor, desk and chairs. The mood is a strip-mall lawyer's office that tries a little too hard to look important, made scholarly and personal by its philosopher owner: confident, theatrical, a bit shabby, proud. No classical columns, no round windows, no flags, no statues of liberty. Photorealistic, cinematic, prestige TV production design. No people, no readable text, no logos, no watermarks.
+```
+
+### Master prompt v01 (used for office-master-wide-golden v01)
+
+```text
+Empty interior of a small philosophical consulting office in an Albuquerque strip-mall storefront, year 2030, wide establishing shot from the front-door corner, eye level, 16:9. Floor-to-ceiling dark-wood bookshelves cover the back wall, with a small Socrates bust on the top-right shelf. A scuffed dark walnut desk faces the front window, holding a green glass banker's lamp (lit), three stacked books and a closed silver laptop. An oxblood leather wingback client chair faces the desk. A slate chalkboard on the left wall shows a hand-drawn trolley-problem diagram. Warm cream plaster walls, a framed diploma, a faded Persian-style rug, wood-look floor. Golden-hour sunlight through half-open venetian blinds casts warm slatted shadows. Slightly shabby but proud and scholarly. Photorealistic, cinematic, prestige TV production design. No people, no readable text, no logos, no watermarks.
 ```

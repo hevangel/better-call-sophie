@@ -1,0 +1,59 @@
+# Generation log: Sophie's office (floor plan v2), office-exterior-dusk, take v02.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-exterior-dusk
+version: v02
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
+room: exterior
+camera_position: cam-e
+lighting_state: dusk
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before master v02; not re-read for this take
+reference_images:            # attached in this order with More options > Add to prompt
+  - office-exterior-dusk v01 (Flow media "Office storefront in strip mall")
+  - office-waiting-wide-golden v02 (Flow media "Empty waiting room interior view")
+
+prompt_source: 'production/prompts/sophie-office-v2.md, section "office-exterior-dusk v02", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 1         # newest first
+  name: "Storefront waiting room and hallway"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 1 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T17:32:37-07:00"   # Start generation clicked; tile appeared about 20 s later
+
+output:
+  original_filename: "Storefront_waiting_room_and_hallway_f006dca4.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Storefront_waiting_room_and_hallway_f006dca4.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-exterior-dusk-v02.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 22FDDA807C3B6085141FDFBB3844BACDBF25941EDD80D4CE3EB5F9AC4E935E63
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - Same strip mall, neighbors, mountains, sky, parking lot and framing as v01
+    - Through the window: the waiting room (chairs, water cooler); through the door: a hallway with wooden doors. No desk, lamp or bookcase visible from the street
+    - The sign panel is a clean blank yellow and red panel; the neighbors' signs are blank; no lens flare
+  deviations:
+    - The vape-shop look of the left neighbor is lost: it is now a plain closed shop
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

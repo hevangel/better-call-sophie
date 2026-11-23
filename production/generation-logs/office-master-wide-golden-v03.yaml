@@ -1,0 +1,61 @@
+# Generation log: Sophie's office (floor plan v2), office-master-wide-golden, take v03.
+# Every value below was read from Flow, AAO output or the downloaded file; nothing is guessed.
+id: office-master-wide-golden
+version: v03
+status: generated            # agent may set generated/rejected; only the showrunner sets selected/final
+asset_type: location reference image (empty set plate)
+location: assets/locations/sophie-office/README.md   # floor plan v2 (PROPOSED)
+room: Sophie's private office
+camera_position: cam-c
+lighting_state: golden (morning sun through the rear window)
+
+tool: Google Flow (web), image mode, direct generation (Flow agent off)
+model: "Nano Banana 2.1"     # composer settings summary at submit: Nano Banana 2.1, 16:9, x1
+settings_shown_in_flow:
+  aspect_ratio: "16:9"
+  count: x1
+  quality: High              # set and read in this project before master v02; not re-read for this take
+reference_images:            # attached in this order with More options > Add to prompt
+  - office-master-wide-golden v02 (Flow media "Philosopher office in strip mall")
+
+prompt_source: 'production/prompts/sophie-office-v2.md, section "office-master-wide-golden v03", verbatim'
+
+flow_project:
+  title: "AAO image a964e0d41448"
+  id: d0b10764-5004-4f27-9269-a447a70807fe
+flow_media:
+  index_at_download: 2         # newest first
+  name: "Lawyer private office layout"
+
+how_it_was_run: >-
+  Hand-driven with playwright-cli (session aao-web-gemini), because `aao web image flow` cannot
+  attach a project image or generate in a chosen project (hevangel/any-agent-orchestrator#9):
+  attach the references by Flow media name, fill the prompt, Start generation. Downloaded with
+  `uv run aao flow download d0b10764-5004-4f27-9269-a447a70807fe 2 --to production/exports/locations/sophie-office`.
+generation_datetime: "2026-11-22T17:27:52-07:00"   # Start generation clicked; tile appeared about 20 s later
+
+output:
+  original_filename: "Lawyer_private_office_layout_eef5e040.jpg"
+  download_quality: "Original size"
+  local_path: "production/exports/locations/sophie-office/Lawyer_private_office_layout_eef5e040.jpg"   # gitignored
+  working_copy: production/exports/locations/sophie-office/office-master-wide-golden-v03.jpg   # identical bytes
+  format: JPEG
+  resolution: 1376x768
+  sha256: 7D6C2F7FA56CDAE53F2F83D5A02383D5D0F830F1A9FC67DAD822AD5BFF0ABF6D
+uploaded_to_show_project_as: null   # upload after the showrunner approves
+
+agent_review:
+  matches:
+    - An enclosed room: no storefront glass; the open office door fills the right foreground
+    - Rear window with blinds in the back wall between the two bookcases; bust on the right bookcase
+    - Desk faces the door with the high-backed chair behind it; the wingback and the visitor chair face the desk
+    - Chalkboard on the left wall shows only the trolley drawing (the garbled text of v02 is gone); six diplomas beside it; two beige filing cabinets in the left foreground
+    - Same desk, lamp (lit), stacked books, laptop and card holder as master v02
+  deviations:
+    - Slatted light falls on the left wall from the front-right, not from the rear window behind the desk
+    - A small logo shape on the back of the laptop lid
+
+showrunner_review:
+  decision: null
+  notes: null
+youtube_url: null

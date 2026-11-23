@@ -17,7 +17,7 @@ settings_shown_in_flow:
   count: x1
 reference_images: []         # none; this is the master the later views will reference
 
-prompt_source: assets/locations/sophie-office/README.md, "Master prompt (PROPOSED)", used verbatim
+prompt_source: production/prompts/sophie-office-views.md, "Master prompt v01" (moved there from the office README on 2026-11-22), used verbatim
 prompt: >-
   Empty interior of a small philosophical consulting office in an Albuquerque strip-mall storefront,
   year 2030, wide establishing shot from the front-door corner, eye level, 16:9. Floor-to-ceiling
