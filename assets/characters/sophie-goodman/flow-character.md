@@ -41,7 +41,7 @@ reference_images:
 previous_images:   # still in the character's history panel
   - "Portrait: tutorial image, 'Medium studio shot of a 33-year-old woman ...', sha256 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6 (flow-character-portrait-original.jpg)"
   - "Body: tutorial triptych, 'Full-body triptych, three distinct views: front facing, 3/4 side view and back view ...' (not downloaded)"
-info_text_in_flow: approved text below, entered 2026-11-23 and read back after a reload
+info_text_in_flow: approved info text below + blank line + approved voice paragraph below; entered 2026-11-23 and read back after a reload (1,034 characters, exact match)
 voice_in_flow: kore             # shown on the character page; Flow lists it as "Kore — Female, firm, mid pitch"; approved by the showrunner 2026-11-23 ("Keep kore")
 model_shown_on_character_page: "Nano Banana 2.1"   # model picker in the character's edit box
 last_synced: 2026-11-23
@@ -91,7 +91,7 @@ Approved, with her age updated to late twenties to match the age lock. **Entered
 A realistic television casting reference photograph of a fictional woman named Sophie Goodman, age about 27. Dark brown wavy hair loosely pinned up, confident intelligent eyes, warm light-medium skin tone, subtle makeup, small gold hoop earrings, cream blouse and deep burgundy tailored blazer. Neutral light gray studio background, soft even lighting, camera at eye level, shoulders and face unobscured, natural expression. No writing, posters, props, extra people, watermarks or stylization. This is a consistent original fictional character design, not a portrait of a real actor.
 ```
 
-## PROPOSED — voice description to add to the info text (2026-11-23)
+## APPROVED — voice description added to the info text (showrunner, 2026-11-23)
 
 The showrunner asked for more description of the voice in Flow. The character page has no separate voice-description field: it has the voice picker and one **Character info** box ("Describe how your character acts…", no length limit in the page). So the voice description goes there, appended after the approved text above, which stays unchanged.
 
@@ -107,7 +107,7 @@ Why these lines:
 - The "never" list repeats the voice brief's exclusions, which are the common failure modes of generated voices.
 - No real person, actor or character is named, so it cannot drift into a sound-alike.
 
-**Decision needed:** approve this text (or edit it); then an agent appends it in Flow and reads it back after a reload.
+**Approved** by the showrunner on 2026-11-23 ("Good add it"). **Entered in Flow on 2026-11-23** with playwright-cli: the Character info box now holds the approved info text, a blank line, then this paragraph (1,034 characters). Saved with Done; after a reload the box matched the entered text exactly and the voice still showed kore.
 
 ## Voice selection — Kore (APPROVED 2026-11-23)
 
