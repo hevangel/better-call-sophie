@@ -64,7 +64,7 @@ Seen from the parking lot, front at the bottom. It matches the exterior take `of
 | Filing cabinets | Office | Two battered beige metal filing cabinets against the partition |
 | Office door | Hallway | Solid dark wood door with a small brass plate (text in post), a white-noise machine on the floor beside it |
 | Gold-framed painting | Waiting room | A gaudy gold-framed print of a classical painting of philosophers, on the partition wall facing the front door |
-| Reception desk | Waiting room | Small, cheap, usually unstaffed, with a brass desk bell and a card holder |
+| Reception desk | Waiting room | Small, cheap, with a brass desk bell and a card holder. No receptionist in season 1: normally empty, sometimes used by Sophie's friends or other characters for their own business (decision 3) |
 | Waiting area | Waiting room | Three mismatched waiting chairs, a side table with magazines, a water cooler, a cheap coffee maker, a coat stand by the door, a tired potted plant |
 | Storefront | Waiting room | Large window with half-open venetian blinds, glass front door on the right. A yellow-red sign panel above for "BETTER CALL SOPHIE" (add the text in post) |
 | Floor and walls | Both | Worn wood-look laminate, a faded Persian-style rug under the desk, warm cream plaster walls, a cheap drop ceiling |
@@ -119,7 +119,7 @@ The prompts are in [production/prompts/sophie-office-v2.md](../../../production/
 
 1. ~~Concept~~: strip-mall storefront, approved 2026-11-22.
 2. Floor plan: v1 approved 2026-11-22, then **superseded** the same day by showrunner direction ("the office is its own room"; exterior and interior must agree). Floor plan v2 **APPROVED** by the showrunner on 2026-11-22 ("Approve all four").
-3. **Decision needed:** does Sophie have a receptionist? v2 assumes an empty reception desk with a bell (a solo practice that can't afford one yet). A part-time receptionist could be a recurring character.
+3. ~~Receptionist~~: **decided by the showrunner, 2026-11-23.** Sophie has **no receptionist in season 1**; the reception desk is normally empty, with its bell. Sometimes her friends or other characters sit at it to do other things.
 4. Master wide history:
    - **v01** (2026-11-22): re-roll requested. [Log](../../../production/generation-logs/office-master-wide-golden-v01.yaml).
    - **v02** (2026-11-22): approved by the showrunner as the floor plan v1 master, with its deviations accepted (client chairs against the left wall, garbled chalk text, window on the right wall, freestanding bookcases). Superseded by floor plan v2; its desk, chairs, chalkboard, bookcases, bust, diplomas and painting carry over. [Log](../../../production/generation-logs/office-master-wide-golden-v02.yaml); its repo copy was replaced by v03 (in git history at commit 5faaf8e).

@@ -23,6 +23,7 @@
 - **Quality and cost:** draft quality is fine for now, and other tools may be tried later. The subscription plan covers credits, so cost does not limit tests.
 - **Distribution:** test and demo videos go to the YouTube channel [@better-call-sophie](https://www.youtube.com/@better-call-sophie).
 - **Sophie's office (APPROVED 2026-11-22):** the strip-mall storefront concept in `assets/locations/sophie-office/README.md`. The first floor plan was approved, then reopened the same day by the showrunner: the unit is mid-row, and Sophie's office is a private room separate from the waiting room. Floor plan v2, its set list and its four masters were approved by the showrunner on 2026-11-22.
+- **No receptionist in season 1 (LOCKED 2026-11-23):** Sophie works alone. The reception desk in her waiting room is normally empty; sometimes her friends or other characters sit there to do other things.
 - **Sophie's Flow character info text (APPROVED 2026-11-22):** see `assets/characters/sophie-goodman/flow-character.md`. Her voice is not chosen yet.
 
 ## PROPOSED — do not mistake for final canon
