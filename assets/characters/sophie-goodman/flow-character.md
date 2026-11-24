@@ -165,7 +165,25 @@ Both are 24 kHz mono. Loudness was −16.0 LUFS (plain) and −16.4 LUFS (perfor
 - Pitch rose a little in the middle while the top of the range came down, so the delivery is less sing-song.
 - The likely cause is the clauses about a pause before the key word and being lower and quieter when serious. If the showrunner wants it faster, the next version could say "brisk pace, short pauses" and drop the pause clause.
 
-**Decision needed:** listen to both previews. Then approve the text as is, edit it, or keep plain Kore. Only on the showrunner's yes is it added to the character (on the character page: voice dialog, Kore, the same fields, **Add to character**, then **Done**, then reload to check).
+### Performance text v02 (brisker, PROPOSED 2026-11-24)
+
+The showrunner asked to make it brisker ("Make it brisker"). Changes from v01: the pause-before-the-key-word clause is gone; the text asks for a brisk pace, short pauses and momentum; "lower and quieter when serious" becomes a touch lower but never slower.
+
+```text
+A woman in her late twenties with a General American accent. Keep Kore's firm, clear mid pitch. Brisk, fast-talking, crisp and articulate, with confident energy and a dry, amused edge. Short pauses only; keep the momentum going between sentences. Warm and a little theatrical when persuading, a touch lower when serious but never slower. Never shouting. Not breathy, whispery, sing-song or announcer-like.
+```
+
+Preview of v02 (2026-11-24): same method, same line, same voice; nothing added or saved.
+
+| Preview | File | Length | Pace | Pauses | Pitch (median, 10–90 %) | Loudness |
+| --- | --- | --- | --- | --- | --- | --- |
+| Plain Kore | `kore-plain-v01.wav` | 5.52 s | 1.59 words/s | 0.76 s, 0.78 s | 204 Hz, 139–370 Hz | −16.0 LUFS |
+| v01 text | `kore-performance-v01.wav` | 6.80 s | 1.28 words/s | 1.02 s, 1.10 s | 219 Hz, 124–329 Hz | −16.4 LUFS |
+| **v02 text** | `kore-performance-v02.wav` | **5.08 s** | **1.76 words/s** | **0.54 s, 0.68 s** | 232 Hz, 133–381 Hz | −17.0 LUFS |
+
+All three files are in `production/exports/sophie-voice/` and are local only. Whisper heard v02 word-perfectly. v02 is the briskest: about 10 % faster than plain Kore and 38 % faster than v01, with the shortest pauses. Its pitch sits a little higher and moves more, which reads as more animated. Whether that still sounds like a late-twenties advocate and not younger is for the showrunner's ear.
+
+**Decision needed:** listen to the previews. Then approve a text as is, edit it, or keep plain Kore. Only on the showrunner's yes is it added to the character (on the character page: voice dialog, Kore, the same fields, **Add to character**, then **Done**, then reload to check).
 
 ## Voice selection — Kore (APPROVED 2026-11-23)
 
