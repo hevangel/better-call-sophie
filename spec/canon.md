@@ -25,7 +25,7 @@
 - **Sophie's office (APPROVED 2026-11-22):** the strip-mall storefront concept in `assets/locations/sophie-office/README.md`. The first floor plan was approved, then reopened the same day by the showrunner: the unit is mid-row, and Sophie's office is a private room separate from the waiting room. Floor plan v2, its set list and its four masters were approved by the showrunner on 2026-11-22.
 - **No receptionist in season 1 (LOCKED 2026-11-23):** Sophie works alone. The reception desk in her waiting room is normally empty; sometimes her friends or other characters sit there to do other things.
 - **Sophie's Flow character info text (APPROVED 2026-11-22):** see `assets/characters/sophie-goodman/flow-character.md`.
-- **Sophie's voice (APPROVED 2026-11-23):** Flow's built-in voice **Kore** ("Female, firm, mid pitch"), on her Flow character, with an approved voice description in its info text. See `assets/characters/sophie-goodman/flow-character.md`.
+- **Sophie's voice (APPROVED 2026-11-23):** Flow's built-in voice **Kore** ("Female, firm, mid pitch"), on her Flow character, with an approved voice description in its info text. Since 2026-11-24 it is the custom voice **"Sophie Goodman (Kore, v02)"**: base Kore plus the approved brisker performance text v02 (`assets/characters/sophie-goodman/flow-character.md`). See `assets/characters/sophie-goodman/flow-character.md`.
 - **Sophie's face (APPROVED 2026-11-23):** age-27 portrait v02 (`assets/characters/sophie-goodman/reference-front.webp`), now the image of her Flow character. It replaces the tutorial portrait, which read early thirties.
 
 ## PROPOSED — do not mistake for final canon

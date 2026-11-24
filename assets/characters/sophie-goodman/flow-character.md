@@ -42,7 +42,7 @@ previous_images:   # still in the character's history panel
   - "Portrait: tutorial image, 'Medium studio shot of a 33-year-old woman ...', sha256 5FC1EE6107C534C7F901BAB62B53B43797AC236F372812035248E278312C78E6 (flow-character-portrait-original.jpg)"
   - "Body: tutorial triptych, 'Full-body triptych, three distinct views: front facing, 3/4 side view and back view ...' (not downloaded)"
 info_text_in_flow: approved info text below + blank line + approved voice paragraph below; entered 2026-11-23 and read back after a reload (1,034 characters, exact match)
-voice_in_flow: kore             # shown on the character page; Flow lists it as "Kore — Female, firm, mid pitch"; approved by the showrunner 2026-11-23 ("Keep kore")
+voice_in_flow: "Sophie Goodman (Kore, v02)"   # custom voice: base Kore + performance text v02; added to the character 2026-11-24 ("Add v02 to Sophie"), read back after a reload. Before: "kore" (approved 2026-11-23)
 model_shown_on_character_page: "Nano Banana 2.1"   # model picker in the character's edit box
 last_synced: 2026-11-23
 synced_by: "playwright-cli -s=aao-web-gemini on the character page (edit, then reload and read back); images fetched at =s0 in the signed-in session"
@@ -183,7 +183,18 @@ Preview of v02 (2026-11-24): same method, same line, same voice; nothing added o
 
 All three files are in `production/exports/sophie-voice/` and are local only. Whisper heard v02 word-perfectly. v02 is the briskest: about 10 % faster than plain Kore and 38 % faster than v01, with the shortest pauses. Its pitch sits a little higher and moves more, which reads as more animated. Whether that still sounds like a late-twenties advocate and not younger is for the showrunner's ear.
 
-**Decision needed:** listen to the previews. Then approve a text as is, edit it, or keep plain Kore. Only on the showrunner's yes is it added to the character (on the character page: voice dialog, Kore, the same fields, **Add to character**, then **Done**, then reload to check).
+**APPROVED and applied (showrunner, 2026-11-24: "Add v02 to Sophie").** On the character page, the agent:
+
+1. Opened the voice dialog and searched "Kore", which selects it without a click.
+2. Filled **Sample dialogue** with the test line and **Customise performance** with v02.
+
+Entering performance text turns the voice into a **custom voice**. Flow then shows a **Voice name** field (pre-filled "Kore custom"), **Reset**, a refreshing **Preview** and **Save new voice**.
+
+3. Named it **Sophie Goodman (Kore, v02)**, previewed it and saved it. It now appears in the voice list with its performance text.
+4. Selected it, clicked **Add to character**, then **Done**.
+5. Reloaded: the character's voice row shows "Sophie Goodman (Kore, v02)" with the v02 text.
+
+The plain "kore" voice is no longer on the character. To undo, pick Kore again in the voice dialog, then Done.
 
 ## Voice selection — Kore (APPROVED 2026-11-23)
 
