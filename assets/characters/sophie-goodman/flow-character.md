@@ -93,7 +93,9 @@ A realistic television casting reference photograph of a fictional woman named S
 
 ## APPROVED — voice description added to the info text (showrunner, 2026-11-23)
 
-The showrunner asked for more description of the voice in Flow. The character page has no separate voice-description field: it has the voice picker and one **Character info** box ("Describe how your character acts…", no length limit in the page). So the voice description goes there, appended after the approved text above, which stays unchanged.
+The showrunner asked for more description of the voice in Flow. The character page itself has the voice picker and one **Character info** box ("Describe how your character acts…", no length limit in the page), so the voice description went there, appended after the approved text above, which stays unchanged.
+
+**Correction (2026-11-24):** the voice picker *does* have its own performance field, **Customise performance**, shown with **Sample dialogue** and **Add to character** in the preview panel of a selected voice. The agent missed it on 2026-11-23 because it only read the voice list. See "Customise performance" below.
 
 ```text
 Voice (Kore): a firm, clear, mid-pitched woman's voice in her late twenties, General American accent. She talks fast but crisply and lands the key word of each argument with a short pause. Selling, she is bright and theatrical, with a local TV-ad rhythm and a smile you can hear. Thinking or arguing, she drops lower and quieter: short sentences, precise, a deliberate pause before a conclusion. Her dry humor is deadpan; the joke is in the timing. When angry she gets quieter and slower, never louder. Never breathy, whispery, sing-song or announcer-like.
@@ -108,6 +110,44 @@ Why these lines:
 - No real person, actor or character is named, so it cannot drift into a sound-alike.
 
 **Approved** by the showrunner on 2026-11-23 ("Good add it"). **Entered in Flow on 2026-11-23** with playwright-cli: the Character info box now holds the approved info text, a blank line, then this paragraph (1,034 characters). Saved with Done; after a reload the box matched the entered text exactly and the voice still showed kore.
+
+## PROPOSED — Customise performance for Kore (2026-11-24)
+
+**What the field is.** In Flow's **Select a voice** dialog, a selected voice shows a preview panel with three parts: **Sample dialogue** (up to 120 characters, read aloud by **Preview**), **Customise performance** ("Describe the voice performance style…") and **Add to character**. Flow Help calls the same idea **Voice Performance**: start from a preset "base voice", then describe how to change it. Its example is a raspy voice with a New York accent. Help says:
+
+- custom voices are an **Omni Flash** feature (not Veo);
+- voices work only in **Ingredients** video generations;
+- some voice customizations are available only in certain regions.
+
+It gives no length limit and no list of supported descriptors.
+
+**How it differs from the info text.** Customise performance styles the *audio of the voice itself*. The info-text voice paragraph (above) tells Flow's agent about the character. Both should agree.
+
+**How to use it (from the docs, not yet tested here):**
+
+1. Keep the base voice **Kore** (approved).
+2. Write the performance as short, concrete voice directions: age and accent, pitch relative to the base, pace, energy, attitude, texture, and what to avoid. Keep the character's story out of it.
+3. Put a real line in **Sample dialogue** and press **Preview**. Compare it with plain Kore, and listen for the salesy and the serious register.
+4. Only then **Add to character**. The voice is saved on the character only after **Done** on the character page. On an existing character, clicking a voice in the list swaps it in straight away (seen 2026-11-24; a reload without Done undid it), so be careful in that dialog.
+5. Re-check that the character's voice row still shows the right voice after a reload.
+
+**Known issue.** A user reported on Google's developer forum (2026-10-03) that the described tone did not apply and the voice stayed flat. Google's only reply pointed to in-app Feedback ([thread](https://discuss.ai.google.dev/t/googoe-flow-character-voice-tone-customisation-not-working-properly/186477)). So test with Preview before relying on it.
+
+**Proposed performance text:**
+
+```text
+A woman in her late twenties with a General American accent. Keep Kore's firm, clear mid pitch. Quick, crisp, articulate delivery with confident energy and a dry, amused edge; a short pause before the key word of each argument. Warm and a little theatrical when persuading, lower and quieter when serious. Natural breaths, never shouting. Not breathy, whispery, sing-song or announcer-like.
+```
+
+**Sample dialogue for the preview** (57 of 120 characters, the voice brief's test line):
+
+```text
+Legality is your lawyer's problem. Morality? That's mine.
+```
+
+Sources: Flow Help, [Create videos](https://support.google.com/flow/answer/16353334) (custom voices) and [models and supported features](https://support.google.com/labs/answer/16352836); [Manage projects, assets and characters](https://support.google.com/flow/answer/16935308) ("Select a voice or create a custom voice", then "Add to Character").
+
+**Decision needed:** approve or edit the performance text. Then an agent enters it and previews it on Kore, the showrunner listens and compares it with plain Kore, and only on the showrunner's yes is it added to the character.
 
 ## Voice selection — Kore (APPROVED 2026-11-23)
 
