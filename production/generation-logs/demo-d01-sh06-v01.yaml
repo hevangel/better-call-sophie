@@ -49,4 +49,11 @@ agent_review:
 showrunner_review:
   decision: final             # 2026-11-23: "Approve as final"
   notes: The end card and the assembled commercial demo-d01-v01 are final.
-youtube_url: null             # upload by hand with the disclosures, then record the URL here
+youtube_url: https://www.youtube.com/watch?v=iZbO5J0NBl4
+youtube_upload:              # via youtube-mcp v0.3.3 (scripts/youtube_mcp.py), each write previewed and approved by the showrunner
+  channel: "BetterCallSophie (UCqtXuyN2Xz2i2S2HgQjx9vQ)"
+  video_id: iZbO5J0NBl4
+  uploaded: "2026-11-23T20:16:46-07:00"     # private; showrunner: "Approve upload"
+  metadata_set: "2026-11-23"                # tags, category 1 Film & Animation, language en, not made for kids, altered or synthetic content: yes; showrunner: "Approve metadata"
+  made_public: "2026-11-24T00:03:35-07:00"  # showrunner: "Make it public"; read back as public, processing succeeded, playable signed out
+  text_source: production/demo/d01-youtube.md

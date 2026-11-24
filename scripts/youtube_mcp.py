@@ -48,7 +48,7 @@ def load_env(path: Path) -> dict[str, str]:
     return env
 
 
-async def run(tool: str | None, args: dict, env: dict[str, str]) -> None:
+async def run(tool: str | None, args: dict, env: dict[str, str]) -> bool:
     params = StdioServerParameters(command="node", args=[str(SERVER), "--transport", "stdio"], env={**os.environ, **env})
     async with stdio_client(params) as (read, write):
         async with ClientSession(read, write) as session:
@@ -56,7 +56,7 @@ async def run(tool: str | None, args: dict, env: dict[str, str]) -> None:
             if tool is None:
                 for t in (await session.list_tools()).tools:
                     print(t.name)
-                return
+                return True
             result = await session.call_tool(tool, args)
             for item in result.content:
                 text = getattr(item, "text", None)
@@ -64,8 +64,7 @@ async def run(tool: str | None, args: dict, env: dict[str, str]) -> None:
                     print(json.dumps(json.loads(text), indent=2, ensure_ascii=False) if text else item)
                 except (TypeError, ValueError):
                     print(text)
-            if getattr(result, "is_error", None) or getattr(result, "isError", False):
-                raise SystemExit(1)
+            return not (getattr(result, "is_error", None) or getattr(result, "isError", False))
 
 
 def main() -> None:
@@ -80,7 +79,8 @@ def main() -> None:
         raise SystemExit(f"{SERVER} is missing: run `npm ci` in external/youtube-mcp")
     env = load_env(a.env_file) if a.env_file.exists() else {}
     args = json.loads(a.args_file.read_text(encoding="utf-8")) if a.args_file else json.loads(a.args)
-    asyncio.run(run(None if a.list else a.tool, args, env))
+    if not asyncio.run(run(None if a.list else a.tool, args, env)):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
