@@ -147,7 +147,25 @@ Legality is your lawyer's problem. Morality? That's mine.
 
 Sources: Flow Help, [Create videos](https://support.google.com/flow/answer/16353334) (custom voices) and [models and supported features](https://support.google.com/labs/answer/16352836); [Manage projects, assets and characters](https://support.google.com/flow/answer/16935308) ("Select a voice or create a custom voice", then "Add to Character").
 
-**Decision needed:** approve or edit the performance text. Then an agent enters it and previews it on Kore, the showrunner listens and compares it with plain Kore, and only on the showrunner's yes is it added to the character.
+### Preview test v01 (2026-11-24)
+
+Run at the showrunner's request ("Yes, preview it"). The preview used the project composer: **Add** (+), then the **Voices** tab, then a search for "Kore". Searching leaves Kore as the only voice and selects it without a click. Clicking a voice in that list adds it to the prompt straight away, so don't click. The agent filled **Sample dialogue** and **Customise performance** and pressed **Preview**, twice. Nothing was added to the prompt or to the character, and nothing was saved. Flow returned each preview as a WAV from `flow-content.google` in about 12–14 s; the files were saved locally (gitignored).
+
+| Preview | File | Length | Whisper (small.en) | Pace | Pauses | Pitch (median, 10–90 %) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Plain Kore (performance empty) | `production/exports/sophie-voice/kore-plain-v01.wav` | 5.52 s | word-perfect | 1.59 words/s | 0.76 s after "problem.", 0.78 s after "Morality?" | 204 Hz, 139–370 Hz |
+| Kore + proposed performance text | `production/exports/sophie-voice/kore-performance-v01.wav` | 6.80 s | word-perfect | 1.28 words/s | 1.02 s and 1.10 s | 219 Hz, 124–329 Hz |
+
+Both are 24 kHz mono. Loudness was −16.0 LUFS (plain) and −16.4 LUFS (performance). Pitch was measured with a simple autocorrelation estimate, so treat it as approximate.
+
+**What the numbers say (not yet heard by a human):**
+
+- The field does change the voice; the October forum report of no effect did not reproduce here.
+- With this text the delivery got about 20 % slower, with longer pauses: more deliberate, not "quick, crisp".
+- Pitch rose a little in the middle while the top of the range came down, so the delivery is less sing-song.
+- The likely cause is the clauses about a pause before the key word and being lower and quieter when serious. If the showrunner wants it faster, the next version could say "brisk pace, short pauses" and drop the pause clause.
+
+**Decision needed:** listen to both previews. Then approve the text as is, edit it, or keep plain Kore. Only on the showrunner's yes is it added to the character (on the character page: voice dialog, Kore, the same fields, **Add to character**, then **Done**, then reload to check).
 
 ## Voice selection — Kore (APPROVED 2026-11-23)
 
