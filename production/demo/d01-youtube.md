@@ -39,4 +39,4 @@ Better Call Sophie, AI-generated, AI video, Google Flow, Flow Music, philosophy,
 
 - **Altered or synthetic content:** Yes. The video shows realistic people and voices made with AI, which YouTube asks creators to disclose.
 - **Audience:** No, it's not made for kids.
-- **Visibility:** the showrunner's call. The Flow tutorial advised keeping experiments private until rights and publication decisions are reviewed, while the canon says demo videos go to this channel; **Unlisted** is a middle option.
+- **Visibility: Public** (showrunner, 2026-11-23). Upload as private, set the metadata and the altered-content flag, then switch to public, so the video is never public without its disclosure.
